@@ -14,9 +14,9 @@ SetWindow::SetWindow(QWidget *parent) :
     ui(new Ui::SetWindow)
 {
     ui->setupUi(this);
+    prt = new port;
     //Stworzenie nowego obiektu klasy QSerial port oraz ustawienie jego rodzica(SetWindow) do poprawnego zwolnienia pamieci
-    microcontroller = new QSerialPort(this);
-    //connect(device, SIGNAL(errorOccurred(QSerialPort::SerialPortError)), this, SLOT(onErrorOccurred(QSerialPort::SerialPortError)));
+   // microcontroller = new QSerialPort(this);
     sBuff = " ";
 }
 
@@ -56,10 +56,18 @@ void SetWindow::on_pushButtonConnect_clicked()
         return;
     }
     //Ustawienie nazwy portu
-    QString portName = "COM3";
+    QString comboBoxstr = ui->comboBoxDevices->currentText();
+    QStringList portList = comboBoxstr.split(" ");
+    QString portName = portList.first();
+
+    prt->connect(portName);
+
+
+    //QString portName = "COM3";
     //Ustaw nazwe portu
-    this->microcontroller->setPortName(portName);
+   // this->microcontroller->setPortName(portName);
     //Jesli port jest otworzony
+    /*
     if(microcontroller->isOpen())
     {
         //Wyswietl komunikat i wroc ze slotu
@@ -91,11 +99,13 @@ void SetWindow::on_pushButtonConnect_clicked()
         }
 
     }
-
+*/
 }
 //Slot odpowiadajacy zamknieciu portu
 void SetWindow::on_pushButtonDisconnect_clicked()
 {
+    prt->closeConnection();
+    /*
     //Jesli port jest otwarty
     if(microcontroller->isOpen())
     { //Zamknij port, wypisz komunikat
@@ -111,11 +121,12 @@ void SetWindow::on_pushButtonDisconnect_clicked()
       this->addLogs("Port isn't opened!");
       return;
     }
+    */
 }
-
+/*
 void SetWindow::readPortData()
 {
-/*
+
      //sData.clear();
      QStringList buffsplit = sBuff.split(";");
      if(buffsplit.length()<=1)
@@ -130,7 +141,7 @@ void SetWindow::readPortData()
          sBuff = "";
      }
      //sData.clear();
-*/
+
 
     QStringList buffsplit = sBuff.split(";");
 
@@ -139,3 +150,4 @@ void SetWindow::readPortData()
     this->addLogs(_sBuff+"\t");
 
 }
+*/
