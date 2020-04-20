@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include "setwindow.h"
 #include <QSerialPort>//Do obslugi portow szeregowych
-
+#include "port.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -23,13 +23,12 @@ private slots:
     void on_pushButtonConnect_clicked();
     //---------------Proba--------------//
     void ifReport(const QString &message);
-    void openPort();
 
 private:
     Ui::MainWindow *ui;
     //SetWindow *sw;
     SetWindow *sw;//Wskaznik na obiekt SetWindow->okno ustawien polaczenia
-    //QSerialPort *mcu;
+    port *device;
 
 };
 #endif // MAINWINDOW_H

@@ -62,7 +62,6 @@ void SetWindow::on_pushButtonConnect_clicked()
 
     prt->connect(portName);
 
-
     //QString portName = "COM3";
     //Ustaw nazwe portu
    // this->microcontroller->setPortName(portName);
@@ -123,31 +122,4 @@ void SetWindow::on_pushButtonDisconnect_clicked()
     }
     */
 }
-/*
-void SetWindow::readPortData()
-{
 
-     //sData.clear();
-     QStringList buffsplit = sBuff.split(";");
-     if(buffsplit.length()<=1)
-     {
-        sData = microcontroller->readAll();
-        sBuff += QString::fromStdString(sData.toStdString());
-     //this->addLogs(sBuff+"\t");
-     }
-     else
-     {
-         this->addLogs(sBuff+"\t");
-         sBuff = "";
-     }
-     //sData.clear();
-
-
-    QStringList buffsplit = sBuff.split(";");
-
-    QByteArray _sData = microcontroller->readAll();
-    QString _sBuff = QString::fromStdString(_sData.toStdString());
-    this->addLogs(_sBuff+"\t");
-
-}
-*/

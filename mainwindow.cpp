@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     setStatusBar(new QStatusBar());//StatusBar
     statusBar()->showMessage("Status: Disconnected");
+    device = new port;
 }
 
 MainWindow::~MainWindow()
@@ -35,7 +36,3 @@ void MainWindow::ifReport(const QString &message)
     statusBar()->showMessage(message);
 }
 
-void MainWindow::openPort()
-{
-
-}

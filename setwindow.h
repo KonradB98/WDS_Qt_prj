@@ -18,7 +18,6 @@ class SetWindow : public QMainWindow
 public:
     explicit SetWindow(QWidget *parent = nullptr);
     ~SetWindow();
-
 private slots:
     void on_pushButtonSearch_clicked();
 

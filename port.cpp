@@ -28,7 +28,7 @@ void port::connect(QString portName)
         //Jesli udalo sie otworzyc port
         if(mcu->open(QSerialPort::ReadOnly))
         {
-            this->mcu->setBaudRate(QSerialPort::Baud57600);
+            this->mcu->setBaudRate(QSerialPort::Baud115200);
             this->mcu->setDataBits(QSerialPort::Data8);
             this->mcu->setParity(QSerialPort::NoParity);
             this->mcu->setStopBits(QSerialPort::OneStop);
@@ -64,12 +64,34 @@ void port::closeConnection()
 }
 //Slot wyswietlajacy dane z mcu w konsoli
 void port::readPortData()
-{
-    QStringList buffsplit = sBuff.split(";");
+{/*
+    QStringList buffsplit = serialBuffer.split(" ");
+    QStringList discoveryData;
+    serialData = mcu->readAll();
+    serialBuffer = QString::fromStdString(serialData.toStdString());
+    qDebug() << serialBuffer;*/
 
-    QByteArray _sData = mcu->readAll();
-    QString _sBuff = QString::fromStdString(_sData.toStdString());
-    qDebug() << _sBuff;
-   // this->addLogs(_sBuff+"\t");
+    QStringList bufferSplit = serialBuffer.split(" ");
+    QStringList discoveryData;
+    int checkSUM = 0;
+    if(bufferSplit.length() < 4){
+           serialData = mcu->readAll();
+           serialBuffer += QString::fromStdString(serialData.toStdString());
+    }
+    else{
+        // bufferSplit[0], bufferSplit[1] ...
+        discoveryData = bufferSplit;
+
+        // SPRAWDZANIE POPRAWNOSCI DANYCH
+        for(int i = 0; i < 3; ++i)
+            checkSUM += QString(discoveryData[i]).toInt();
+
+           checkSUM = (checkSUM % 128);
+               if(checkSUM == QString(discoveryData[3]).toInt()){
+                   qDebug() << bufferSplit;
+               }
+        serialBuffer = "";
+    }
+
 }
 

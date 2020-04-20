@@ -9,15 +9,17 @@ class port : public QObject
 public:
     port();
     ~port();
-     void connect(QString portName);
-     void closeConnection();
+     void connect(QString portName); //Metoda umozliwiajaca nawiazanie polaczenia z mikrokontrolerem
+     void closeConnection(); //Metoda zamykajaca polaczenie
 private:
-    QSerialPort *mcu;
-    QString sBuff;
-    //void connect( QString portName);
-private slots:
-    void readPortData();
+    QSerialPort *mcu; //Wskaznik na obiekt klasy QSerialPort
+   // QString sBuff; // Bufor do ktorego beda zapisywane dane z mikrokontrolera
+    //QByteArray sData;//
+    QByteArray serialData;
+    QString serialBuffer;
 
+private slots:
+    void readPortData(); //Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera
 };
 
 #endif // PORT_H
