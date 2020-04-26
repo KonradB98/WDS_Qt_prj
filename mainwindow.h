@@ -26,9 +26,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    //SetWindow *sw;
-    SetWindow *sw;//Wskaznik na obiekt SetWindow->okno ustawien polaczenia
-    port *device;
+    SetWindow sw;//Wskaznik na obiekt SetWindow->okno ustawien polaczenia
+    port device;
 
 };
 #endif // MAINWINDOW_H

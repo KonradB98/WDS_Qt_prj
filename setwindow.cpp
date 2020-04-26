@@ -1,12 +1,8 @@
 #include "setwindow.h"
 #include "ui_setwindow.h"
-#include <QDebug>//Debugowanie w konsoli
 #include <QList>//Dynamiczna lista obiektow QList<QSerialPortInfo>
 #include <QSerialPortInfo>//QSerialPortInfo
-#include <QSerialPort>//obsluga portu szeregowego
 #include <QDateTime>//currentDateTime()
-#include "mainwindow.h"
-
 
 
 SetWindow::SetWindow(QWidget *parent) :
@@ -14,10 +10,6 @@ SetWindow::SetWindow(QWidget *parent) :
     ui(new Ui::SetWindow)
 {
     ui->setupUi(this);
-    prt = new port;
-    //Stworzenie nowego obiektu klasy QSerial port oraz ustawienie jego rodzica(SetWindow) do poprawnego zwolnienia pamieci
-   // microcontroller = new QSerialPort(this);
-    sBuff = " ";
 }
 
 SetWindow::~SetWindow()
@@ -59,67 +51,15 @@ void SetWindow::on_pushButtonConnect_clicked()
     QString comboBoxstr = ui->comboBoxDevices->currentText();
     QStringList portList = comboBoxstr.split(" ");
     QString portName = portList.first();
+    //emituj sygnal, ktory aktywuje SLOT w port.cpp odpowiadajacy za otworzenie i konfiguracje polaczenia
+    emit setConnect(portName);
 
-    prt->connect(portName);
 
-    //QString portName = "COM3";
-    //Ustaw nazwe portu
-   // this->microcontroller->setPortName(portName);
-    //Jesli port jest otworzony
-    /*
-    if(microcontroller->isOpen())
-    {
-        //Wyswietl komunikat i wroc ze slotu
-        this->addLogs("Port is already opened!");
-        return;
-    }
-    else
-    {
-        //Jesli udalo sie otworzyc port
-        if(microcontroller->open(QSerialPort::ReadOnly))
-        {
-            this->microcontroller->setBaudRate(QSerialPort::Baud57600);
-            this->microcontroller->setDataBits(QSerialPort::Data8);
-            this->microcontroller->setParity(QSerialPort::NoParity);
-            this->microcontroller->setStopBits(QSerialPort::OneStop);
-            this->microcontroller->setFlowControl(QSerialPort::NoFlowControl);
-            this->addLogs("Port is opened");
-
-            //Polacz ze slotem
-            connect(this->microcontroller,SIGNAL(readyRead()),this,SLOT(readPortData()));
-            //Aktualizuj statusBar
-           QString stat = "Status: Connected";
-           emit reportStatus(stat);
-
-        }
-        else
-        {
-            this->addLogs("FAIL! Port couldn't be opened");
-        }
-
-    }
-*/
 }
 //Slot odpowiadajacy zamknieciu portu
 void SetWindow::on_pushButtonDisconnect_clicked()
 {
-    prt->closeConnection();
-    /*
-    //Jesli port jest otwarty
-    if(microcontroller->isOpen())
-    { //Zamknij port, wypisz komunikat
-      microcontroller->close();
-      this->addLogs("Connection closed.");
-      //Aktualizuj statusBar
-      QString stat = "Status: Disconnected";
-      emit reportStatus(stat);
-    }
-    else
-    {
-      //Wypisz komunikat i wyjdz ze slotu
-      this->addLogs("Port isn't opened!");
-      return;
-    }
-    */
+    //emituje sygnal, ktory aktywuje SLOT w port.cpp odpowiadajacy za zamkniecie polaczenia
+    emit closeConnect();
 }
 

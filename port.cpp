@@ -1,8 +1,5 @@
 #include "port.h"
 #include <QDebug>
-#include <QList>//Dynamiczna lista obiektow QList<QSerialPortInfo>
-#include <QSerialPortInfo>//QSerialPortInfo
-#include <QByteArray>
 
 
 port::port()
@@ -13,8 +10,52 @@ port::~port()
 {
     delete mcu;
 }
-//Funkcja otwierajaca port szeregowy
-void port::connect(QString portName)
+
+//Slot wyswietlajacy dane z mcu w konsoli
+void port::readPortData()
+{   /*
+    QStringList buffsplit = serialBuffer.split(" ");
+    QStringList discoveryData;
+    serialData = mcu->readAll();
+    serialBuffer = QString::fromStdString(serialData.toStdString());
+    qDebug() << serialBuffer;
+    */
+    //wpisz do zmiennej pomocniczej dane z bufora
+    QStringList bufferSplit = serialBuffer.split(" ");
+    QStringList discoveryData; //Zmienna pomocnicza do weryfikacji poprawnosci danych
+    int checkSUM = 0; //Zmienna pom do obliczenia sumy kontrolnej
+    uint checkSync = 0x24; //Znak '$' zapisany w Hex
+    bool correctConvert;
+    //ramka danych sklada sie z 6 czesci danych odzielonych spacja
+    //[$][_][X][_][Y][_][Z][_][CRC][_][\n]
+    if(bufferSplit.length() < 6){
+           serialData = mcu->readAll();//Czytaj dane z portu
+           serialBuffer += QString::fromStdString(serialData.toStdString());//Dodaj dane do bufora i konwertuj do stringa
+    }
+    else{
+        // przypisanie wartosci do zmiennej pomocniczej, na ktorej bedziemy dzilac
+        discoveryData = bufferSplit;
+        //----------------SPRAWDZANIE POPRAWNOSCI DANYCH-------------------//
+        //Sprawdz bit synchronizacji
+        //if(checkSync == QString(discoveryData[0].toInt())){
+        if(checkSync == QString(discoveryData[0]).toUInt(&correctConvert,16)){
+            //Zlicz sume slowa bitowego
+            for(int i = 1; i < 4; ++i)
+                checkSUM += QString(discoveryData[i]).toInt();
+
+               checkSUM = (checkSUM % 128); //Deszyfruj uzyskany wynik
+               //Jesli wynik zgodny z rejsetrem CRC, wypisz dane do konsoli
+                   if(checkSUM == QString(discoveryData[4]).toInt()){
+                       qDebug() << bufferSplit;
+                   }
+           }
+        //Wyczysc bufor
+        serialBuffer = "";
+    }
+
+}
+//Slot otwierajacy i konfigurujacy port. port jest otwierany poprzez wcisniecie przycisku connect w setwindow.
+void port::OpenPort(QString portName)
 {
     if(mcu->isOpen())
     {
@@ -38,8 +79,8 @@ void port::connect(QString portName)
             //Polacz ze slotem
            QObject::connect(mcu,SIGNAL(readyRead()),this,SLOT(readPortData()));
             //Aktualizuj statusBar
-        //   QString stat = "Status: Connected";
-         //  emit reportStatus(stat);
+            QString stat = "Status: Connected";
+            emit reportStatus(stat);
 
         }
         else
@@ -47,51 +88,21 @@ void port::connect(QString portName)
               qDebug()<< "FAIL! Port couldn't be opened";
 
         }
-   }
+    }
 }
-//Funkcja zamykajaca port szeregowy
-void port::closeConnection()
+//Slot odpowiadajacy za zamkniecie portu szeregowego. Slot jest wywolywany poprzez nacisniecie przycisku disconnect w setwindow
+void port::ClosePort()
 {
     if(this->mcu->isOpen())
     {
         this->mcu->close();
         qDebug()<<"Connection closed.";
+        QString stat = "Status: Disconnected";
+        emit reportStatus(stat);
     }
     else {
         qDebug()<<"Port isn't opened!";
         return;
     }
-}
-//Slot wyswietlajacy dane z mcu w konsoli
-void port::readPortData()
-{/*
-    QStringList buffsplit = serialBuffer.split(" ");
-    QStringList discoveryData;
-    serialData = mcu->readAll();
-    serialBuffer = QString::fromStdString(serialData.toStdString());
-    qDebug() << serialBuffer;*/
-
-    QStringList bufferSplit = serialBuffer.split(" ");
-    QStringList discoveryData;
-    int checkSUM = 0;
-    if(bufferSplit.length() < 4){
-           serialData = mcu->readAll();
-           serialBuffer += QString::fromStdString(serialData.toStdString());
-    }
-    else{
-        // bufferSplit[0], bufferSplit[1] ...
-        discoveryData = bufferSplit;
-
-        // SPRAWDZANIE POPRAWNOSCI DANYCH
-        for(int i = 0; i < 3; ++i)
-            checkSUM += QString(discoveryData[i]).toInt();
-
-           checkSUM = (checkSUM % 128);
-               if(checkSUM == QString(discoveryData[3]).toInt()){
-                   qDebug() << bufferSplit;
-               }
-        serialBuffer = "";
-    }
-
 }
 

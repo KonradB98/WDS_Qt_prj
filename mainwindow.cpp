@@ -1,8 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "setwindow.h"//*sw
 #include <QDebug>
-
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -12,7 +10,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     setStatusBar(new QStatusBar());//StatusBar
     statusBar()->showMessage("Status: Disconnected");
-    device = new port;
+    connect(&sw,SIGNAL(setConnect(QString)),&device,SLOT(OpenPort(QString)));//Otworz i skonfiguruj port
+    connect(&sw,SIGNAL(closeConnect()),&device,SLOT(ClosePort()));//Zamknij port
+    connect(&device,SIGNAL(reportStatus(const QString &)),this,SLOT(ifReport(const QString &)));//Aktualizuj StatusBar
 }
 
 MainWindow::~MainWindow()
@@ -23,14 +23,9 @@ MainWindow::~MainWindow()
 //Slot otwiera nowe okno do ustawien polaczenia z mikrokontreolerem
 void MainWindow::on_pushButtonConnect_clicked()
 {
-
-    sw = new SetWindow(this);//Dynamiczna alokacja pamieci oraz ustawienie rodzica(MainWindow) do poprawnego zwolnienia pamieci
-    sw->show();//Wyswietlenie nowego okna z ustawieniami
-    connect(sw,SIGNAL(reportStatus(const QString &)),this,SLOT(ifReport(const QString &)));
-    //connect(sw,SIGNAL(reportStatus));
-
+     sw.show();//Wyswietlenie nowego okna z ustawieniami
 }
-
+//Slot odpowiedzialny za aktualizacje paska statusowego polaczenia
 void MainWindow::ifReport(const QString &message)
 {
     statusBar()->showMessage(message);
