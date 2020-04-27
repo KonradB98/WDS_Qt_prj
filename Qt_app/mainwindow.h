@@ -23,6 +23,13 @@ private slots:
     void on_pushButtonConnect_clicked();
     //---------------Proba--------------//
     void ifReport(const QString &message);
+    //Funkcja odpowiada rysowanie wykresu
+    void makePlot(QList<float> acc_dat);
+    void on_pushButtonX_clicked();
+
+    void on_pushButtonY_clicked();
+
+    void on_pushButton_3_clicked();
 
 private:
     Ui::MainWindow *ui;

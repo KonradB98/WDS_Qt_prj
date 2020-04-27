@@ -20,6 +20,7 @@ private slots:
     void ClosePort(); //Slot zamyka otwarty port szeregowy
 signals:
     void reportStatus(const QString &);//Sygnal emitowany po poprawnym skonfigurowaniu i podlaczeniu urzadzenia
+    void plotData(QList<float>); // Sygnal emitowany po poprawnym odczytaniu danych w slocie readPortData()
 };
 
 #endif // PORT_H

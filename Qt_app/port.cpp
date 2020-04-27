@@ -1,6 +1,6 @@
 #include "port.h"
 #include <QDebug>
-
+#include <climits>
 
 port::port()
 {
@@ -20,10 +20,10 @@ void port::readPortData()
     serialBuffer = QString::fromStdString(serialData.toStdString());
     qDebug() << serialBuffer;
     */
-    //wpisz do zmiennej pomocniczej dane z bufora
-    QStringList bufferSplit = serialBuffer.split(" ");
+    const float resolution = 2.0;//Rozdzielczosc akcelerometru
+    QStringList bufferSplit = serialBuffer.split(" ");//wpisz do zmiennej pomocniczej dane z bufora oddzielone znakiem spacji " "
     QStringList discoveryData; //Zmienna pomocnicza do weryfikacji poprawnosci danych
-    int checkSUM = 0; //Zmienna pom do obliczenia sumy kontrolnej
+    uint checkSUM = 0; //Zmienna pom do obliczenia sumy kontrolnej
     uint checkSync = 0x24; //Znak '$' zapisany w Hex
     bool correctConvert;
     //ramka danych sklada sie z 6 czesci danych odzielonych spacja
@@ -45,12 +45,25 @@ void port::readPortData()
 
                checkSUM = (checkSUM % 128); //Deszyfruj uzyskany wynik
                //Jesli wynik zgodny z rejsetrem CRC, wypisz dane do konsoli
-                   if(checkSUM == QString(discoveryData[4]).toInt()){
-                       qDebug() << bufferSplit;
+                   if(checkSUM == QString(discoveryData[4]).toUInt()){
+                       //---------Konwersja danych do jednostek Si(g) max=2.0g-------------//
+                       int16_t pom_x = discoveryData[1].toInt();
+                       int16_t pom_y = discoveryData[2].toInt();
+                       int16_t pom_z = discoveryData[3].toInt();
+                       float X_g = ((float)pom_x*resolution)/((float)INT16_MAX);
+                       float Y_g = ((float)pom_y*resolution)/((float)INT16_MAX);
+                       float Z_g = ((float)pom_z*resolution)/((float)INT16_MAX);
+                       QList<float> acc_data = {X_g, Y_g, Z_g};
+                       qDebug()<< acc_data;
+                       emit plotData(acc_data);
+                        //qDebug()<< discoveryData[1] << discoveryData[2] << discoveryData[3] << INT16_MAX;
+                       //qDebug() << bufferSplit;
                    }
            }
         //Wyczysc bufor
         serialBuffer = "";
+        bufferSplit.clear();
+        discoveryData.clear();
     }
 
 }

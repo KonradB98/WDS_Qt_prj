@@ -28,7 +28,7 @@
 /* USER CODE BEGIN Includes */
 #include "usbd_cdc_if.h" // Plik bedacy interfejsem uzytkownika do kontrolera USB
 #include <limits.h> //Do maxint
-#include <stdio.h>
+#include <stdio.h> //Do printf()
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
