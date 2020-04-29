@@ -5,6 +5,7 @@
 #include "setwindow.h"
 #include <QSerialPort>//Do obslugi portow szeregowych
 #include "port.h"
+#include "gamewin.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -31,10 +32,15 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_pushButtonPlay_clicked();
+
 private:
     Ui::MainWindow *ui;
-    SetWindow sw;//Wskaznik na obiekt SetWindow->okno ustawien polaczenia
+    SetWindow sw;
+    //SetWindow *sw;
     port device;
+    //port *device;
+    Gamewin *game;
 
 };
 #endif // MAINWINDOW_H

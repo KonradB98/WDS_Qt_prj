@@ -54,7 +54,7 @@ void port::readPortData()
                        float Y_g = ((float)pom_y*resolution)/((float)INT16_MAX);
                        float Z_g = ((float)pom_z*resolution)/((float)INT16_MAX);
                        QList<float> acc_data = {X_g, Y_g, Z_g};
-                       qDebug()<< acc_data;
+                       //qDebug()<< acc_data;
                        emit plotData(acc_data);
                         //qDebug()<< discoveryData[1] << discoveryData[2] << discoveryData[3] << INT16_MAX;
                        //qDebug() << bufferSplit;

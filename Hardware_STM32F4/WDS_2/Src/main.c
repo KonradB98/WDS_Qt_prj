@@ -163,7 +163,7 @@ syncSign = 0x24;// Znak '$' zapisany w systemie szesnastkowym Hex
 	  Length=sprintf(DataToSend,"%x %d %d %d %d \n",syncSign,Xaxis,Yaxis,Zaxis,ToCrc);
 	  printf("%x %d %d %d %d \r\n",syncSign,Xaxis,Yaxis,Zaxis,ToCrc);
 	  CDC_Transmit_FS(DataToSend, Length);
-	  HAL_Delay(1000);
+	 //elk HAL_Delay(200);
 
     /* USER CODE END WHILE */
 

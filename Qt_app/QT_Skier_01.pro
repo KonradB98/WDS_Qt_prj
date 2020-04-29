@@ -16,6 +16,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Player.cpp \
+    gamewin.cpp \
     main.cpp \
     mainwindow.cpp \
     port.cpp \
@@ -23,12 +25,15 @@ SOURCES += \
     setwindow.cpp
 
 HEADERS += \
+    Player.h \
+    gamewin.h \
     mainwindow.h \
     port.h \
     qcustomplot.h \
     setwindow.h
 
 FORMS += \
+    gamewin.ui \
     mainwindow.ui \
     setwindow.ui
 
