@@ -1,6 +1,7 @@
 #include "gamewin.h"
 #include "ui_gamewin.h"
 #include <QDebug>
+#include <QTimer>
 
 Gamewin::Gamewin(QWidget *parent) :
     QDialog(parent),
@@ -10,29 +11,37 @@ Gamewin::Gamewin(QWidget *parent) :
 
     scene = new QGraphicsScene();
     scene->setSceneRect(0,0,800,600);
+    // 0---------->800(x)
+    // |
+    // |
+    // |
+    //600(y)
 
     ui->game->setScene(scene);
     ui->game->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     ui->game->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     ui->game->setFixedSize(800,600);
 
-    // create the player
+    // Stworz obiekt klasy Player
     player = new Player();
-    connect(this,SIGNAL(passData(QList<float>)),player,SLOT(accMove(QList<float>)));
-    player->setRect(0,0,100,100); // change the rect from 0x0 (default) to 100x100 pixels
-    player->setPos(400,500); // TODO generalize to always be in the middle bottom of screen
-    // make the player focusable and set it to be the current focus
-    player->setFlag(QGraphicsItem::ItemIsFocusable);
+    connect(this,SIGNAL(passData(QList<float>)),player,SLOT(accMove(QList<float>))); //Polacz gracza z danymi z akcelerometru
+    player->setRect(0,0,100,100); //Wymiary wstepne
+    player->setPos(scene->width()/2-player->rect().width()/2,scene->height()-player->rect().height());//center pos
+    player->setFlag(QGraphicsItem::ItemIsFocusable); //Ustaw odpowiednia flage i focus, aby mozna bylo sterowac obiektem
     player->setFocus();
-    // add the player to the scene
-    scene->addItem(player);
+    scene->addItem(player); // dodaj gracza do sceny
+
+    //---------------Timery-------------//
+    QTimer * tim1 = new QTimer();
+    QObject::connect(tim1,SIGNAL(timeout()),player,SLOT(makeSpawn()));
+    tim1->start(4000);
 }
 
 Gamewin::~Gamewin()
 {
     delete ui;
 }
-
+//Slot odbier dane z akcelerometru od mainwindow, slot emituje sygnal dla gracza (player) ktory odbiera dane z akcelerometru
 void Gamewin::getControlData(QList<float> acc_dat)
 {
     emit passData(acc_dat);

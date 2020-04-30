@@ -7,6 +7,8 @@
 int t = 0;
 int range = 200;
 int axis = 0;
+//Zmienna wskaznikowa globalna do utworzenia rozgrywki
+Gamewin *game;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -98,5 +100,4 @@ void MainWindow::on_pushButtonPlay_clicked()
     game = new Gamewin(this);
     connect(&device,SIGNAL(plotData(QList<float>)),game,SLOT(getControlData(QList<float>)));//Rysuj wykres
     game->show();
-    //game.show();
 }

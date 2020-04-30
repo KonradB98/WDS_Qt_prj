@@ -40,7 +40,7 @@ private:
     //SetWindow *sw;
     port device;
     //port *device;
-    Gamewin *game;
+    //Gamewin *game;
 
 };
 #endif // MAINWINDOW_H

@@ -2,6 +2,7 @@
 #include <QGraphicsScene>
 #include <QKeyEvent>
 #include <QDebug>
+#include "Gate.h"
 
 Player::Player(QGraphicsItem *parent): QGraphicsRectItem(parent){
 
@@ -32,4 +33,9 @@ void Player::accMove(QList<float> acc_dat)
         setPos(x()+10,y());
     }
     qDebug()<<acc_dat;
+}
+void Player::makeSpawn()
+{
+    Gate *gate = new Gate();
+    scene()->addItem(gate);
 }

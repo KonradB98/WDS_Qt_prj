@@ -12,6 +12,7 @@ public:
 public slots:
     void moveEvent(QKeyEvent * event);
     void accMove(QList<float> acc_dat);
+    void makeSpawn();
 };
 
 #endif // PLAYER_H
