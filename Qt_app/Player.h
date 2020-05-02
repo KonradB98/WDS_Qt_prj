@@ -4,15 +4,15 @@
 #include <QGraphicsRectItem>
 #include <QObject>
 #include <QGraphicsItem>
+#include <QGraphicsPixmapItem>
 
-class Player:public QObject, public QGraphicsRectItem{
+class Player:public QObject, public QGraphicsPixmapItem{
     Q_OBJECT
 public:
-    Player(QGraphicsItem * parent=0);
+    Player(QGraphicsItem *parent = NULL);
 public slots:
-    void moveEvent(QKeyEvent * event);
-    void accMove(QList<float> acc_dat);
-    void makeSpawn();
+    void accMove(QList<float> acc_dat); //Slot porusza postacia przy pomocy danych z akcelerometru
+    void makeSpawn(); //Slot spawnuje bramki (przeszkody)
 };
 
 #endif // PLAYER_H

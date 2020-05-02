@@ -42,6 +42,13 @@ void MainWindow::on_pushButtonConnect_clicked()
      //connect(sw,SIGNAL(closeConnect()),device,SLOT(ClosePort()));//Zamknij port
      sw.show();//Wyswietlenie nowego okna z ustawieniami
 }
+//Przycisk uruchamia nowa gre
+void MainWindow::on_pushButtonPlay_clicked()
+{
+    game = new Gamewin(this);
+    connect(&device,SIGNAL(plotData(QList<float>)),game,SLOT(getControlData(QList<float>)));//Rysuj wykres
+    game->show();
+}
 //Slot odpowiedzialny za aktualizacje paska statusowego polaczenia
 void MainWindow::ifReport(const QString &message)
 {
@@ -93,11 +100,4 @@ void MainWindow::on_pushButton_3_clicked()
     axis = 2;
     ui->customPlot->clearGraphs();
     t = 0;
-}
-
-void MainWindow::on_pushButtonPlay_clicked()
-{
-    game = new Gamewin(this);
-    connect(&device,SIGNAL(plotData(QList<float>)),game,SLOT(getControlData(QList<float>)));//Rysuj wykres
-    game->show();
 }

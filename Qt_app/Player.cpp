@@ -4,22 +4,11 @@
 #include <QDebug>
 #include "Gate.h"
 
-Player::Player(QGraphicsItem *parent): QGraphicsRectItem(parent){
+Player::Player(QGraphicsItem *parent): QGraphicsPixmapItem(parent){
+    //Ustaw grafike
+    setPixmap(QPixmap(":/game_img/plr.png"));
 
 }
-
-void Player::moveEvent(QKeyEvent *event)
-{
-    if (event->key() == Qt::Key_Left){
-        if (pos().x() > 0)
-        setPos(x()-10,y());
-    }
-    else if (event->key() == Qt::Key_Right){
-        if (pos().x() + this->rect().width() < 800)
-        setPos(x()+10,y());
-    }
-}
-
 void Player::accMove(QList<float> acc_dat)
 {
     const float Threshold = 0.5;
@@ -29,10 +18,10 @@ void Player::accMove(QList<float> acc_dat)
         setPos(x()-10,y());
     }
     else if (x_d<-Threshold){
-        if (pos().x() + this->rect().width() < 800)
+        if (pos().x() + 100< 800)
         setPos(x()+10,y());
     }
-    qDebug()<<acc_dat;
+    //qDebug()<<acc_dat;
 }
 void Player::makeSpawn()
 {

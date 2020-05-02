@@ -8,17 +8,16 @@
 #include "gamewin.h"
 #include "mainwindow.h"
 
-extern Gamewin *game;
+extern Gamewin *game;// Sprawdzanie kolizji w moveDown()
 
-Gate::Gate()
-{
+Gate::Gate(QGraphicsItem *parent): QObject(), QGraphicsPixmapItem(parent){
     //Ustaw losowa pozycje po lewej stronie sceny
-    setPos(rand()%650,0);
-    if(this->rect().x()<50)
-        setPos(x()+150,0);
-    // Rysuj bramke
-    setRect(0,0,50,100);
-
+    int rdn_pos = rand()%690;
+    if(rdn_pos<10)
+        rdn_pos +=100;
+    setPos(rdn_pos,0);
+    //Dodaj grafike z zasobowego folderu
+    setPixmap(QPixmap(":/game_img/gt1.png"));
     // Polacz z timerem
     QTimer * timer = new QTimer();
     connect(timer,SIGNAL(timeout()),this,SLOT(moveDown()));
@@ -54,6 +53,6 @@ void Gate::moveDown()
         scene()->removeItem(this);
         //Usun obiekt ze stosu
         delete this;
-        qDebug()<<"Delete gate!";
+       // qDebug()<<"Delete gate!";
     }
 }

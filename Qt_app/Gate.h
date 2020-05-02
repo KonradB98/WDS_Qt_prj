@@ -2,14 +2,14 @@
 #define GATE_H
 
 #include <QObject>
-#include <QGraphicsRectItem>
+#include <QGraphicsPixmapItem> //Do graficznej reprezentacji obiektow
 
-class Gate:public QObject,public QGraphicsRectItem{
+class Gate:public QObject,public QGraphicsPixmapItem{
     Q_OBJECT
 public:
-    Gate();
+    Gate(QGraphicsItem *parent=NULL);
 public slots:
-    void moveDown();
+    void moveDown(); //Slot porusza bramka w dol i sprawdza kolizje z graczem
 };
 
 #endif // GATE_H

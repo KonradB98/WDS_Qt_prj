@@ -23,9 +23,9 @@ public:
      QGraphicsScene * scene;
      Player * player;
 public slots:
-    void getControlData(QList<float> acc_dat);
+    void getControlData(QList<float> acc_dat); //Odbiera dane z akcelerometru od okna "mainwindow"
 signals:
-    void passData(QList<float> acc_dat);
+    void passData(QList<float> acc_dat); // Emitwany po odebraniu danych z akcelerometru w slocie  getControlData()
 };
 
 #endif // GAMEWIN_H

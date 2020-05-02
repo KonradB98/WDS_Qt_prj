@@ -1,6 +1,11 @@
 <RCC>
     <qresource prefix="/">
-        <file>Con_but.png</file>
         <file>Play_but.png</file>
+        <file>Con_but.png</file>
+    </qresource>
+    <qresource prefix="/game_img">
+        <file>background.png</file>
+        <file>gt1.png</file>
+        <file>plr.png</file>
     </qresource>
 </RCC>

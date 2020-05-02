@@ -13,13 +13,7 @@ port::~port()
 
 //Slot wyswietlajacy dane z mcu w konsoli
 void port::readPortData()
-{   /*
-    QStringList buffsplit = serialBuffer.split(" ");
-    QStringList discoveryData;
-    serialData = mcu->readAll();
-    serialBuffer = QString::fromStdString(serialData.toStdString());
-    qDebug() << serialBuffer;
-    */
+{
     const float resolution = 2.0;//Rozdzielczosc akcelerometru
     QStringList bufferSplit = serialBuffer.split(" ");//wpisz do zmiennej pomocniczej dane z bufora oddzielone znakiem spacji " "
     QStringList discoveryData; //Zmienna pomocnicza do weryfikacji poprawnosci danych
