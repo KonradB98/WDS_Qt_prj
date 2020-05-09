@@ -35,6 +35,13 @@ Gamewin::Gamewin(QWidget *parent) :
     player->setFocus();
     scene->addItem(player); // dodaj gracza do sceny
 
+    // Stworz obiekty typu "Score" i "Health" i dodaj do sceny
+    score = new Score();
+    scene->addItem(score);
+    health = new Health();
+    health->setPos(health->x(),health->y()+35);
+    scene->addItem(health);
+
     //---------------Timer-------------//
     QTimer * tim1 = new QTimer();
     QObject::connect(tim1,SIGNAL(timeout()),player,SLOT(makeSpawn()));
@@ -44,8 +51,10 @@ Gamewin::Gamewin(QWidget *parent) :
 Gamewin::~Gamewin()
 {
     delete ui;
-    delete player;
-    delete scene;
+    //delete player;
+    //delete scene;
+    //delete score;
+    //delete health;
 }
 //Slot odbier dane z akcelerometru od mainwindow, slot emituje sygnal dla gracza (player) ktory odbiera dane z akcelerometru
 void Gamewin::getControlData(QList<float> acc_dat)

@@ -34,7 +34,8 @@ void Gate::moveDown()
     for (int i = 0, n = colliding_items.size(); i < n; ++i){
         //Jesli jednym z obiektow jest gracz zniszcz bramke
         if (typeid(*(colliding_items[i])) == typeid(Player)){
-
+            // zmniejsz wartosc zdrowia w przypadku kolizji
+            game->health->decrease();
             // Usun ze sceny bramke
             scene()->removeItem(this);
 

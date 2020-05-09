@@ -17,7 +17,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     Gate.cpp \
+    Health.cpp \
     Player.cpp \
+    Score.cpp \
     gamewin.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -27,7 +29,9 @@ SOURCES += \
 
 HEADERS += \
     Gate.h \
+    Health.h \
     Player.h \
+    Score.h \
     gamewin.h \
     mainwindow.h \
     port.h \

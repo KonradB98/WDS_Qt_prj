@@ -4,6 +4,8 @@
 #include <QDialog>
 #include "Player.h"
 #include <QGraphicsScene>
+#include "Score.h"
+#include "Health.h"
 
 namespace Ui {
 class Gamewin;
@@ -22,6 +24,8 @@ private:
 public:
      QGraphicsScene * scene;
      Player * player;
+     Score * score;
+     Health * health;
 public slots:
     void getControlData(QList<float> acc_dat); //Odbiera dane z akcelerometru od okna "mainwindow"
 signals:
