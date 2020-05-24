@@ -15,11 +15,11 @@ void Player::accMove(QList<float> acc_dat)
     float x_d = acc_dat.at(0);
     if(x_d>Threshold){
         if (pos().x() > 0)
-        setPos(x()-10,y());
+        setPos(x()-25,y());
     }
     else if (x_d<-Threshold){
         if (pos().x() + 100< 800)
-        setPos(x()+10,y());
+        setPos(x()+25,y());
     }
     //qDebug()<<acc_dat;
 }

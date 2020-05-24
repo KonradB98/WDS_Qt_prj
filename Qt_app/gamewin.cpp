@@ -5,13 +5,16 @@
 #include <QBrush>
 #include <QImage>
 
+//extern QPointer<Gamewin> game;
+//extern Gamewin *game;
+
 Gamewin::Gamewin(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Gamewin)
 {
     ui->setupUi(this);
 
-    scene = new QGraphicsScene();
+    scene = new QGraphicsScene(this);
     scene->setSceneRect(0,0,800,600);
     scene->setBackgroundBrush(QBrush(QImage(":/game_img/background.png")));
     // 0---------->800(x)
@@ -43,18 +46,22 @@ Gamewin::Gamewin(QWidget *parent) :
     scene->addItem(health);
 
     //---------------Timer-------------//
-    QTimer * tim1 = new QTimer();
+    tim1 = new QTimer(this);
     QObject::connect(tim1,SIGNAL(timeout()),player,SLOT(makeSpawn()));
-    tim1->start(4000);
+    tim1->start(6000);
 }
 
 Gamewin::~Gamewin()
 {
     delete ui;
-    //delete player;
+    delete player;
     //delete scene;
-    //delete score;
-    //delete health;
+    delete score;
+    delete health;
+    //game.clear();
+    //delete game;
+    //delete this;
+    //delete tim1;
 }
 //Slot odbier dane z akcelerometru od mainwindow, slot emituje sygnal dla gracza (player) ktory odbiera dane z akcelerometru
 void Gamewin::getControlData(QList<float> acc_dat)

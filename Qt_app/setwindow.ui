@@ -6,30 +6,86 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>320</width>
-    <height>274</height>
+    <width>297</width>
+    <height>320</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#pushButtonSearch:hover {
+background-color: rgb(200, 200, 200);
+border-style: inset;
+}
+
+QPushButton#pushButtonConnect:hover {
+border-style: inset;
+}
+
+QPushButton#pushButtonDisconnect:hover {
+border-style: inset;
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_4">
     <item row="0" column="0">
      <widget class="QGroupBox" name="groupBox">
       <property name="title">
-       <string>Connection</string>
+       <string/>
       </property>
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="1">
         <widget class="QPushButton" name="pushButtonSearch">
+         <property name="font">
+          <font>
+           <family>Yu Gothic UI Semilight</family>
+           <pointsize>11</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(50, 50, 50);
+font: 11pt &quot;Yu Gothic UI Semilight&quot;;</string>
+         </property>
          <property name="text">
           <string>Search</string>
          </property>
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QComboBox" name="comboBoxDevices"/>
+        <widget class="QComboBox" name="comboBoxDevices">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Yu Gothic UI Semilight&quot;;
+color: rgb(50, 50, 50);</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="font">
+       <font>
+        <family>Yu Gothic UI Semilight</family>
+        <pointsize>8</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 8pt &quot;Yu Gothic UI Semilight&quot;;</string>
+      </property>
+      <property name="title">
+       <string>Logs</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QTextEdit" name="textEdit"/>
        </item>
       </layout>
      </widget>
@@ -42,6 +98,20 @@
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="0" column="0">
         <widget class="QPushButton" name="pushButtonConnect">
+         <property name="font">
+          <font>
+           <family>Yu Gothic UI Semilight</family>
+           <pointsize>11</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(113, 255, 5);
+color: rgb(50, 50, 50);
+font: 11pt &quot;Yu Gothic UI Semilight&quot;;</string>
+         </property>
          <property name="text">
           <string>Connect</string>
          </property>
@@ -49,22 +119,24 @@
        </item>
        <item row="1" column="0">
         <widget class="QPushButton" name="pushButtonDisconnect">
+         <property name="font">
+          <font>
+           <family>Yu Gothic UI Semilight</family>
+           <pointsize>11</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 47, 47);
+color: rgb(50, 50, 50);
+font: 11pt &quot;Yu Gothic UI Semilight&quot;;</string>
+         </property>
          <property name="text">
           <string>Disconnect</string>
          </property>
         </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item row="1" column="0" colspan="2">
-     <widget class="QGroupBox" name="groupBox_2">
-      <property name="title">
-       <string>Logs</string>
-      </property>
-      <layout class="QGridLayout" name="gridLayout_3">
-       <item row="0" column="0">
-        <widget class="QTextEdit" name="textEdit"/>
        </item>
       </layout>
      </widget>
@@ -76,7 +148,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>320</width>
+     <width>297</width>
      <height>20</height>
     </rect>
    </property>

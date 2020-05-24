@@ -6,6 +6,8 @@
 #include <QGraphicsScene>
 #include "Score.h"
 #include "Health.h"
+#include <QPointer>
+#include <QTimer>
 
 namespace Ui {
 class Gamewin;
@@ -23,9 +25,11 @@ private:
     Ui::Gamewin *ui;
 public:
      QGraphicsScene * scene;
-     Player * player;
-     Score * score;
-     Health * health;
+     Player *player;
+     //QPointer<Player> player;
+     Score *score;
+     Health *health;
+     QTimer *tim1;
 public slots:
     void getControlData(QList<float> acc_dat); //Odbiera dane z akcelerometru od okna "mainwindow"
 signals:

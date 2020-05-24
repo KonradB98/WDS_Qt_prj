@@ -17,7 +17,12 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(43, 43, 43);</string>
+   <string notr="true">background-color: rgb(43, 43, 43);
+
+QPushButton#pushButtonConnect:hover {
+border-style: inset;
+}
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="autoFillBackground">
@@ -36,13 +41,15 @@
        <bool>false</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(43, 43, 43);</string>
+       <string notr="true">color: rgb(43, 43, 43);
+
+</string>
       </property>
       <property name="tabShape">
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <property name="iconSize">
        <size>
@@ -164,6 +171,9 @@ background-repeat: none;
        </layout>
       </widget>
       <widget class="QWidget" name="plot_tab">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
        <attribute name="title">
         <string>Plots</string>
        </attribute>

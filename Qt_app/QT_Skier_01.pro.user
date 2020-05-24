@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.12.0, 2020-05-09T12:52:44. -->
+<!-- Written by QtCreator 4.12.1, 2020-05-23T23:23:06. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -84,7 +84,7 @@
     <value type="bool">true</value>
     <value type="int" key="EnableQmlDebugging">2</value>
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">C:\Users\Konrad\Desktop\Materialy_studia\AiR_6sem\Wizualizacja_danych_sens\Projekt\Tesciki_proby\build-QT_Skier_01-Desktop_Qt_5_14_2_MinGW_64_bit-Debug</value>
-    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">C:\Users\Konrad\Desktop\Materialy_studia\AiR_6sem\Wizualizacja_danych_sens\Projekt\Tesciki_proby\build-QT_Skier_01-Desktop_Qt_5_14_2_MinGW_64_bit-Debug</value>
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory.shadowDir">C:/Users/Konrad/Desktop/Materialy_studia/AiR_6sem/Wizualizacja_danych_sens/Projekt/Tesciki_proby/build-QT_Skier_01-Desktop_Qt_5_14_2_MinGW_64_bit-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>

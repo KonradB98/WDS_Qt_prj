@@ -21,6 +21,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "i2c.h"
+#include "tim.h"
 #include "usb_device.h"
 #include "gpio.h"
 
@@ -49,6 +50,7 @@
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
+volatile int flag_tim;
 //Rejestry
 #define LSM303_ACC_ADDRESS (0x19 << 1) // adres akcelerometru: 0011001x
 #define LSM303_ACC_CTRL_REG1_A 0x20 // rejestr ustawien 1
@@ -68,7 +70,9 @@
 // Maski bitowe
 // CTRL_REG1_A = [ODR3][ODR2][ODR1][ODR0][LPEN][ZEN][YEN][XEN]
 #define LSM303_ACC_XYZ_ENABLE 0x07 // 0000 0111
-#define LSM303_ACC_1HZ 0x10 //0001 0000 50
+#define LSM303_ACC_1HZ 0x10 //0001 0000 1Hz
+#define LSM303_ACC_10HZ 0x20 //0001 0000 10Hz
+#define LSM303_ACC_100HZ 0x50 // 0101 0000
 
 #define LSM303_ACC_RESOLUTION 2.0 // Maksymalna wartosc mierzalnego przyspieszenia [g]
 //------------------------- Zmienne--------------------------------------//
@@ -101,6 +105,12 @@ int _write(int file, char *ptr, int len){
 	}
 	return len;
 }
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+	if(htim == &htim10){
+		flag_tim = 1;
+		printf("ELO \r\n");
+	}
+}
 /* USER CODE END 0 */
 
 /**
@@ -114,6 +124,7 @@ Xaxis = 0;
 Yaxis = 0;
 Zaxis = 0;
 ToCrc = 0;
+//flag_tim = 0;
 syncSign = 0x24;// Znak '$' zapisany w systemie szesnastkowym Hex
   /* USER CODE END 1 */
 
@@ -137,34 +148,39 @@ syncSign = 0x24;// Znak '$' zapisany w systemie szesnastkowym Hex
   MX_GPIO_Init();
   MX_USB_DEVICE_Init();
   MX_I2C1_Init();
+  MX_TIM10_Init();
   /* USER CODE BEGIN 2 */
   // wypelnienie zmiennej konfiguracyjnej odpowiednimi opcjami
-  uint8_t Settings = LSM303_ACC_XYZ_ENABLE | LSM303_ACC_1HZ;
+  //uint8_t Settings = LSM303_ACC_XYZ_ENABLE | LSM303_ACC_1HZ;
+  uint8_t Settings = LSM303_ACC_XYZ_ENABLE | LSM303_ACC_10HZ;
   // Wpisanie konfiguracji do rejestru akcelerometru
   HAL_I2C_Mem_Write(&hi2c1, LSM303_ACC_ADDRESS, LSM303_ACC_CTRL_REG1_A, 1, &Settings, 1, 100);
+  HAL_TIM_Base_Start_IT(&htim10);//Uruchom timer generujacy przerwania
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  // Pobieranie 6 bajtów danych zawierających przyspieszenia w 3 osiach
-	  HAL_I2C_Mem_Read(&hi2c1, LSM303_ACC_ADDRESS, (LSM303_ACC_X_H_A), 1, &Data[1], 2, 100);
-	  HAL_I2C_Mem_Read(&hi2c1, LSM303_ACC_ADDRESS, (LSM303_ACC_Y_H_A), 1, &Data[3], 2, 100);
-	  HAL_I2C_Mem_Read(&hi2c1, LSM303_ACC_ADDRESS, (LSM303_ACC_Z_H_A), 1, &Data[5], 2, 100);
+	  if(flag_tim == 1){
+		  flag_tim = 0;
+		  // Pobieranie 6 bajtów danych zawierających przyspieszenia w 3 osiach
+		  HAL_I2C_Mem_Read(&hi2c1, LSM303_ACC_ADDRESS, (LSM303_ACC_X_H_A), 1, &Data[1], 2, 100);
+		  HAL_I2C_Mem_Read(&hi2c1, LSM303_ACC_ADDRESS, (LSM303_ACC_Y_H_A), 1, &Data[3], 2, 100);
+		  HAL_I2C_Mem_Read(&hi2c1, LSM303_ACC_ADDRESS, (LSM303_ACC_Z_H_A), 1, &Data[5], 2, 100);
 
-	  Xaxis = ((Data[1] << 8) | Data[0]);
-	  Yaxis = ((Data[3] << 8) | Data[2]);
-	  Zaxis = ((Data[5] << 8) | Data[4]);
-	  ToCrc = Xaxis + Yaxis + Zaxis;
-	  ToCrc = (ToCrc % 128);
-	  //Length=sprintf(DataToSend,"%d %d %d %d",Xaxis,Yaxis,Zaxis,ToCrc);
-	  //Przeslij ramke [$][_][X][_][Y][_][Z][_][CRC][_][\n]
-	  Length=sprintf(DataToSend,"%x %d %d %d %d \n",syncSign,Xaxis,Yaxis,Zaxis,ToCrc);
-	  printf("%x %d %d %d %d \r\n",syncSign,Xaxis,Yaxis,Zaxis,ToCrc);
-	  CDC_Transmit_FS(DataToSend, Length);
-	 //elk HAL_Delay(200);
-
+		  Xaxis = ((Data[1] << 8) | Data[0]);
+		  Yaxis = ((Data[3] << 8) | Data[2]);
+		  Zaxis = ((Data[5] << 8) | Data[4]);
+		  ToCrc = Xaxis + Yaxis + Zaxis;
+		  ToCrc = (ToCrc % 128);
+		  //Length=sprintf(DataToSend,"%d %d %d %d",Xaxis,Yaxis,Zaxis,ToCrc);
+		  //Przeslij ramke [$][_][X][_][Y][_][Z][_][CRC][_][\n]
+		  Length=sprintf(DataToSend,"%x %d %d %d %d \n",syncSign,Xaxis,Yaxis,Zaxis,ToCrc);
+		  printf("%x %d %d %d %d \r\n",syncSign,Xaxis,Yaxis,Zaxis,ToCrc);
+		  CDC_Transmit_FS(DataToSend, Length);
+		  //HAL_Delay(1000);
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

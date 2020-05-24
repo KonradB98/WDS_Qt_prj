@@ -2,6 +2,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDebug>
+#include <QPointer>
 
 //Zmienne do rysowania wykresow
 int t = 0;
@@ -9,6 +10,7 @@ int range = 200;
 int axis = 0;
 //Zmienna wskaznikowa globalna do utworzenia rozgrywki
 Gamewin *game;
+//QPointer<Gamewin> game;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -18,8 +20,8 @@ MainWindow::MainWindow(QWidget *parent)
     setStatusBar(new QStatusBar());//StatusBar
     statusBar()->showMessage("Status: Disconnected");
     //device = new port();
-    connect(&sw,SIGNAL(setConnect(QString)),&device,SLOT(OpenPort(QString)));//Otworz i skonfiguruj port
-    connect(&sw,SIGNAL(closeConnect()),&device,SLOT(ClosePort()));//Zamknij port
+    //connect(&sw,SIGNAL(setConnect(QString)),&device,SLOT(OpenPort(QString)));//Otworz i skonfiguruj port
+    //connect(&sw,SIGNAL(closeConnect()),&device,SLOT(ClosePort()));//Zamknij port
 
     connect(&device,SIGNAL(reportStatus(const QString &)),this,SLOT(ifReport(const QString &)));//Aktualizuj StatusBar
     connect(&device,SIGNAL(plotData(QList<float>)),this,SLOT(makePlot(QList<float>)));//Rysuj wykres
@@ -32,21 +34,22 @@ MainWindow::~MainWindow()
     delete ui;
     //delete device;
     //delete game;
+    delete sw;
 }
 
 //Slot otwiera nowe okno do ustawien polaczenia z mikrokontreolerem
 void MainWindow::on_pushButtonConnect_clicked()
 {
-     //sw = new SetWindow(this);
-     //connect(sw,SIGNAL(setConnect(QString)),device,SLOT(OpenPort(QString)));//Otworz i skonfiguruj port
-     //connect(sw,SIGNAL(closeConnect()),device,SLOT(ClosePort()));//Zamknij port
-     sw.show();//Wyswietlenie nowego okna z ustawieniami
+     sw = new SetWindow();
+     connect(sw,SIGNAL(setConnect(QString)),&device,SLOT(OpenPort(QString)));//Otworz i skonfiguruj port
+     connect(sw,SIGNAL(closeConnect()),&device,SLOT(ClosePort()));//Zamknij port
+     sw->show();//Wyswietlenie nowego okna z ustawieniami
 }
 //Przycisk uruchamia nowa gre
 void MainWindow::on_pushButtonPlay_clicked()
 {
     game = new Gamewin(this);
-    connect(&device,SIGNAL(plotData(QList<float>)),game,SLOT(getControlData(QList<float>)));//Rysuj wykres
+    connect(&device,SIGNAL(plotData(QList<float>)),game,SLOT(getControlData(QList<float>)));//Rysuj
     game->show();
 }
 //Slot odpowiedzialny za aktualizacje paska statusowego polaczenia
@@ -68,7 +71,7 @@ void MainWindow::makePlot(QList<float> acc_dat)
         ui->customPlot->graph(0)->addData(t,acc_dat.at(2));
     }
     // give the axes some labels:
-    ui->customPlot->xAxis->setLabel("t [s]");
+    ui->customPlot->xAxis->setLabel("t");
     ui->customPlot->yAxis->setLabel("y");
     if(t < range){
         ui->customPlot->xAxis->setRange(0,t);

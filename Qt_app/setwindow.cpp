@@ -62,4 +62,3 @@ void SetWindow::on_pushButtonDisconnect_clicked()
     //emituje sygnal, ktory aktywuje SLOT w port.cpp odpowiadajacy za zamkniecie polaczenia
     emit closeConnect();
 }
-

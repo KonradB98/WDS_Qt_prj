@@ -36,8 +36,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    SetWindow sw;
-    //SetWindow *sw;
+    //SetWindow sw;
+    SetWindow *sw;
     port device;
     //port *device;
     //Gamewin *game;

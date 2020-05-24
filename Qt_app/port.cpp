@@ -44,9 +44,9 @@ void port::readPortData()
                        int16_t pom_x = discoveryData[1].toInt();
                        int16_t pom_y = discoveryData[2].toInt();
                        int16_t pom_z = discoveryData[3].toInt();
-                       float X_g = ((float)pom_x*resolution)/((float)INT16_MAX);
-                       float Y_g = ((float)pom_y*resolution)/((float)INT16_MAX);
-                       float Z_g = ((float)pom_z*resolution)/((float)INT16_MAX);
+                       float X_g = (pom_x*resolution)/((float)INT16_MAX);
+                       float Y_g = (pom_y*resolution)/((float)INT16_MAX);
+                       float Z_g = (pom_z*resolution)/((float)INT16_MAX);
                        QList<float> acc_data = {X_g, Y_g, Z_g};
                        //qDebug()<< acc_data;
                        emit plotData(acc_data);
