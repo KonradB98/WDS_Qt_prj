@@ -108,7 +108,7 @@ int _write(int file, char *ptr, int len){
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(htim == &htim10){
 		flag_tim = 1;
-		printf("ELO \r\n");
+		//printf("ELO \r\n");
 	}
 }
 /* USER CODE END 0 */

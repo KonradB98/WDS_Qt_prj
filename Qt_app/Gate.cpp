@@ -52,7 +52,7 @@ void Gate::moveDown()
     }
 
     //Jedz w dol
-    setPos(x(),y()+8);
+    setPos(x(),y()+6);
     if(pos().y()>600) //600 - wysokosc sceny
     {
         //powieksz wynik gry

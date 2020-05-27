@@ -5,9 +5,10 @@
 #include <QPointer>
 
 //Zmienne do rysowania wykresow
-int t = 0;
-int range = 200;
+float t = 0;
+float range = 20;
 int axis = 0;
+QString os = "X";
 //Zmienna wskaznikowa globalna do utworzenia rozgrywki
 Gamewin *game;
 //QPointer<Gamewin> game;
@@ -19,31 +20,23 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     setStatusBar(new QStatusBar());//StatusBar
     statusBar()->showMessage("Status: Disconnected");
-    //device = new port();
-    //connect(&sw,SIGNAL(setConnect(QString)),&device,SLOT(OpenPort(QString)));//Otworz i skonfiguruj port
-    //connect(&sw,SIGNAL(closeConnect()),&device,SLOT(ClosePort()));//Zamknij port
+
+    connect(&sw,SIGNAL(setConnect(QString)),&device,SLOT(OpenPort(QString)));//Otworz i skonfiguruj port
+    connect(&sw,SIGNAL(closeConnect()),&device,SLOT(ClosePort()));//Zamknij port
 
     connect(&device,SIGNAL(reportStatus(const QString &)),this,SLOT(ifReport(const QString &)));//Aktualizuj StatusBar
     connect(&device,SIGNAL(plotData(QList<float>)),this,SLOT(makePlot(QList<float>)));//Rysuj wykres
-    //connect(device,SIGNAL(reportStatus(const QString &)),this,SLOT(ifReport(const QString &)));//Aktualizuj StatusBar
-    //connect(device,SIGNAL(plotData(QList<float>)),this,SLOT(makePlot(QList<float>)));//Rysuj wykres
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
-    //delete device;
-    //delete game;
-    delete sw;
 }
 
 //Slot otwiera nowe okno do ustawien polaczenia z mikrokontreolerem
 void MainWindow::on_pushButtonConnect_clicked()
 {
-     sw = new SetWindow();
-     connect(sw,SIGNAL(setConnect(QString)),&device,SLOT(OpenPort(QString)));//Otworz i skonfiguruj port
-     connect(sw,SIGNAL(closeConnect()),&device,SLOT(ClosePort()));//Zamknij port
-     sw->show();//Wyswietlenie nowego okna z ustawieniami
+     sw.show();//Wyswietlenie nowego okna z ustawieniami
 }
 //Przycisk uruchamia nowa gre
 void MainWindow::on_pushButtonPlay_clicked()
@@ -60,6 +53,7 @@ void MainWindow::ifReport(const QString &message)
 //Rysowanie wykresu
 void MainWindow::makePlot(QList<float> acc_dat)
 {
+    //os = "X";
     ui->customPlot->addGraph();
     if(axis == 0){
         ui->customPlot->graph(0)->addData(t,acc_dat.at(0));
@@ -71,23 +65,27 @@ void MainWindow::makePlot(QList<float> acc_dat)
         ui->customPlot->graph(0)->addData(t,acc_dat.at(2));
     }
     // give the axes some labels:
-    ui->customPlot->xAxis->setLabel("t");
-    ui->customPlot->yAxis->setLabel("y");
+    ui->customPlot->xAxis->setLabel("t [s]");
+    ui->customPlot->yAxis->setLabel("Przyspieszenie wzgledem osi " + os + " [g]");
     if(t < range){
         ui->customPlot->xAxis->setRange(0,t);
     }
     else{
-        ui->customPlot->xAxis->setRange(t-200, t);
+        ui->customPlot->xAxis->setRange(t-range, t);
     }
     ui->customPlot->yAxis->setRange(-2,2);
     ui->customPlot->replot();
-    ++t;
+    //++t;
+    t+=0.17;
 }
+
+
 //-----Przyciski zmieniajace osie--------//
 void MainWindow::on_pushButtonX_clicked()
 {
     axis = 0;
     ui->customPlot->clearGraphs();
+    os = "X";
     t = 0;
 }
 
@@ -95,6 +93,7 @@ void MainWindow::on_pushButtonY_clicked()
 {
     axis = 1;
     ui->customPlot->clearGraphs();
+    os = "Y";
     t = 0;
 }
 
@@ -102,5 +101,6 @@ void MainWindow::on_pushButton_3_clicked()
 {
     axis = 2;
     ui->customPlot->clearGraphs();
+    os = "Z";
     t = 0;
 }

@@ -231,6 +231,7 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t* pbuf, uint16_t length)
     case CDC_GET_LINE_CODING:
     {
     	uint32_t spped = 115200;
+    	//uint32_t spped = 9600;
     	//uint32_t databits = 8;
     	length = 7;
     	memcpy(pbuf,&spped,4);

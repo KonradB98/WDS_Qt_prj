@@ -24,7 +24,7 @@ public:
 private:
     Ui::Gamewin *ui;
 public:
-     QGraphicsScene * scene;
+     QGraphicsScene *scene;
      Player *player;
      //QPointer<Player> player;
      Score *score;
@@ -34,6 +34,7 @@ public slots:
     void getControlData(QList<float> acc_dat); //Odbiera dane z akcelerometru od okna "mainwindow"
 signals:
     void passData(QList<float> acc_dat); // Emitwany po odebraniu danych z akcelerometru w slocie  getControlData()
+
 };
 
 #endif // GAMEWIN_H

@@ -26,6 +26,7 @@ private slots:
     void ifReport(const QString &message);
     //Funkcja odpowiada rysowanie wykresu
     void makePlot(QList<float> acc_dat);
+
     void on_pushButtonX_clicked();
 
     void on_pushButtonY_clicked();
@@ -36,8 +37,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    //SetWindow sw;
-    SetWindow *sw;
+    SetWindow sw;
+    //SetWindow *sw;
     port device;
     //port *device;
     //Gamewin *game;

@@ -12,6 +12,7 @@ public:
     Player(QGraphicsItem *parent = NULL);
 public slots:
     void accMove(QList<float> acc_dat); //Slot porusza postacia przy pomocy danych z akcelerometru
+
     void makeSpawn(); //Slot spawnuje bramki (przeszkody)
 };
 
