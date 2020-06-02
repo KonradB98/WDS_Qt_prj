@@ -48,7 +48,7 @@ Gamewin::Gamewin(QWidget *parent) :
     //---------------Timer-------------//
     tim1 = new QTimer(this);
     QObject::connect(tim1,SIGNAL(timeout()),player,SLOT(makeSpawn()));
-    tim1->start(5000);
+    tim1->start(3000);
 }
 
 Gamewin::~Gamewin()

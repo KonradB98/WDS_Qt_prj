@@ -54,7 +54,6 @@ var hierarchy =
     [ "QCPStatisticalBoxData", "class_q_c_p_statistical_box_data.html", null ],
     [ "QCPVector2D", "class_q_c_p_vector2_d.html", null ],
     [ "QDialog", null, [
-      [ "Game", "class_game.html", null ],
       [ "Gamewin", "class_gamewin.html", null ]
     ] ],
     [ "QGraphicsPixmapItem", null, [

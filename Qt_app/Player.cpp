@@ -16,13 +16,13 @@ void Player::accMove(QList<float> acc_dat)
     float x_d = acc_dat.at(0);
     if(x_d>Threshold){
         if (pos().x() > 0){
-            setPos(x()-25,y());
+            setPos(x()-40,y());
             setPixmap(QPixmap(":/game_img/plr.png"));
         }
     }
     else if (x_d<-Threshold){
         if (pos().x() + 100< 800){
-            setPos(x()+25,y());
+            setPos(x()+40,y());
             setPixmap(QPixmap(":/game_img/sk2.png"));
         }
     }

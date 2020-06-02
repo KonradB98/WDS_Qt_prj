@@ -70,18 +70,18 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_game_8cpp.html",
-"class_q_c_p_axis.html#a1399d614f7c307159bfec938a069203d",
-"class_q_c_p_axis_rect.html#a587d073a97b27bc7293fab4b2774ad59",
-"class_q_c_p_bars_data.html#ab636644fb40630f3b1b72f44d65ec072",
-"class_q_c_p_curve.html#af5df2560b30333fe662ec676bd355415",
-"class_q_c_p_graph.html#a36d5b641db08e27527827c212542bbbd",
-"class_q_c_p_item_position.html#a0a87f9dce1af6cc9b510785991bcf1c6",
-"class_q_c_p_layerable.html#aa2a528433e44db02b8aef23c1f9f90ed",
-"class_q_c_p_line_ending.html#a5ef16e6876b4b74959c7261d8d4c2cd5a3d7dcea2f100671727c3417142154f8f",
-"class_q_c_p_selection_rect.html#aded186aabcdc3ee51775b7c5063e199a",
-"class_q_custom_plot.html#aaa3073362074581a7b5905726b4a0067",
-"qcustomplot_8h.html#a2ad6bb6281c7c2d593d4277b44c2b037a269c9af298e257d1108edec0432b5513"
+"_gate_8cpp.html",
+"class_q_c_p_axis.html#a1d52c78c856d8bd1f331d4ec4e63d944",
+"class_q_c_p_axis_rect.html#a648cce336bd99daac4a5ca3e5743775d",
+"class_q_c_p_bars_group.html#a314d09aeb2ad209518b9183ca7ffe662",
+"class_q_c_p_curve_data.html#a72b39b8e1dbf7b45382ebd48419b6828",
+"class_q_c_p_graph.html#a5b0291f248e8ca8eaa82833ab420dcd0",
+"class_q_c_p_item_position.html#a4ff3931ad115603dfb4c7000b24bb415",
+"class_q_c_p_layerable.html#acb663e375d2d36dc5c55021ee5a2119b",
+"class_q_c_p_line_ending.html#aca89d21341133c20dc6825c33a5eac48",
+"class_q_c_p_statistical_box.html#a0b62775bd67301b1eba5c785f2b26f14",
+"class_q_custom_plot.html#ab1692469dde841080fa33719533bf2b7",
+"qcustomplot_8h.html#a2e5583d1ae212f0deb10537cf975a15a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

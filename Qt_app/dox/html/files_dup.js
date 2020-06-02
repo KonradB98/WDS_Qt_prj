@@ -1,9 +1,5 @@
 var files_dup =
 [
-    [ "Game.cpp", "_game_8cpp.html", null ],
-    [ "Game.h", "_game_8h.html", [
-      [ "Game", "class_game.html", "class_game" ]
-    ] ],
     [ "gamewin.cpp", "gamewin_8cpp.html", null ],
     [ "gamewin.h", "gamewin_8h.html", [
       [ "Gamewin", "class_gamewin.html", "class_gamewin" ]

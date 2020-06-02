@@ -29,7 +29,7 @@
    <div id="projectname">Skier Game
    &#160;<span id="projectnumber">v 1.0</span>
    </div>
-   <div id="projectbrief">Wizualizacja Danych Sensorycznych - Projekt, Konrad Bajak</div>
+   <div id="projectbrief">Wizualizacja Danych Sensorycznych -- Projekt, Konrad Bajak</div>
   </td>
  </tr>
  </tbody>
@@ -106,13 +106,13 @@ $(document).ready(function(){initNavTree('_player_8cpp_source.html',''); initRes
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">float</span> x_d = acc_dat.at(0);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">if</span>(x_d&gt;<a class="code" href="_player_8cpp.html#a58f178e8e5ded3040cb260c32221eba3">Threshold</a>){</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">if</span> (pos().x() &gt; 0){</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            setPos(x()-25,y());</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            setPos(x()-40,y());</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            setPixmap(QPixmap(<span class="stringliteral">&quot;:/game_img/plr.png&quot;</span>));</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (x_d&lt;-<a class="code" href="_player_8cpp.html#a58f178e8e5ded3040cb260c32221eba3">Threshold</a>){</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">if</span> (pos().x() + 100&lt; 800){</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            setPos(x()+25,y());</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            setPos(x()+40,y());</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            setPixmap(QPixmap(<span class="stringliteral">&quot;:/game_img/sk2.png&quot;</span>));</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
