@@ -95,7 +95,8 @@ $(document).ready(function(){initNavTree('classport.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 
-<p>Klasa modeluje obiekt typu port. Posiada niezbęde atrybuty, sloty oraz sygnały umożliwiające nawiązanie połączenia z zewnątrznym urządzeniem.  
+<p>Klasa port. Klasa modeluje obiekt typu port. <br  />
+Dostarcza interfejs umożliwiający nawiązanie połączenia oraz odbieranie danych przez aplikację.  
  <a href="classport.html#details">Więcej...</a></p>
 
 <p><code>#include &lt;<a class="el" href="port_8h_source.html">port.h</a>&gt;</code></p>
@@ -104,7 +105,7 @@ Diagram dziedziczenia dla port</div>
 <div class="dyncontent">
 <div class="center"><img src="classport__inherit__graph.png" border="0" usemap="#port_inherit__map" alt="Inheritance graph"/></div>
 <map name="port_inherit__map" id="port_inherit__map">
-<area shape="rect" title="Klasa modeluje obiekt typu port. Posiada niezbęde atrybuty, sloty oraz sygnały umożliwiające nawiązan..." alt="" coords="19,80,63,107"/>
+<area shape="rect" title="Klasa port. Klasa modeluje obiekt typu port. &#160;Dostarcza interfejs umożliwiający nawiązanie połączenia..." alt="" coords="19,80,63,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,76,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
@@ -113,7 +114,7 @@ Diagram współpracy dla port:</div>
 <div class="dyncontent">
 <div class="center"><img src="classport__coll__graph.png" border="0" usemap="#port_coll__map" alt="Collaboration graph"/></div>
 <map name="port_coll__map" id="port_coll__map">
-<area shape="rect" title="Klasa modeluje obiekt typu port. Posiada niezbęde atrybuty, sloty oraz sygnały umożliwiające nawiązan..." alt="" coords="19,80,63,107"/>
+<area shape="rect" title="Klasa port. Klasa modeluje obiekt typu port. &#160;Dostarcza interfejs umożliwiający nawiązanie połączenia..." alt="" coords="19,80,63,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,76,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
@@ -121,10 +122,10 @@ Diagram współpracy dla port:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Sygnały</h2></td></tr>
 <tr class="memitem:aa88ff772ccd4a2c3016bdf9111287430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#aa88ff772ccd4a2c3016bdf9111287430">reportStatus</a> (const QString &amp;)</td></tr>
-<tr class="memdesc:aa88ff772ccd4a2c3016bdf9111287430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnal emitowany po poprawnym skonfigurowaniu i podlaczeniu urzadzenia.  <a href="classport.html#aa88ff772ccd4a2c3016bdf9111287430">Więcej...</a><br /></td></tr>
+<tr class="memdesc:aa88ff772ccd4a2c3016bdf9111287430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnal readData Sygnał emitowany po poprawnym skonfigurowaniu i podlaczeniu urzadzenia.  <a href="classport.html#aa88ff772ccd4a2c3016bdf9111287430">Więcej...</a><br /></td></tr>
 <tr class="separator:aa88ff772ccd4a2c3016bdf9111287430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29daafc7e56d50d600fe4ce709df6406"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a29daafc7e56d50d600fe4ce709df6406">plotData</a> (QList&lt; float &gt;)</td></tr>
-<tr class="memdesc:a29daafc7e56d50d600fe4ce709df6406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnal emitowany po poprawnym odczytaniu danych w slocie <a class="el" href="classport.html#a799ea3847ff38d544b4d49189eb69e86" title="Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera.">readData()</a>.  <a href="classport.html#a29daafc7e56d50d600fe4ce709df6406">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a29daafc7e56d50d600fe4ce709df6406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnal plotData Sygnał emitowany po poprawnym odczytaniu danych w slocie <a class="el" href="classport.html#a799ea3847ff38d544b4d49189eb69e86" title="Slot readData Slot czytajacy dane przesylane z mikrokontrolera.">readData()</a>.  <a href="classport.html#a29daafc7e56d50d600fe4ce709df6406">Więcej...</a><br /></td></tr>
 <tr class="separator:a29daafc7e56d50d600fe4ce709df6406"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -139,29 +140,29 @@ Metody publiczne</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
 Sloty prywatne</h2></td></tr>
 <tr class="memitem:a0bec8b815e7f3e959983d2500792778d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a0bec8b815e7f3e959983d2500792778d">OpenPort</a> (QString portName)</td></tr>
-<tr class="memdesc:a0bec8b815e7f3e959983d2500792778d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot konfiguruje i otwiera port szeregowy.  <a href="classport.html#a0bec8b815e7f3e959983d2500792778d">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a0bec8b815e7f3e959983d2500792778d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot OpenPort.  <a href="classport.html#a0bec8b815e7f3e959983d2500792778d">Więcej...</a><br /></td></tr>
 <tr class="separator:a0bec8b815e7f3e959983d2500792778d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70ef1817cd20c1f06eb91bb33edbb680"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a70ef1817cd20c1f06eb91bb33edbb680">ClosePort</a> ()</td></tr>
-<tr class="memdesc:a70ef1817cd20c1f06eb91bb33edbb680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot zamyka otwarty port szeregowy.  <a href="classport.html#a70ef1817cd20c1f06eb91bb33edbb680">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a70ef1817cd20c1f06eb91bb33edbb680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot ClosePort Slot zamyka otwarty port szeregowy.  <a href="classport.html#a70ef1817cd20c1f06eb91bb33edbb680">Więcej...</a><br /></td></tr>
 <tr class="separator:a70ef1817cd20c1f06eb91bb33edbb680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a799ea3847ff38d544b4d49189eb69e86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a799ea3847ff38d544b4d49189eb69e86">readData</a> ()</td></tr>
-<tr class="memdesc:a799ea3847ff38d544b4d49189eb69e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera.  <a href="classport.html#a799ea3847ff38d544b4d49189eb69e86">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a799ea3847ff38d544b4d49189eb69e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot readData Slot czytajacy dane przesylane z mikrokontrolera.  <a href="classport.html#a799ea3847ff38d544b4d49189eb69e86">Więcej...</a><br /></td></tr>
 <tr class="separator:a799ea3847ff38d544b4d49189eb69e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Atrybuty prywatne</h2></td></tr>
 <tr class="memitem:a31e6dae45b6b0b22d4494593eb6b49ae"><td class="memItemLeft" align="right" valign="top">QSerialPort *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a31e6dae45b6b0b22d4494593eb6b49ae">mcu</a></td></tr>
-<tr class="memdesc:a31e6dae45b6b0b22d4494593eb6b49ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na obiekt klasy QSerialPort. Definuje obiekt, umożliwiający połączenie oraz interakcję aplikacji z urządzeniem zewnętrznym.  <a href="classport.html#a31e6dae45b6b0b22d4494593eb6b49ae">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a31e6dae45b6b0b22d4494593eb6b49ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na obiekt klasy QSerialPort Definuje obiekt, umożliwiający połączenie oraz interakcję aplikacji z urządzeniem zewnętrznym.  <a href="classport.html#a31e6dae45b6b0b22d4494593eb6b49ae">Więcej...</a><br /></td></tr>
 <tr class="separator:a31e6dae45b6b0b22d4494593eb6b49ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87b5ed026d63f1a31140580155b83b66"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a87b5ed026d63f1a31140580155b83b66">serialData</a></td></tr>
 <tr class="separator:a87b5ed026d63f1a31140580155b83b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9255ec3763e26a0809f3c1c9772803df"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a9255ec3763e26a0809f3c1c9772803df">serialBuffer</a></td></tr>
 <tr class="separator:a9255ec3763e26a0809f3c1c9772803df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7a240da3fad7f3cd61596cde5225dda"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#ac7a240da3fad7f3cd61596cde5225dda">checkSUM</a></td></tr>
-<tr class="memdesc:ac7a240da3fad7f3cd61596cde5225dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna potrzebna do obliczenia sumy kontrolnej.  <a href="classport.html#ac7a240da3fad7f3cd61596cde5225dda">Więcej...</a><br /></td></tr>
+<tr class="memdesc:ac7a240da3fad7f3cd61596cde5225dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atrybut checkSUM Zmienna używana podczas obliczenia sumy kontrolnej.  <a href="classport.html#ac7a240da3fad7f3cd61596cde5225dda">Więcej...</a><br /></td></tr>
 <tr class="separator:ac7a240da3fad7f3cd61596cde5225dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18d91402ab6f9063c02fdc1c815e0772"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a18d91402ab6f9063c02fdc1c815e0772">checkSync</a></td></tr>
-<tr class="memdesc:a18d91402ab6f9063c02fdc1c815e0772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna przechowująca znak synchronizacji zapisany w systemie szestnastkowym.  <a href="classport.html#a18d91402ab6f9063c02fdc1c815e0772">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a18d91402ab6f9063c02fdc1c815e0772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atrybut checkSync Zmienna przechowująca znak synchronizacji '$' zapisany w systemie szesnastkowym.  <a href="classport.html#a18d91402ab6f9063c02fdc1c815e0772">Więcej...</a><br /></td></tr>
 <tr class="separator:a18d91402ab6f9063c02fdc1c815e0772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa6cb2cb2f1e1cb97ed36a65d232246"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a1aa6cb2cb2f1e1cb97ed36a65d232246">correctConvert</a></td></tr>
 <tr class="separator:a1aa6cb2cb2f1e1cb97ed36a65d232246"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,9 +172,10 @@ Atrybuty prywatne</h2></td></tr>
 <tr class="separator:a4ba7a08a02f1a3ab39e37589a05aa0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
-<div class="textblock"><p>Klasa modeluje obiekt typu port. Posiada niezbęde atrybuty, sloty oraz sygnały umożliwiające nawiązanie połączenia z zewnątrznym urządzeniem. </p>
+<div class="textblock"><p>Klasa port. Klasa modeluje obiekt typu port. <br  />
+Dostarcza interfejs umożliwiający nawiązanie połączenia oraz odbieranie danych przez aplikację. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00010">10</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00019">19</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a5f40cbc450a8b0342a79b6e7ca4886e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f40cbc450a8b0342a79b6e7ca4886e9">&#9670;&nbsp;</a></span>port()</h2>
@@ -241,7 +243,7 @@ Atrybuty prywatne</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Slot zamyka otwarty port szeregowy. </p>
+<p>Slot ClosePort Slot zamyka otwarty port szeregowy. </p>
 
 <p class="definition">Definicja w linii <a class="el" href="port_8cpp_source.html#l00102">102</a> pliku <a class="el" href="port_8cpp_source.html">port.cpp</a>.</p>
 
@@ -271,10 +273,10 @@ Atrybuty prywatne</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Slot konfiguruje i otwiera port szeregowy. </p>
+<p>Slot OpenPort. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">portName</td><td>- nazwa portu typu QString, sczytana z combobox'a. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">portName</td><td>- nazwa portu typu QString, sczytana z combobox'a. Slot konfiguruje i otwiera port szeregowy. </td></tr>
   </table>
   </dd>
 </dl>
@@ -285,8 +287,8 @@ Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classport_a0bec8b815e7f3e959983d2500792778d_cgraph.png" border="0" usemap="#classport_a0bec8b815e7f3e959983d2500792778d_cgraph" alt=""/></div>
 <map name="classport_a0bec8b815e7f3e959983d2500792778d_cgraph" id="classport_a0bec8b815e7f3e959983d2500792778d_cgraph">
-<area shape="rect" title="Slot konfiguruje i otwiera port szeregowy." alt="" coords="5,5,112,32"/>
-<area shape="rect" href="classport.html#a799ea3847ff38d544b4d49189eb69e86" title="Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera." alt="" coords="160,5,264,32"/>
+<area shape="rect" title="Slot OpenPort." alt="" coords="5,5,112,32"/>
+<area shape="rect" href="classport.html#a799ea3847ff38d544b4d49189eb69e86" title="Slot readData Slot czytajacy dane przesylane z mikrokontrolera." alt="" coords="160,5,264,32"/>
 </map>
 </div>
 
@@ -316,15 +318,15 @@ Oto graf wywołań dla tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Sygnal emitowany po poprawnym odczytaniu danych w slocie <a class="el" href="classport.html#a799ea3847ff38d544b4d49189eb69e86" title="Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera.">readData()</a>. </p>
+<p>Sygnal plotData Sygnał emitowany po poprawnym odczytaniu danych w slocie <a class="el" href="classport.html#a799ea3847ff38d544b4d49189eb69e86" title="Slot readData Slot czytajacy dane przesylane z mikrokontrolera.">readData()</a>. </p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classport_a29daafc7e56d50d600fe4ce709df6406_icgraph.png" border="0" usemap="#classport_a29daafc7e56d50d600fe4ce709df6406_icgraph" alt=""/></div>
 <map name="classport_a29daafc7e56d50d600fe4ce709df6406_icgraph" id="classport_a29daafc7e56d50d600fe4ce709df6406_icgraph">
-<area shape="rect" title="Sygnal emitowany po poprawnym odczytaniu danych w slocie readData()." alt="" coords="312,5,412,32"/>
-<area shape="rect" href="classport.html#a799ea3847ff38d544b4d49189eb69e86" title="Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera." alt="" coords="160,5,264,32"/>
-<area shape="rect" href="classport.html#a0bec8b815e7f3e959983d2500792778d" title="Slot konfiguruje i otwiera port szeregowy." alt="" coords="5,5,112,32"/>
+<area shape="rect" title="Sygnal plotData Sygnał emitowany po poprawnym odczytaniu danych w slocie readData()." alt="" coords="312,5,412,32"/>
+<area shape="rect" href="classport.html#a799ea3847ff38d544b4d49189eb69e86" title="Slot readData Slot czytajacy dane przesylane z mikrokontrolera." alt="" coords="160,5,264,32"/>
+<area shape="rect" href="classport.html#a0bec8b815e7f3e959983d2500792778d" title="Slot OpenPort." alt="" coords="5,5,112,32"/>
 </map>
 </div>
 
@@ -353,7 +355,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera. </p>
+<p>Slot readData Slot czytajacy dane przesylane z mikrokontrolera. </p>
 
 <p class="definition">Definicja w linii <a class="el" href="port_8cpp_source.html#l00117">117</a> pliku <a class="el" href="port_8cpp_source.html">port.cpp</a>.</p>
 <div class="dynheader">
@@ -361,8 +363,8 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classport_a799ea3847ff38d544b4d49189eb69e86_icgraph.png" border="0" usemap="#classport_a799ea3847ff38d544b4d49189eb69e86_icgraph" alt=""/></div>
 <map name="classport_a799ea3847ff38d544b4d49189eb69e86_icgraph" id="classport_a799ea3847ff38d544b4d49189eb69e86_icgraph">
-<area shape="rect" title="Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera." alt="" coords="160,5,264,32"/>
-<area shape="rect" href="classport.html#a0bec8b815e7f3e959983d2500792778d" title="Slot konfiguruje i otwiera port szeregowy." alt="" coords="5,5,112,32"/>
+<area shape="rect" title="Slot readData Slot czytajacy dane przesylane z mikrokontrolera." alt="" coords="160,5,264,32"/>
+<area shape="rect" href="classport.html#a0bec8b815e7f3e959983d2500792778d" title="Slot OpenPort." alt="" coords="5,5,112,32"/>
 </map>
 </div>
 
@@ -392,15 +394,15 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Sygnal emitowany po poprawnym skonfigurowaniu i podlaczeniu urzadzenia. </p>
+<p>Sygnal readData Sygnał emitowany po poprawnym skonfigurowaniu i podlaczeniu urzadzenia. </p>
 <div class="dynheader">
 Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="classport_aa88ff772ccd4a2c3016bdf9111287430_icgraph.png" border="0" usemap="#classport_aa88ff772ccd4a2c3016bdf9111287430_icgraph" alt=""/></div>
 <map name="classport_aa88ff772ccd4a2c3016bdf9111287430_icgraph" id="classport_aa88ff772ccd4a2c3016bdf9111287430_icgraph">
-<area shape="rect" title="Sygnal emitowany po poprawnym skonfigurowaniu i podlaczeniu urzadzenia." alt="" coords="163,31,285,57"/>
-<area shape="rect" href="classport.html#a70ef1817cd20c1f06eb91bb33edbb680" title="Slot zamyka otwarty port szeregowy." alt="" coords="5,5,115,32"/>
-<area shape="rect" href="classport.html#a0bec8b815e7f3e959983d2500792778d" title="Slot konfiguruje i otwiera port szeregowy." alt="" coords="7,56,113,83"/>
+<area shape="rect" title="Sygnal readData Sygnał emitowany po poprawnym skonfigurowaniu i podlaczeniu urzadzenia." alt="" coords="163,31,285,57"/>
+<area shape="rect" href="classport.html#a70ef1817cd20c1f06eb91bb33edbb680" title="Slot ClosePort Slot zamyka otwarty port szeregowy." alt="" coords="5,5,115,32"/>
+<area shape="rect" href="classport.html#a0bec8b815e7f3e959983d2500792778d" title="Slot OpenPort." alt="" coords="7,56,113,83"/>
 </map>
 </div>
 
@@ -427,9 +429,9 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Zmienna potrzebna do obliczenia sumy kontrolnej. </p>
+<p>Atrybut checkSUM Zmienna używana podczas obliczenia sumy kontrolnej. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00033">33</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00043">43</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
 
 </div>
 </div>
@@ -453,9 +455,9 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Zmienna przechowująca znak synchronizacji zapisany w systemie szestnastkowym. </p>
+<p>Atrybut checkSync Zmienna przechowująca znak synchronizacji '$' zapisany w systemie szesnastkowym. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00037">37</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00048">48</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
 
 </div>
 </div>
@@ -479,7 +481,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00038">38</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00049">49</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
 
 </div>
 </div>
@@ -503,9 +505,9 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Wskaźnik na obiekt klasy QSerialPort. Definuje obiekt, umożliwiający połączenie oraz interakcję aplikacji z urządzeniem zewnętrznym. </p>
+<p>Wskaźnik na obiekt klasy QSerialPort Definuje obiekt, umożliwiający połączenie oraz interakcję aplikacji z urządzeniem zewnętrznym. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00027">27</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00036">36</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
 
 </div>
 </div>
@@ -529,7 +531,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00039">39</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00050">50</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
 
 </div>
 </div>
@@ -553,7 +555,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00040">40</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00051">51</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
 
 </div>
 </div>
@@ -577,7 +579,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00029">29</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00038">38</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
 
 </div>
 </div>
@@ -601,7 +603,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00028">28</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00037">37</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
 
 </div>
 </div>

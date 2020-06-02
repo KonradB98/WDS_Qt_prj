@@ -1,4 +1,4 @@
 <map id="MainWindow::makePlot" name="MainWindow::makePlot">
-<area shape="rect" id="node1" title="Slot rysujący wykres w zakładce &quot;plots&quot;." alt="" coords="232,5,391,32"/>
-<area shape="rect" id="node2" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Konstruktor parametryczny głównego okna aplikacji." alt="" coords="5,5,184,32"/>
+<area shape="rect" id="node1" title="Slot makePlot Slot odpowiedzialny za rysowanie wykres w zakładce &quot;plots&quot;." alt="" coords="232,5,391,32"/>
+<area shape="rect" id="node2" href="$class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Konstruktor głównego okna aplikacji." alt="" coords="5,5,184,32"/>
 </map>

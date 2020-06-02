@@ -1,4 +1,4 @@
 <map id="Health" name="Health">
-<area shape="rect" id="node1" title="Klasa Health Klasa odpowiada za atrybut gracza jakim jest zdrowie." alt="" coords="43,80,102,107"/>
+<area shape="rect" id="node1" title="Klasa Health Klasa odpowiada za atrybut gry jakim jest zdrowie narciarza." alt="" coords="43,80,102,107"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,5,140,32"/>
 </map>

@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('class_gamewin.html',''); initResizable
 <div class="contents">
 
 <p>Klasa Gamewindow Klasa modeluje całą rozgrywkę. <br  />
-Posiada wszystkie obiekty występujące w grze.  
+Posiada wskaźniki na wszystkie obiekty występujące w grze. Konstruktor inicjalizuje obiekty i wstawia je na scenę.  
  <a href="class_gamewin.html#details">Więcej...</a></p>
 
 <p><code>#include &lt;<a class="el" href="gamewin_8h_source.html">gamewin.h</a>&gt;</code></p>
@@ -106,7 +106,7 @@ Diagram dziedziczenia dla Gamewin</div>
 <div class="dyncontent">
 <div class="center"><img src="class_gamewin__inherit__graph.png" border="0" usemap="#_gamewin_inherit__map" alt="Inheritance graph"/></div>
 <map name="_gamewin_inherit__map" id="_gamewin_inherit__map">
-<area shape="rect" title="Klasa Gamewindow Klasa modeluje całą rozgrywkę. &#160;Posiada wszystkie obiekty występujące w grze." alt="" coords="5,80,81,107"/>
+<area shape="rect" title="Klasa Gamewindow Klasa modeluje całą rozgrywkę. &#160;Posiada wskaźniki na wszystkie obiekty występujące w..." alt="" coords="5,80,81,107"/>
 <area shape="rect" title=" " alt="" coords="9,5,77,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
@@ -115,12 +115,12 @@ Diagram współpracy dla Gamewin:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_gamewin__coll__graph.png" border="0" usemap="#_gamewin_coll__map" alt="Collaboration graph"/></div>
 <map name="_gamewin_coll__map" id="_gamewin_coll__map">
-<area shape="rect" title="Klasa Gamewindow Klasa modeluje całą rozgrywkę. &#160;Posiada wszystkie obiekty występujące w grze." alt="" coords="129,171,205,197"/>
+<area shape="rect" title="Klasa Gamewindow Klasa modeluje całą rozgrywkę. &#160;Posiada wskaźniki na wszystkie obiekty występujące w..." alt="" coords="129,171,205,197"/>
 <area shape="rect" title=" " alt="" coords="5,81,73,108"/>
-<area shape="rect" href="class_health.html" title="Klasa Health Klasa odpowiada za atrybut gracza jakim jest zdrowie." alt="" coords="98,81,157,108"/>
+<area shape="rect" href="class_health.html" title="Klasa Health Klasa odpowiada za atrybut gry jakim jest zdrowie narciarza." alt="" coords="98,81,157,108"/>
 <area shape="rect" title=" " alt="" coords="84,5,219,32"/>
 <area shape="rect" href="class_score.html" title="Klasa modeluje wynik gry Dziedziczy po QGraphicsTextItem i posiada niezbędne atrybuty oraz funkcję do..." alt="" coords="181,81,237,108"/>
-<area shape="rect" href="class_player.html" title="Klasa Player Klasa zawiera konstruktor oraz sloty potrzebne do interakcji z postacią (poruszanie oraz..." alt="" coords="261,81,319,108"/>
+<area shape="rect" href="class_player.html" title="Klasa Player Klasa modeluje postać gracza. &#160;Umożliwia sterowanie graczem przy pomocy danych z akceler..." alt="" coords="261,81,319,108"/>
 <area shape="rect" title=" " alt="" coords="248,5,319,32"/>
 <area shape="rect" title=" " alt="" coords="343,5,496,32"/>
 </map>
@@ -129,36 +129,37 @@ Diagram współpracy dla Gamewin:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Sloty publiczne</h2></td></tr>
 <tr class="memitem:af616b5c86f944defa0c2e1ca4dfced89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gamewin.html#af616b5c86f944defa0c2e1ca4dfced89">getControlData</a> (QList&lt; float &gt; acc_dat)</td></tr>
-<tr class="memdesc:af616b5c86f944defa0c2e1ca4dfced89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot umożliwiający odbiór danych z akcelerometru.  <a href="class_gamewin.html#af616b5c86f944defa0c2e1ca4dfced89">Więcej...</a><br /></td></tr>
+<tr class="memdesc:af616b5c86f944defa0c2e1ca4dfced89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot odbierający dane Umożliwia on odbiór danych z akcelerometru orez przesłanie ich dalej do obiektu <a class="el" href="class_player.html" title="Klasa Player Klasa modeluje postać gracza.  Umożliwia sterowanie graczem przy pomocy danych z akceler...">Player</a>.  <a href="class_gamewin.html#af616b5c86f944defa0c2e1ca4dfced89">Więcej...</a><br /></td></tr>
 <tr class="separator:af616b5c86f944defa0c2e1ca4dfced89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Sygnały</h2></td></tr>
 <tr class="memitem:a4eb4b3832a7e13455f17bb398b2db401"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gamewin.html#a4eb4b3832a7e13455f17bb398b2db401">passData</a> (QList&lt; float &gt; acc_dat)</td></tr>
-<tr class="memdesc:a4eb4b3832a7e13455f17bb398b2db401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnał emitowany po odebraniu danych przez obiekt klasy gamewindow.  <a href="class_gamewin.html#a4eb4b3832a7e13455f17bb398b2db401">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a4eb4b3832a7e13455f17bb398b2db401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnał emitowany po odebraniu danych.  <a href="class_gamewin.html#a4eb4b3832a7e13455f17bb398b2db401">Więcej...</a><br /></td></tr>
 <tr class="separator:a4eb4b3832a7e13455f17bb398b2db401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:ac19d436da5f2ea78924ef940b3a73a67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gamewin.html#ac19d436da5f2ea78924ef940b3a73a67">Gamewin</a> (QWidget *parent=nullptr)</td></tr>
-<tr class="memdesc:ac19d436da5f2ea78924ef940b3a73a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor parametryczny.  <a href="class_gamewin.html#ac19d436da5f2ea78924ef940b3a73a67">Więcej...</a><br /></td></tr>
+<tr class="memdesc:ac19d436da5f2ea78924ef940b3a73a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor obiektu klasy <a class="el" href="class_gamewin.html" title="Klasa Gamewindow Klasa modeluje całą rozgrywkę.  Posiada wskaźniki na wszystkie obiekty występujące w...">Gamewin</a>.  <a href="class_gamewin.html#ac19d436da5f2ea78924ef940b3a73a67">Więcej...</a><br /></td></tr>
 <tr class="separator:ac19d436da5f2ea78924ef940b3a73a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32474f36af90076f401cbd92473803cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gamewin.html#a32474f36af90076f401cbd92473803cd">~Gamewin</a> ()</td></tr>
+<tr class="memdesc:a32474f36af90076f401cbd92473803cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor obiektu klasy <a class="el" href="class_gamewin.html" title="Klasa Gamewindow Klasa modeluje całą rozgrywkę.  Posiada wskaźniki na wszystkie obiekty występujące w...">Gamewin</a>.  <a href="class_gamewin.html#a32474f36af90076f401cbd92473803cd">Więcej...</a><br /></td></tr>
 <tr class="separator:a32474f36af90076f401cbd92473803cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Atrybuty publiczne</h2></td></tr>
 <tr class="memitem:aeba5c79e82ae6e71473ad394681c3640"><td class="memItemLeft" align="right" valign="top">QGraphicsScene *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gamewin.html#aeba5c79e82ae6e71473ad394681c3640">scene</a></td></tr>
-<tr class="memdesc:aeba5c79e82ae6e71473ad394681c3640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na obiekt typu QGraphicsScene do stworzenia sceny rozgrywki.  <a href="class_gamewin.html#aeba5c79e82ae6e71473ad394681c3640">Więcej...</a><br /></td></tr>
+<tr class="memdesc:aeba5c79e82ae6e71473ad394681c3640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na obiekt typu QGraphicsScene Jest tworzony w konstruktorze i zawiera elementy gry takie jak gracz, wynik oraz życie.  <a href="class_gamewin.html#aeba5c79e82ae6e71473ad394681c3640">Więcej...</a><br /></td></tr>
 <tr class="separator:aeba5c79e82ae6e71473ad394681c3640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a460d704a8cd1e3b3d5f4cc0e69ece7f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gamewin.html#a460d704a8cd1e3b3d5f4cc0e69ece7f5">player</a></td></tr>
-<tr class="memdesc:a460d704a8cd1e3b3d5f4cc0e69ece7f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na obiekt typu <a class="el" href="class_player.html" title="Klasa Player Klasa zawiera konstruktor oraz sloty potrzebne do interakcji z postacią (poruszanie oraz...">Player</a> Obiekt jest tworzony dynamicznie i odpowiada za postać gracza na scenie.  <a href="class_gamewin.html#a460d704a8cd1e3b3d5f4cc0e69ece7f5">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a460d704a8cd1e3b3d5f4cc0e69ece7f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na obiekt typu <a class="el" href="class_player.html" title="Klasa Player Klasa modeluje postać gracza.  Umożliwia sterowanie graczem przy pomocy danych z akceler...">Player</a> Obiekt jest tworzony dynamicznie w konstruktorze i odpowiada za postać gracza na scenie.  <a href="class_gamewin.html#a460d704a8cd1e3b3d5f4cc0e69ece7f5">Więcej...</a><br /></td></tr>
 <tr class="separator:a460d704a8cd1e3b3d5f4cc0e69ece7f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2de60b23940c733d59e0b43c343f45d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_score.html">Score</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gamewin.html#ad2de60b23940c733d59e0b43c343f45d">score</a></td></tr>
 <tr class="memdesc:ad2de60b23940c733d59e0b43c343f45d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na obiekt typu <a class="el" href="class_score.html" title="Klasa modeluje wynik gry Dziedziczy po QGraphicsTextItem i posiada niezbędne atrybuty oraz funkcję do...">Score</a> Obiekt tworzony dynamicznie odpowiadający za aktualny wynik gry.  <a href="class_gamewin.html#ad2de60b23940c733d59e0b43c343f45d">Więcej...</a><br /></td></tr>
 <tr class="separator:ad2de60b23940c733d59e0b43c343f45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9dac54d7f6fccb4973367fdbc8ad52e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_health.html">Health</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gamewin.html#ae9dac54d7f6fccb4973367fdbc8ad52e">health</a></td></tr>
-<tr class="memdesc:ae9dac54d7f6fccb4973367fdbc8ad52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na obiekt typu <a class="el" href="class_health.html" title="Klasa Health Klasa odpowiada za atrybut gracza jakim jest zdrowie.">Health</a> Obiekt przechowuje informacje na temat zdrowia gracza.  <a href="class_gamewin.html#ae9dac54d7f6fccb4973367fdbc8ad52e">Więcej...</a><br /></td></tr>
+<tr class="memdesc:ae9dac54d7f6fccb4973367fdbc8ad52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na obiekt typu <a class="el" href="class_health.html" title="Klasa Health Klasa odpowiada za atrybut gry jakim jest zdrowie narciarza.">Health</a> Obiekt przechowuje informacje na temat zdrowia gracza.  <a href="class_gamewin.html#ae9dac54d7f6fccb4973367fdbc8ad52e">Więcej...</a><br /></td></tr>
 <tr class="separator:ae9dac54d7f6fccb4973367fdbc8ad52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10e8cf2e2a8a7122c5d666bb9be8ce49"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gamewin.html#a10e8cf2e2a8a7122c5d666bb9be8ce49">tim1</a></td></tr>
 <tr class="memdesc:a10e8cf2e2a8a7122c5d666bb9be8ce49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na obiekt typu QTimer Obiekt odpowiedzialny za timer cyklicznie tworzący przeszkody w grze.  <a href="class_gamewin.html#a10e8cf2e2a8a7122c5d666bb9be8ce49">Więcej...</a><br /></td></tr>
@@ -171,9 +172,9 @@ Atrybuty prywatne</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><p>Klasa Gamewindow Klasa modeluje całą rozgrywkę. <br  />
-Posiada wszystkie obiekty występujące w grze. </p>
+Posiada wskaźniki na wszystkie obiekty występujące w grze. Konstruktor inicjalizuje obiekty i wstawia je na scenę. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="gamewin_8h_source.html#l00022">22</a> pliku <a class="el" href="gamewin_8h_source.html">gamewin.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="gamewin_8h_source.html#l00028">28</a> pliku <a class="el" href="gamewin_8h_source.html">gamewin.h</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="ac19d436da5f2ea78924ef940b3a73a67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac19d436da5f2ea78924ef940b3a73a67">&#9670;&nbsp;</a></span>Gamewin()</h2>
@@ -199,7 +200,7 @@ Posiada wszystkie obiekty występujące w grze. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Konstruktor parametryczny. </p>
+<p>Konstruktor obiektu klasy <a class="el" href="class_gamewin.html" title="Klasa Gamewindow Klasa modeluje całą rozgrywkę.  Posiada wskaźniki na wszystkie obiekty występujące w...">Gamewin</a>. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>- rodzic ustawiony na NULL pointer. </td></tr>
@@ -225,6 +226,8 @@ Posiada wszystkie obiekty występujące w grze. </p>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destruktor obiektu klasy <a class="el" href="class_gamewin.html" title="Klasa Gamewindow Klasa modeluje całą rozgrywkę.  Posiada wskaźniki na wszystkie obiekty występujące w...">Gamewin</a>. </p>
 
 <p class="definition">Definicja w linii <a class="el" href="gamewin_8cpp_source.html#l00054">54</a> pliku <a class="el" href="gamewin_8cpp_source.html">gamewin.cpp</a>.</p>
 
@@ -255,7 +258,7 @@ Posiada wszystkie obiekty występujące w grze. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Slot umożliwiający odbiór danych z akcelerometru. </p>
+<p>Slot odbierający dane Umożliwia on odbiór danych z akcelerometru orez przesłanie ich dalej do obiektu <a class="el" href="class_player.html" title="Klasa Player Klasa modeluje postać gracza.  Umożliwia sterowanie graczem przy pomocy danych z akceler...">Player</a>. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">acc_dat</td><td>- dane z akcelerometru w postaci listy. </td></tr>
@@ -291,10 +294,10 @@ Posiada wszystkie obiekty występujące w grze. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Sygnał emitowany po odebraniu danych przez obiekt klasy gamewindow. </p>
+<p>Sygnał emitowany po odebraniu danych. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">acc_dat</td><td>- dane z akcelerometru w postaci listy. Sygnał odbierany jest przez obiekt klasy <a class="el" href="class_player.html" title="Klasa Player Klasa zawiera konstruktor oraz sloty potrzebne do interakcji z postacią (poruszanie oraz...">Player</a>, aby umożliwić poruszanie graczem za pomocą danych z akcelerometru. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">acc_dat</td><td>- dane z akcelerometru w postaci listy. Sygnał emitowany jest po odbiorze danych przez slot getControlData. Sygnał odbierany jest przez obiekt klasy <a class="el" href="class_player.html" title="Klasa Player Klasa modeluje postać gracza.  Umożliwia sterowanie graczem przy pomocy danych z akceler...">Player</a>, aby umożliwić poruszanie graczem za pomocą danych z akcelerometru. </td></tr>
   </table>
   </dd>
 </dl>
@@ -303,9 +306,9 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_gamewin_a4eb4b3832a7e13455f17bb398b2db401_icgraph.png" border="0" usemap="#class_gamewin_a4eb4b3832a7e13455f17bb398b2db401_icgraph" alt=""/></div>
 <map name="class_gamewin_a4eb4b3832a7e13455f17bb398b2db401_icgraph" id="class_gamewin_a4eb4b3832a7e13455f17bb398b2db401_icgraph">
-<area shape="rect" title="Sygnał emitowany po odebraniu danych przez obiekt klasy gamewindow." alt="" coords="224,31,363,57"/>
-<area shape="rect" href="class_gamewin.html#ac19d436da5f2ea78924ef940b3a73a67" title="Konstruktor parametryczny." alt="" coords="21,5,160,32"/>
-<area shape="rect" href="class_gamewin.html#af616b5c86f944defa0c2e1ca4dfced89" title="Slot umożliwiający odbiór danych z akcelerometru." alt="" coords="5,56,176,83"/>
+<area shape="rect" title="Sygnał emitowany po odebraniu danych." alt="" coords="224,31,363,57"/>
+<area shape="rect" href="class_gamewin.html#ac19d436da5f2ea78924ef940b3a73a67" title="Konstruktor obiektu klasy Gamewin." alt="" coords="21,5,160,32"/>
+<area shape="rect" href="class_gamewin.html#af616b5c86f944defa0c2e1ca4dfced89" title="Slot odbierający dane Umożliwia on odbiór danych z akcelerometru orez przesłanie ich dalej do obiektu..." alt="" coords="5,56,176,83"/>
 </map>
 </div>
 
@@ -324,9 +327,9 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Wskaźnik na obiekt typu <a class="el" href="class_health.html" title="Klasa Health Klasa odpowiada za atrybut gracza jakim jest zdrowie.">Health</a> Obiekt przechowuje informacje na temat zdrowia gracza. </p>
+<p>Wskaźnik na obiekt typu <a class="el" href="class_health.html" title="Klasa Health Klasa odpowiada za atrybut gry jakim jest zdrowie narciarza.">Health</a> Obiekt przechowuje informacje na temat zdrowia gracza. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="gamewin_8h_source.html#l00056">56</a> pliku <a class="el" href="gamewin_8h_source.html">gamewin.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="gamewin_8h_source.html#l00066">66</a> pliku <a class="el" href="gamewin_8h_source.html">gamewin.h</a>.</p>
 
 </div>
 </div>
@@ -342,9 +345,9 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Wskaźnik na obiekt typu <a class="el" href="class_player.html" title="Klasa Player Klasa zawiera konstruktor oraz sloty potrzebne do interakcji z postacią (poruszanie oraz...">Player</a> Obiekt jest tworzony dynamicznie i odpowiada za postać gracza na scenie. </p>
+<p>Wskaźnik na obiekt typu <a class="el" href="class_player.html" title="Klasa Player Klasa modeluje postać gracza.  Umożliwia sterowanie graczem przy pomocy danych z akceler...">Player</a> Obiekt jest tworzony dynamicznie w konstruktorze i odpowiada za postać gracza na scenie. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="gamewin_8h_source.html#l00045">45</a> pliku <a class="el" href="gamewin_8h_source.html">gamewin.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="gamewin_8h_source.html#l00055">55</a> pliku <a class="el" href="gamewin_8h_source.html">gamewin.h</a>.</p>
 
 </div>
 </div>
@@ -360,9 +363,9 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Wskaźnik na obiekt typu QGraphicsScene do stworzenia sceny rozgrywki. </p>
+<p>Wskaźnik na obiekt typu QGraphicsScene Jest tworzony w konstruktorze i zawiera elementy gry takie jak gracz, wynik oraz życie. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="gamewin_8h_source.html#l00040">40</a> pliku <a class="el" href="gamewin_8h_source.html">gamewin.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="gamewin_8h_source.html#l00050">50</a> pliku <a class="el" href="gamewin_8h_source.html">gamewin.h</a>.</p>
 
 </div>
 </div>
@@ -380,7 +383,7 @@ Oto graf wywoływań tej funkcji:</div>
 
 <p>Wskaźnik na obiekt typu <a class="el" href="class_score.html" title="Klasa modeluje wynik gry Dziedziczy po QGraphicsTextItem i posiada niezbędne atrybuty oraz funkcję do...">Score</a> Obiekt tworzony dynamicznie odpowiadający za aktualny wynik gry. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="gamewin_8h_source.html#l00051">51</a> pliku <a class="el" href="gamewin_8h_source.html">gamewin.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="gamewin_8h_source.html#l00061">61</a> pliku <a class="el" href="gamewin_8h_source.html">gamewin.h</a>.</p>
 
 </div>
 </div>
@@ -398,7 +401,7 @@ Oto graf wywoływań tej funkcji:</div>
 
 <p>Wskaźnik na obiekt typu QTimer Obiekt odpowiedzialny za timer cyklicznie tworzący przeszkody w grze. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="gamewin_8h_source.html#l00061">61</a> pliku <a class="el" href="gamewin_8h_source.html">gamewin.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="gamewin_8h_source.html#l00071">71</a> pliku <a class="el" href="gamewin_8h_source.html">gamewin.h</a>.</p>
 
 </div>
 </div>
@@ -422,7 +425,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="gamewin_8h_source.html#l00035">35</a> pliku <a class="el" href="gamewin_8h_source.html">gamewin.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="gamewin_8h_source.html#l00044">44</a> pliku <a class="el" href="gamewin_8h_source.html">gamewin.h</a>.</p>
 
 </div>
 </div>

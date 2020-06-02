@@ -10,7 +10,8 @@ var indexSectionsWithContent =
   7: "abcdefgilmprstuw",
   8: "abcdefgilmprstuw",
   9: "oq",
-  10: "q"
+  10: "q",
+  11: "g"
 };
 
 var indexSectionNames =
@@ -25,7 +26,8 @@ var indexSectionNames =
   7: "enums",
   8: "enumvalues",
   9: "related",
-  10: "defines"
+  10: "defines",
+  11: "pages"
 };
 
 var indexSectionLabels =
@@ -40,6 +42,7 @@ var indexSectionLabels =
   7: "Wyliczenia",
   8: "Wartości wyliczeń",
   9: "Przyjaciele",
-  10: "Definicje"
+  10: "Definicje",
+  11: "Strony"
 };
 

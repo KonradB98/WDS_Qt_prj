@@ -93,7 +93,8 @@ $(document).ready(function(){initNavTree('class_player.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
-<p>Klasa <a class="el" href="class_player.html" title="Klasa Player Klasa zawiera konstruktor oraz sloty potrzebne do interakcji z postacią (poruszanie oraz...">Player</a> Klasa zawiera konstruktor oraz sloty potrzebne do interakcji z postacią (poruszanie oraz tworzenie przeszkód)  
+<p>Klasa <a class="el" href="class_player.html" title="Klasa Player Klasa modeluje postać gracza.  Umożliwia sterowanie graczem przy pomocy danych z akceler...">Player</a> Klasa modeluje postać gracza. <br  />
+Umożliwia sterowanie graczem przy pomocy danych z akcelerometru oraz tworzenie przeszkód.  
  <a href="class_player.html#details">Więcej...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_player_8h_source.html">Player.h</a>&gt;</code></p>
@@ -102,7 +103,7 @@ Diagram dziedziczenia dla Player</div>
 <div class="dyncontent">
 <div class="center"><img src="class_player__inherit__graph.png" border="0" usemap="#_player_inherit__map" alt="Inheritance graph"/></div>
 <map name="_player_inherit__map" id="_player_inherit__map">
-<area shape="rect" title="Klasa Player Klasa zawiera konstruktor oraz sloty potrzebne do interakcji z postacią (poruszanie oraz..." alt="" coords="79,80,138,107"/>
+<area shape="rect" title="Klasa Player Klasa modeluje postać gracza. &#160;Umożliwia sterowanie graczem przy pomocy danych z akceler..." alt="" coords="79,80,138,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,76,32"/>
 <area shape="rect" title=" " alt="" coords="100,5,253,32"/>
 </map>
@@ -112,7 +113,7 @@ Diagram współpracy dla Player:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_player__coll__graph.png" border="0" usemap="#_player_coll__map" alt="Collaboration graph"/></div>
 <map name="_player_coll__map" id="_player_coll__map">
-<area shape="rect" title="Klasa Player Klasa zawiera konstruktor oraz sloty potrzebne do interakcji z postacią (poruszanie oraz..." alt="" coords="79,80,138,107"/>
+<area shape="rect" title="Klasa Player Klasa modeluje postać gracza. &#160;Umożliwia sterowanie graczem przy pomocy danych z akceler..." alt="" coords="79,80,138,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,76,32"/>
 <area shape="rect" title=" " alt="" coords="100,5,253,32"/>
 </map>
@@ -121,22 +122,23 @@ Diagram współpracy dla Player:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Sloty publiczne</h2></td></tr>
 <tr class="memitem:a3a41e3b74c1738c363c57141feb952ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a3a41e3b74c1738c363c57141feb952ce">accMove</a> (QList&lt; float &gt; acc_dat)</td></tr>
-<tr class="memdesc:a3a41e3b74c1738c363c57141feb952ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot umożliwiający poruszanie postacią przy pomocy.  <a href="class_player.html#a3a41e3b74c1738c363c57141feb952ce">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a3a41e3b74c1738c363c57141feb952ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot accMove Slot umożliwiający poruszanie postacią przy pomocy danych z akcelerometru.  <a href="class_player.html#a3a41e3b74c1738c363c57141feb952ce">Więcej...</a><br /></td></tr>
 <tr class="separator:a3a41e3b74c1738c363c57141feb952ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b44a29eb222521363dd5e2df5a50596"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a9b44a29eb222521363dd5e2df5a50596">makeSpawn</a> ()</td></tr>
-<tr class="memdesc:a9b44a29eb222521363dd5e2df5a50596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot tworzący cyklicznie przeszkody dla gracza (niebieskie bramki)  <a href="class_player.html#a9b44a29eb222521363dd5e2df5a50596">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a9b44a29eb222521363dd5e2df5a50596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot makeSpawn Slot cyklicznie tworzy przeszkody dla gracza (niebieskie bramki)  <a href="class_player.html#a9b44a29eb222521363dd5e2df5a50596">Więcej...</a><br /></td></tr>
 <tr class="separator:a9b44a29eb222521363dd5e2df5a50596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:a320b129a16aca7ff1aeac26292110b8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_player.html#a320b129a16aca7ff1aeac26292110b8c">Player</a> (QGraphicsItem *parent=NULL)</td></tr>
-<tr class="memdesc:a320b129a16aca7ff1aeac26292110b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor parametryczny.  <a href="class_player.html#a320b129a16aca7ff1aeac26292110b8c">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a320b129a16aca7ff1aeac26292110b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy <a class="el" href="class_player.html" title="Klasa Player Klasa modeluje postać gracza.  Umożliwia sterowanie graczem przy pomocy danych z akceler...">Player</a>.  <a href="class_player.html#a320b129a16aca7ff1aeac26292110b8c">Więcej...</a><br /></td></tr>
 <tr class="separator:a320b129a16aca7ff1aeac26292110b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
-<div class="textblock"><p>Klasa <a class="el" href="class_player.html" title="Klasa Player Klasa zawiera konstruktor oraz sloty potrzebne do interakcji z postacią (poruszanie oraz...">Player</a> Klasa zawiera konstruktor oraz sloty potrzebne do interakcji z postacią (poruszanie oraz tworzenie przeszkód) </p>
+<div class="textblock"><p>Klasa <a class="el" href="class_player.html" title="Klasa Player Klasa modeluje postać gracza.  Umożliwia sterowanie graczem przy pomocy danych z akceler...">Player</a> Klasa modeluje postać gracza. <br  />
+Umożliwia sterowanie graczem przy pomocy danych z akcelerometru oraz tworzenie przeszkód. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="_player_8h_source.html#l00013">13</a> pliku <a class="el" href="_player_8h_source.html">Player.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_player_8h_source.html#l00021">21</a> pliku <a class="el" href="_player_8h_source.html">Player.h</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a320b129a16aca7ff1aeac26292110b8c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a320b129a16aca7ff1aeac26292110b8c">&#9670;&nbsp;</a></span>Player()</h2>
@@ -154,7 +156,7 @@ Metody publiczne</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Konstruktor parametryczny. </p>
+<p>Konstruktor klasy <a class="el" href="class_player.html" title="Klasa Player Klasa modeluje postać gracza.  Umożliwia sterowanie graczem przy pomocy danych z akceler...">Player</a>. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>- ustawienie rodzica na NULL pointer </td></tr>
@@ -191,7 +193,7 @@ Metody publiczne</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Slot umożliwiający poruszanie postacią przy pomocy. </p>
+<p>Slot accMove Slot umożliwiający poruszanie postacią przy pomocy danych z akcelerometru. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">acc_dat</td><td>- dane z akcelerometru w postaci listy </td></tr>
@@ -226,7 +228,7 @@ Metody publiczne</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Slot tworzący cyklicznie przeszkody dla gracza (niebieskie bramki) </p>
+<p>Slot makeSpawn Slot cyklicznie tworzy przeszkody dla gracza (niebieskie bramki) </p>
 
 <p class="definition">Definicja w linii <a class="el" href="_player_8cpp_source.html#l00033">33</a> pliku <a class="el" href="_player_8cpp_source.html">Player.cpp</a>.</p>
 

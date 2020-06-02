@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Skier Game: Strona główna</title>
+<title>Skier Game: Gra interaktywna &ndash; Narciarz</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,11 +83,29 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Skier Game Dokumentacja</div>  </div>
+<div class="title">Gra interaktywna &ndash; Narciarz </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><h1><a class="anchor" id="etykieta-opis"></a>
+Opis ogólny</h1>
+<p>Gra polega na takim sterowaniu tytułowym narciarzem, aby omijał on przeszkody (bramki) spadające w dół ekranu. <br  />
+Za każdym razem kiedy postać uderzy w przeszkodę, wartość życia narciarza ulega pomniejszeniu o jeden. Punktacja liczona jest wprost proporcjonalnie do ominiętych bramek tj. ilość bramek, które nie dotknięte przez narciarza znikną z ekranu gry. Gra kończy się w momencie kiedy główna postać trzykrotnie uderzy w bramki. <br  />
+Sterowanie narciarzem odbywa się za pomocą danych z akcelerometru umieszczonego na płytce rozwojowej.</p>
+<h1><a class="anchor" id="etykieta-main"></a>
+Menu</h1>
+<p>Okno główne aplikacji składa się z dwóch przycisków odpowiadających za konfigurację połączenia z mikrokontrolerem (przycisk "Connection") oraz za rozpoczęcie nowej gry (przycisk "Play"). <br  />
+W zakładce "Plots" znajduje się pole, na którym wyświetlany jest wykres przyspieszenia względem konkretnej osi od czasu. Oś wybierana jest przy pomocy przycisków znajdujących się w górnej części zakładki.</p>
+<h1><a class="anchor" id="etykieta-game"></a>
+Okno gry</h1>
+<p>Okno gry otwierane jest po wciśnięciu przycisku "Play" znajdującym się w głównym menu aplikacji. <br  />
+Otwarcie tego okna powoduje inicjalizację gry oraz wszystkich jej elementów takich jak scena, gracz, życie, punkty i timer. Okno oraz jego zawartość kasowana jest w momencie osiągnięcia przez gracza wartości życia równej 0 lub zamknięciu okna przez wciśnięcie czerwonego krzyżyka w górnej części okna.</p>
+<h1><a class="anchor" id="etykieta-setings"></a>
+Okno ustawień</h1>
+<p>Okno ustawień otwierane jest po wciśnięciu przycisku "Connection" znajdującego się w menu aplikacji.<br  />
+Umożliwia ono wyszukanie oraz wybór urządzenia podłączonego poprzez port szeregowy do komputera. Jeśli mikrokontroler podłączony do komputera, możliwe jest nawiązanie połączenia poprzez wciśnięcie przycisku "Connect". Aby odłączyć urządzenie od aplikacji należy wcisnąć czerwony przycisk "Disconnect". </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

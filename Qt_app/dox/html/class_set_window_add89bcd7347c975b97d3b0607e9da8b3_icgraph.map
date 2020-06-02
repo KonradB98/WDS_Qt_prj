@@ -1,4 +1,4 @@
 <map id="SetWindow::closeConnect" name="SetWindow::closeConnect">
-<area shape="rect" id="node1" title="Sygnal emitowany po wcisnieciu przycisku &quot;Disconnect&quot;." alt="" coords="236,13,411,39"/>
-<area shape="rect" id="node2" href="$class_set_window.html#adb14c9fe75853f41da5648f998d6040c" title="Przycisk umożliwiający odłączenie mikrokontrolera od aplikacji." alt="" coords="5,5,188,47"/>
+<area shape="rect" id="node1" title="Sygnał setConnect Sygnał emitowany po wcisnieciu przycisku &quot;Disconnect&quot;." alt="" coords="236,13,411,39"/>
+<area shape="rect" id="node2" href="$class_set_window.html#adb14c9fe75853f41da5648f998d6040c" title="Slot on_pushButtonDisconnect_clicked Przycisk &quot;Disconnect&quot; umożliwiający odłączenie mikrokontrolera o..." alt="" coords="5,5,188,47"/>
 </map>

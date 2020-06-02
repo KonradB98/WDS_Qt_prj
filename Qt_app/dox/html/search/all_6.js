@@ -93,5 +93,6 @@ var searchData=
   ['graphcount_401',['graphCount',['../class_q_custom_plot.html#a5e1787cdde868c4d3790f9ebc8207d90',1,'QCustomPlot']]],
   ['graphkey_402',['graphKey',['../class_q_c_p_item_tracer.html#ac39a0791109588d11bb97cd643da2470',1,'QCPItemTracer']]],
   ['graphs_403',['graphs',['../class_q_c_p_axis.html#ad590c0da223697a2727f97a520870fec',1,'QCPAxis::graphs()'],['../class_q_c_p_axis_rect.html#a2d9ded3eca97be1fcb5867949391bb88',1,'QCPAxisRect::graphs()']]],
-  ['grid_404',['grid',['../class_q_c_p_axis.html#a63f1dd2df663680d2a8d06c19592dd63',1,'QCPAxis']]]
+  ['grid_404',['grid',['../class_q_c_p_axis.html#a63f1dd2df663680d2a8d06c19592dd63',1,'QCPAxis']]],
+  ['gra_20interaktywna_20_26ndash_3b_20narciarz_405',['Gra interaktywna &amp;ndash; Narciarz',['../index.html',1,'']]]
 ];

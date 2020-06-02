@@ -1,5 +1,5 @@
 <map id="Gamewin::passData" name="Gamewin::passData">
-<area shape="rect" id="node1" title="Sygnał emitowany po odebraniu danych przez obiekt klasy gamewindow." alt="" coords="224,31,363,57"/>
-<area shape="rect" id="node2" href="$class_gamewin.html#ac19d436da5f2ea78924ef940b3a73a67" title="Konstruktor parametryczny." alt="" coords="21,5,160,32"/>
-<area shape="rect" id="node3" href="$class_gamewin.html#af616b5c86f944defa0c2e1ca4dfced89" title="Slot umożliwiający odbiór danych z akcelerometru." alt="" coords="5,56,176,83"/>
+<area shape="rect" id="node1" title="Sygnał emitowany po odebraniu danych." alt="" coords="224,31,363,57"/>
+<area shape="rect" id="node2" href="$class_gamewin.html#ac19d436da5f2ea78924ef940b3a73a67" title="Konstruktor obiektu klasy Gamewin." alt="" coords="21,5,160,32"/>
+<area shape="rect" id="node3" href="$class_gamewin.html#af616b5c86f944defa0c2e1ca4dfced89" title="Slot odbierający dane Umożliwia on odbiór danych z akcelerometru orez przesłanie ich dalej do obiektu..." alt="" coords="5,56,176,83"/>
 </map>

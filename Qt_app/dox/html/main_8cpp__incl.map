@@ -1,17 +1,17 @@
 <map id="main.cpp" name="main.cpp">
 <area shape="rect" id="node1" title="Zawiera funkcję główną programu." alt="" coords="228,5,303,32"/>
-<area shape="rect" id="node2" href="$mainwindow_8h.html" title=" " alt="" coords="153,80,255,107"/>
+<area shape="rect" id="node2" href="$mainwindow_8h.html" title="Definicja klasy MainWindow." alt="" coords="153,80,255,107"/>
 <area shape="rect" id="node20" title=" " alt="" coords="280,80,376,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="5,229,112,256"/>
-<area shape="rect" id="node4" href="$setwindow_8h.html" title=" " alt="" coords="73,155,167,181"/>
+<area shape="rect" id="node4" href="$setwindow_8h.html" title="Definicja klasy SetWindow." alt="" coords="73,155,167,181"/>
 <area shape="rect" id="node5" title=" " alt="" coords="159,229,249,256"/>
-<area shape="rect" id="node6" href="$port_8h.html" title=" " alt="" coords="242,155,297,181"/>
-<area shape="rect" id="node7" href="$gamewin_8h.html" title=" " alt="" coords="537,155,621,181"/>
+<area shape="rect" id="node6" href="$port_8h.html" title="Definicja klasy port." alt="" coords="242,155,297,181"/>
+<area shape="rect" id="node7" href="$gamewin_8h.html" title="Definicja klasy Gamewin." alt="" coords="537,155,621,181"/>
 <area shape="rect" id="node8" title=" " alt="" coords="273,229,341,256"/>
-<area shape="rect" id="node9" href="$_player_8h.html" title=" " alt="" coords="365,229,435,256"/>
+<area shape="rect" id="node9" href="$_player_8h.html" title="Definicja klasy Player." alt="" coords="365,229,435,256"/>
 <area shape="rect" id="node14" title=" " alt="" coords="459,229,581,256"/>
-<area shape="rect" id="node15" href="$_score_8h.html" title=" " alt="" coords="605,229,672,256"/>
-<area shape="rect" id="node17" href="$_health_8h.html" title=" " alt="" coords="697,229,767,256"/>
+<area shape="rect" id="node15" href="$_score_8h.html" title="Definicja klasy Score." alt="" coords="605,229,672,256"/>
+<area shape="rect" id="node17" href="$_health_8h.html" title="Definicja klasy Health." alt="" coords="697,229,767,256"/>
 <area shape="rect" id="node18" title=" " alt="" coords="791,229,865,256"/>
 <area shape="rect" id="node19" title=" " alt="" coords="889,229,953,256"/>
 <area shape="rect" id="node10" title=" " alt="" coords="91,304,227,331"/>

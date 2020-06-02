@@ -1,5 +1,5 @@
 <map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
 <area shape="rect" id="node1" title=" " alt="" coords="5,31,140,57"/>
-<area shape="rect" id="node2" href="$class_health.html" title="Klasa Health Klasa odpowiada za atrybut gracza jakim jest zdrowie." alt="" coords="188,5,247,32"/>
+<area shape="rect" id="node2" href="$class_health.html" title="Klasa Health Klasa odpowiada za atrybut gry jakim jest zdrowie narciarza." alt="" coords="188,5,247,32"/>
 <area shape="rect" id="node3" href="$class_score.html" title="Klasa modeluje wynik gry Dziedziczy po QGraphicsTextItem i posiada niezbędne atrybuty oraz funkcję do..." alt="" coords="189,56,245,83"/>
 </map>

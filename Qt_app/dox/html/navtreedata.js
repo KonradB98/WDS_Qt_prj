@@ -25,6 +25,12 @@
 var NAVTREE =
 [
   [ "Skier Game", "index.html", [
+    [ "Gra interaktywna – Narciarz", "index.html", [
+      [ "Opis ogólny", "index.html#etykieta-opis", null ],
+      [ "Menu", "index.html#etykieta-main", null ],
+      [ "Okno gry", "index.html#etykieta-game", null ],
+      [ "Okno ustawień", "index.html#etykieta-setings", null ]
+    ] ],
     [ "Przestrzenie nazw", "namespaces.html", [
       [ "Lista przestrzeni nazw", "namespaces.html", "namespaces_dup" ],
       [ "Składowe przestrzeni nazw", "namespacemembers.html", [
@@ -75,7 +81,7 @@ var NAVTREEINDEX =
 "class_q_c_p_line_ending.html#a5ef16e6876b4b74959c7261d8d4c2cd5a3d7dcea2f100671727c3417142154f8f",
 "class_q_c_p_selection_rect.html#aded186aabcdc3ee51775b7c5063e199a",
 "class_q_custom_plot.html#aaa3073362074581a7b5905726b4a0067",
-"qcustomplot_8h.html#a2ad6bb6281c7c2d593d4277b44c2b037aea2f7c105d674e76d9b187b02ef29260"
+"qcustomplot_8h.html#a2ad6bb6281c7c2d593d4277b44c2b037a269c9af298e257d1108edec0432b5513"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,4 +1,4 @@
 <map id="Gamewin" name="Gamewin">
-<area shape="rect" id="node1" title="Klasa Gamewindow Klasa modeluje całą rozgrywkę. &#160;Posiada wszystkie obiekty występujące w grze." alt="" coords="5,80,81,107"/>
+<area shape="rect" id="node1" title="Klasa Gamewindow Klasa modeluje całą rozgrywkę. &#160;Posiada wskaźniki na wszystkie obiekty występujące w..." alt="" coords="5,80,81,107"/>
 <area shape="rect" id="node2" title=" " alt="" coords="9,5,77,32"/>
 </map>

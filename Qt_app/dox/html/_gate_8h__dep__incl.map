@@ -1,5 +1,5 @@
 <map id="Gate.h" name="Gate.h">
-<area shape="rect" id="node1" title=" " alt="" coords="64,5,125,32"/>
+<area shape="rect" id="node1" title="Definicja klasy Gate." alt="" coords="64,5,125,32"/>
 <area shape="rect" id="node2" href="$_gate_8cpp.html" title=" " alt="" coords="5,80,80,107"/>
 <area shape="rect" id="node3" href="$_player_8cpp.html" title=" " alt="" coords="105,80,189,107"/>
 </map>

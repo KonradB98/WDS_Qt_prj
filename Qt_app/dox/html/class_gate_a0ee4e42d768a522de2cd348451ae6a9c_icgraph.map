@@ -1,4 +1,4 @@
 <map id="Gate::moveDown" name="Gate::moveDown">
-<area shape="rect" id="node1" title="Slot odpowiadający za poruszanie się przeszkody (bramki) w dół sceny." alt="" coords="140,5,260,32"/>
-<area shape="rect" id="node2" href="$class_gate.html#a204aaaa33396f2a1f4a5de4cee3956b8" title="Konstruktor parametryczny." alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node1" title="Slot moveDown Slot odpowiadający za poruszanie się przeszkody (bramki) w dół sceny." alt="" coords="140,5,260,32"/>
+<area shape="rect" id="node2" href="$class_gate.html#a204aaaa33396f2a1f4a5de4cee3956b8" title="Konstruktor klasy Gate." alt="" coords="5,5,92,32"/>
 </map>

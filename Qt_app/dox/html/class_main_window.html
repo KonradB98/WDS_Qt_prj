@@ -95,8 +95,8 @@ $(document).ready(function(){initNavTree('class_main_window.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>Klasa <a class="el" href="class_main_window.html" title="Klasa MainWindow Klasa odpowiada za główne menu aplikacji, dziedziczy po QMainWindow....">MainWindow</a> Klasa odpowiada za główne menu aplikacji, dziedziczy po QMainWindow. <br  />
-Posiada atrybuty odpowiedzialne za wykresy, okno ustawień połączenia oraz samo urządzenie.  
+<p>Klasa <a class="el" href="class_main_window.html" title="Klasa MainWindow Klasa odpowiada za główne menu aplikacji oraz dziedziczy po QMainWindow....">MainWindow</a> Klasa odpowiada za główne menu aplikacji oraz dziedziczy po QMainWindow. <br  />
+Posiada atrybuty odpowiedzialne za wykresy, okno ustawień połączenia oraz samo urządzenie. Umożliwa również dynamiczne stworzenie obiektu typu Gamewindow po wciśnięciu przycisku "Play".  
  <a href="class_main_window.html#details">Więcej...</a></p>
 
 <p><code>#include &lt;<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>&gt;</code></p>
@@ -105,7 +105,7 @@ Diagram dziedziczenia dla MainWindow</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window__inherit__graph.png" border="0" usemap="#_main_window_inherit__map" alt="Inheritance graph"/></div>
 <map name="_main_window_inherit__map" id="_main_window_inherit__map">
-<area shape="rect" title="Klasa MainWindow Klasa odpowiada za główne menu aplikacji, dziedziczy po QMainWindow...." alt="" coords="11,80,107,107"/>
+<area shape="rect" title="Klasa MainWindow Klasa odpowiada za główne menu aplikacji oraz dziedziczy po QMainWindow...." alt="" coords="11,80,107,107"/>
 <area shape="rect" title=" " alt="" coords="5,5,112,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
@@ -114,10 +114,10 @@ Diagram współpracy dla MainWindow:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window__coll__graph.png" border="0" usemap="#_main_window_coll__map" alt="Collaboration graph"/></div>
 <map name="_main_window_coll__map" id="_main_window_coll__map">
-<area shape="rect" title="Klasa MainWindow Klasa odpowiada za główne menu aplikacji, dziedziczy po QMainWindow...." alt="" coords="51,171,147,197"/>
+<area shape="rect" title="Klasa MainWindow Klasa odpowiada za główne menu aplikacji oraz dziedziczy po QMainWindow...." alt="" coords="51,171,147,197"/>
 <area shape="rect" title=" " alt="" coords="5,5,112,32"/>
-<area shape="rect" href="class_set_window.html" title="Klasa modeluje wygląd okna ustawień" alt="" coords="55,81,143,108"/>
-<area shape="rect" href="classport.html" title="Klasa modeluje obiekt typu port. Posiada niezbęde atrybuty, sloty oraz sygnały umożliwiające nawiązan..." alt="" coords="167,81,211,108"/>
+<area shape="rect" href="class_set_window.html" title="Klasa modeluje wygląd okna ustawień Umożliwia za pomocą poszczególnych przycisków na wyszukanie urząd..." alt="" coords="55,81,143,108"/>
+<area shape="rect" href="classport.html" title="Klasa port. Klasa modeluje obiekt typu port. &#160;Dostarcza interfejs umożliwiający nawiązanie połączenia..." alt="" coords="167,81,211,108"/>
 <area shape="rect" title=" " alt="" coords="154,5,225,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
@@ -125,7 +125,7 @@ Diagram współpracy dla MainWindow:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a> (QWidget *parent=nullptr)</td></tr>
-<tr class="memdesc:a996c5a2b6f77944776856f08ec30858d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor parametryczny głównego okna aplikacji.  <a href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a996c5a2b6f77944776856f08ec30858d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor głównego okna aplikacji.  <a href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">Więcej...</a><br /></td></tr>
 <tr class="separator:a996c5a2b6f77944776856f08ec30858d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a> ()</td></tr>
 <tr class="memdesc:ae98d00a93bc118200eeef9f9bba1dba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor głównego okna aplikacji.  <a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">Więcej...</a><br /></td></tr>
@@ -134,36 +134,40 @@ Metody publiczne</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Atrybuty publiczne</h2></td></tr>
 <tr class="memitem:a7c532374be7dd4598178084bc0692819"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a7c532374be7dd4598178084bc0692819">t</a> = 0</td></tr>
+<tr class="memdesc:a7c532374be7dd4598178084bc0692819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atrybut t Zmienna odpowiedzialna za czas (oś X) wykresu.  <a href="class_main_window.html#a7c532374be7dd4598178084bc0692819">Więcej...</a><br /></td></tr>
 <tr class="separator:a7c532374be7dd4598178084bc0692819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fcabbd3601f07b9399318db16e624d5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a6fcabbd3601f07b9399318db16e624d5">range</a> = 20</td></tr>
+<tr class="memdesc:a6fcabbd3601f07b9399318db16e624d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atrybut range Zmienna odpowiedzialna za zakres czasu symulacji na wykresie.  <a href="class_main_window.html#a6fcabbd3601f07b9399318db16e624d5">Więcej...</a><br /></td></tr>
 <tr class="separator:a6fcabbd3601f07b9399318db16e624d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a148d1428d85a7d263efd8f3ee72d32cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a148d1428d85a7d263efd8f3ee72d32cc">axis</a> = 0</td></tr>
+<tr class="memdesc:a148d1428d85a7d263efd8f3ee72d32cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atrybut axis Zmienna odpowiedzialna za wybór osi, z której dane prezentowane są na wykresie.  <a href="class_main_window.html#a148d1428d85a7d263efd8f3ee72d32cc">Więcej...</a><br /></td></tr>
 <tr class="separator:a148d1428d85a7d263efd8f3ee72d32cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbfcc14a05f971e48a22a90259ba30d3"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#adbfcc14a05f971e48a22a90259ba30d3">os</a></td></tr>
+<tr class="memdesc:adbfcc14a05f971e48a22a90259ba30d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atrybut os Zmienna typu QString do opisu osi Y wykresu.  <a href="class_main_window.html#adbfcc14a05f971e48a22a90259ba30d3">Więcej...</a><br /></td></tr>
 <tr class="separator:adbfcc14a05f971e48a22a90259ba30d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
 Sloty prywatne</h2></td></tr>
 <tr class="memitem:a74bf7ec51582db3d2d98265b66afc0cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a74bf7ec51582db3d2d98265b66afc0cc">on_pushButtonConnect_clicked</a> ()</td></tr>
-<tr class="memdesc:a74bf7ec51582db3d2d98265b66afc0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot otwierający okno ustawień połączenia z mikrokontrolerem.  <a href="class_main_window.html#a74bf7ec51582db3d2d98265b66afc0cc">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a74bf7ec51582db3d2d98265b66afc0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot dla przycisku "Connect" Slot otwiera okno ustawień połączenia aplikacji z mikrokontrolerem.  <a href="class_main_window.html#a74bf7ec51582db3d2d98265b66afc0cc">Więcej...</a><br /></td></tr>
 <tr class="separator:a74bf7ec51582db3d2d98265b66afc0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad96b4b5caa6927edce39351a218c5d26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ad96b4b5caa6927edce39351a218c5d26">ifReport</a> (const QString &amp;message)</td></tr>
 <tr class="memdesc:ad96b4b5caa6927edce39351a218c5d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot aktualizujący pasek statusowy.  <a href="class_main_window.html#ad96b4b5caa6927edce39351a218c5d26">Więcej...</a><br /></td></tr>
 <tr class="separator:ad96b4b5caa6927edce39351a218c5d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a024e5e1be2dd79d0a19508bf0b7d651d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a024e5e1be2dd79d0a19508bf0b7d651d">makePlot</a> (QList&lt; float &gt; acc_dat)</td></tr>
-<tr class="memdesc:a024e5e1be2dd79d0a19508bf0b7d651d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot rysujący wykres w zakładce "plots".  <a href="class_main_window.html#a024e5e1be2dd79d0a19508bf0b7d651d">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a024e5e1be2dd79d0a19508bf0b7d651d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot makePlot Slot odpowiedzialny za rysowanie wykres w zakładce "plots".  <a href="class_main_window.html#a024e5e1be2dd79d0a19508bf0b7d651d">Więcej...</a><br /></td></tr>
 <tr class="separator:a024e5e1be2dd79d0a19508bf0b7d651d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bb7c5be3b758428872525dad6877d78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a3bb7c5be3b758428872525dad6877d78">on_pushButtonX_clicked</a> ()</td></tr>
-<tr class="memdesc:a3bb7c5be3b758428872525dad6877d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przycisk przełączający wyświetlanie na wykresie danych z osi X.  <a href="class_main_window.html#a3bb7c5be3b758428872525dad6877d78">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a3bb7c5be3b758428872525dad6877d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot on_pushButtonX_clicked Przycisk przełączający wyświetlanie na wykresie danych z osi X.  <a href="class_main_window.html#a3bb7c5be3b758428872525dad6877d78">Więcej...</a><br /></td></tr>
 <tr class="separator:a3bb7c5be3b758428872525dad6877d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ba9c36f2b0f5ecf4c5091b7be8ca0c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a1ba9c36f2b0f5ecf4c5091b7be8ca0c7">on_pushButtonY_clicked</a> ()</td></tr>
-<tr class="memdesc:a1ba9c36f2b0f5ecf4c5091b7be8ca0c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przycisk przełączający wyświetlanie na wykresie danych z osi Y.  <a href="class_main_window.html#a1ba9c36f2b0f5ecf4c5091b7be8ca0c7">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a1ba9c36f2b0f5ecf4c5091b7be8ca0c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot on_pushButtonY_clicked Przycisk przełączający wyświetlanie na wykresie danych z osi Y.  <a href="class_main_window.html#a1ba9c36f2b0f5ecf4c5091b7be8ca0c7">Więcej...</a><br /></td></tr>
 <tr class="separator:a1ba9c36f2b0f5ecf4c5091b7be8ca0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12cf88402a93adef89645ba4e4cb7be1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a12cf88402a93adef89645ba4e4cb7be1">on_pushButton_3_clicked</a> ()</td></tr>
-<tr class="memdesc:a12cf88402a93adef89645ba4e4cb7be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przycisk przełączający wyświetlanie na wykresie danych z osi Z.  <a href="class_main_window.html#a12cf88402a93adef89645ba4e4cb7be1">Więcej...</a><br /></td></tr>
+<tr class="memdesc:a12cf88402a93adef89645ba4e4cb7be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot on_pushButton_3_clicked Przycisk przełączający wyświetlanie na wykresie danych z osi Z.  <a href="class_main_window.html#a12cf88402a93adef89645ba4e4cb7be1">Więcej...</a><br /></td></tr>
 <tr class="separator:a12cf88402a93adef89645ba4e4cb7be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeda898912761f267a586cb1b436e3c71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#aeda898912761f267a586cb1b436e3c71">on_pushButtonPlay_clicked</a> ()</td></tr>
-<tr class="memdesc:aeda898912761f267a586cb1b436e3c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przycisk uruchamiający nową grę.  <a href="class_main_window.html#aeda898912761f267a586cb1b436e3c71">Więcej...</a><br /></td></tr>
+<tr class="memdesc:aeda898912761f267a586cb1b436e3c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot on_pushButtonPlay_clicked Przycisk inicjalizujący nową grę.  <a href="class_main_window.html#aeda898912761f267a586cb1b436e3c71">Więcej...</a><br /></td></tr>
 <tr class="separator:aeda898912761f267a586cb1b436e3c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -171,15 +175,17 @@ Atrybuty prywatne</h2></td></tr>
 <tr class="memitem:a35466a70ed47252a0191168126a352a5"><td class="memItemLeft" align="right" valign="top">Ui::MainWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a35466a70ed47252a0191168126a352a5">ui</a></td></tr>
 <tr class="separator:a35466a70ed47252a0191168126a352a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87e61310bf1f584b49bb20c40034a8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_set_window.html">SetWindow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#aa87e61310bf1f584b49bb20c40034a8d">sw</a></td></tr>
+<tr class="memdesc:aa87e61310bf1f584b49bb20c40034a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atrybut sw Zmienna typu <a class="el" href="class_set_window.html" title="Klasa modeluje wygląd okna ustawień Umożliwia za pomocą poszczególnych przycisków na wyszukanie urząd...">SetWindow</a> odpowiedzialna za okno konfiguracji połączenia.  <a href="class_main_window.html#aa87e61310bf1f584b49bb20c40034a8d">Więcej...</a><br /></td></tr>
 <tr class="separator:aa87e61310bf1f584b49bb20c40034a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1df47b34e48a983d3b73555010b1f06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classport.html">port</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#af1df47b34e48a983d3b73555010b1f06">device</a></td></tr>
+<tr class="memdesc:af1df47b34e48a983d3b73555010b1f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atrybut device Zmienna typu port odpowiedzialna za przetwarzanie danych z mikrokontrolera.  <a href="class_main_window.html#af1df47b34e48a983d3b73555010b1f06">Więcej...</a><br /></td></tr>
 <tr class="separator:af1df47b34e48a983d3b73555010b1f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
-<div class="textblock"><p>Klasa <a class="el" href="class_main_window.html" title="Klasa MainWindow Klasa odpowiada za główne menu aplikacji, dziedziczy po QMainWindow....">MainWindow</a> Klasa odpowiada za główne menu aplikacji, dziedziczy po QMainWindow. <br  />
-Posiada atrybuty odpowiedzialne za wykresy, okno ustawień połączenia oraz samo urządzenie. </p>
+<div class="textblock"><p>Klasa <a class="el" href="class_main_window.html" title="Klasa MainWindow Klasa odpowiada za główne menu aplikacji oraz dziedziczy po QMainWindow....">MainWindow</a> Klasa odpowiada za główne menu aplikacji oraz dziedziczy po QMainWindow. <br  />
+Posiada atrybuty odpowiedzialne za wykresy, okno ustawień połączenia oraz samo urządzenie. Umożliwa również dynamiczne stworzenie obiektu typu Gamewindow po wciśnięciu przycisku "Play". </p>
 
-<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00019">19</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00027">27</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 </div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
 <a id="a996c5a2b6f77944776856f08ec30858d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a996c5a2b6f77944776856f08ec30858d">&#9670;&nbsp;</a></span>MainWindow()</h2>
@@ -197,7 +203,7 @@ Posiada atrybuty odpowiedzialne za wykresy, okno ustawień połączenia oraz sam
       </table>
 </div><div class="memdoc">
 
-<p>Konstruktor parametryczny głównego okna aplikacji. </p>
+<p>Konstruktor głównego okna aplikacji. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>- wskażnik rodzica ustawiony na NULL pointer. </td></tr>
@@ -211,9 +217,9 @@ Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph.png" border="0" usemap="#class_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph" alt=""/></div>
 <map name="class_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph" id="class_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph">
-<area shape="rect" title="Konstruktor parametryczny głównego okna aplikacji." alt="" coords="5,31,184,57"/>
+<area shape="rect" title="Konstruktor głównego okna aplikacji." alt="" coords="5,31,184,57"/>
 <area shape="rect" href="class_main_window.html#ad96b4b5caa6927edce39351a218c5d26" title="Slot aktualizujący pasek statusowy." alt="" coords="237,5,385,32"/>
-<area shape="rect" href="class_main_window.html#a024e5e1be2dd79d0a19508bf0b7d651d" title="Slot rysujący wykres w zakładce &quot;plots&quot;." alt="" coords="232,56,391,83"/>
+<area shape="rect" href="class_main_window.html#a024e5e1be2dd79d0a19508bf0b7d651d" title="Slot makePlot Slot odpowiedzialny za rysowanie wykres w zakładce &quot;plots&quot;." alt="" coords="232,56,391,83"/>
 </map>
 </div>
 
@@ -280,7 +286,7 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="center"><img src="class_main_window_ad96b4b5caa6927edce39351a218c5d26_icgraph.png" border="0" usemap="#class_main_window_ad96b4b5caa6927edce39351a218c5d26_icgraph" alt=""/></div>
 <map name="class_main_window_ad96b4b5caa6927edce39351a218c5d26_icgraph" id="class_main_window_ad96b4b5caa6927edce39351a218c5d26_icgraph">
 <area shape="rect" title="Slot aktualizujący pasek statusowy." alt="" coords="232,5,380,32"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Konstruktor parametryczny głównego okna aplikacji." alt="" coords="5,5,184,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Konstruktor głównego okna aplikacji." alt="" coords="5,5,184,32"/>
 </map>
 </div>
 
@@ -310,7 +316,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Slot rysujący wykres w zakładce "plots". </p>
+<p>Slot makePlot Slot odpowiedzialny za rysowanie wykres w zakładce "plots". </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">acc_dat</td><td>- dane z akcelerometru w postaci listy. </td></tr>
@@ -324,8 +330,8 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_main_window_a024e5e1be2dd79d0a19508bf0b7d651d_icgraph.png" border="0" usemap="#class_main_window_a024e5e1be2dd79d0a19508bf0b7d651d_icgraph" alt=""/></div>
 <map name="class_main_window_a024e5e1be2dd79d0a19508bf0b7d651d_icgraph" id="class_main_window_a024e5e1be2dd79d0a19508bf0b7d651d_icgraph">
-<area shape="rect" title="Slot rysujący wykres w zakładce &quot;plots&quot;." alt="" coords="232,5,391,32"/>
-<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Konstruktor parametryczny głównego okna aplikacji." alt="" coords="5,5,184,32"/>
+<area shape="rect" title="Slot makePlot Slot odpowiedzialny za rysowanie wykres w zakładce &quot;plots&quot;." alt="" coords="232,5,391,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Konstruktor głównego okna aplikacji." alt="" coords="5,5,184,32"/>
 </map>
 </div>
 
@@ -354,7 +360,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Przycisk przełączający wyświetlanie na wykresie danych z osi Z. </p>
+<p>Slot on_pushButton_3_clicked Przycisk przełączający wyświetlanie na wykresie danych z osi Z. </p>
 
 <p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00100">100</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
@@ -383,7 +389,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Slot otwierający okno ustawień połączenia z mikrokontrolerem. </p>
+<p>Slot dla przycisku "Connect" Slot otwiera okno ustawień połączenia aplikacji z mikrokontrolerem. </p>
 
 <p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00033">33</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
@@ -412,7 +418,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Przycisk uruchamiający nową grę. </p>
+<p>Slot on_pushButtonPlay_clicked Przycisk inicjalizujący nową grę. </p>
 
 <p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00038">38</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
@@ -441,7 +447,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Przycisk przełączający wyświetlanie na wykresie danych z osi X. </p>
+<p>Slot on_pushButtonX_clicked Przycisk przełączający wyświetlanie na wykresie danych z osi X. </p>
 
 <p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00084">84</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
@@ -470,7 +476,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Przycisk przełączający wyświetlanie na wykresie danych z osi Y. </p>
+<p>Slot on_pushButtonY_clicked Przycisk przełączający wyświetlanie na wykresie danych z osi Y. </p>
 
 <p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00092">92</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
 
@@ -489,7 +495,9 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00037">37</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p>Atrybut axis Zmienna odpowiedzialna za wybór osi, z której dane prezentowane są na wykresie. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00057">57</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
 </div>
 </div>
@@ -513,7 +521,9 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00077">77</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p>Atrybut device Zmienna typu port odpowiedzialna za przetwarzanie danych z mikrokontrolera. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00115">115</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
 </div>
 </div>
@@ -529,7 +539,9 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00038">38</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p>Atrybut os Zmienna typu QString do opisu osi Y wykresu. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00062">62</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
 </div>
 </div>
@@ -545,7 +557,9 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00036">36</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p>Atrybut range Zmienna odpowiedzialna za zakres czasu symulacji na wykresie. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00052">52</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
 </div>
 </div>
@@ -569,7 +583,9 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00075">75</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p>Atrybut sw Zmienna typu <a class="el" href="class_set_window.html" title="Klasa modeluje wygląd okna ustawień Umożliwia za pomocą poszczególnych przycisków na wyszukanie urząd...">SetWindow</a> odpowiedzialna za okno konfiguracji połączenia. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00109">109</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
 </div>
 </div>
@@ -585,7 +601,9 @@ Oto graf wywoływań tej funkcji:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00035">35</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p>Atrybut t Zmienna odpowiedzialna za czas (oś X) wykresu. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00047">47</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
 </div>
 </div>
@@ -609,7 +627,7 @@ Oto graf wywoływań tej funkcji:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00074">74</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00104">104</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
 
 </div>
 </div>

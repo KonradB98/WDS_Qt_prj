@@ -1,10 +1,10 @@
 <map id="gamewin.h" name="gamewin.h">
-<area shape="rect" id="node1" title=" " alt="" coords="510,5,594,32"/>
+<area shape="rect" id="node1" title="Definicja klasy Gamewin." alt="" coords="510,5,594,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="186,80,254,107"/>
-<area shape="rect" id="node3" href="$_player_8h.html" title=" " alt="" coords="278,80,349,107"/>
+<area shape="rect" id="node3" href="$_player_8h.html" title="Definicja klasy Player." alt="" coords="278,80,349,107"/>
 <area shape="rect" id="node8" title=" " alt="" coords="373,80,494,107"/>
-<area shape="rect" id="node9" href="$_score_8h.html" title=" " alt="" coords="519,80,585,107"/>
-<area shape="rect" id="node11" href="$_health_8h.html" title=" " alt="" coords="610,80,681,107"/>
+<area shape="rect" id="node9" href="$_score_8h.html" title="Definicja klasy Score." alt="" coords="519,80,585,107"/>
+<area shape="rect" id="node11" href="$_health_8h.html" title="Definicja klasy Health." alt="" coords="610,80,681,107"/>
 <area shape="rect" id="node12" title=" " alt="" coords="705,80,778,107"/>
 <area shape="rect" id="node13" title=" " alt="" coords="803,80,867,107"/>
 <area shape="rect" id="node4" title=" " alt="" coords="5,155,141,181"/>
