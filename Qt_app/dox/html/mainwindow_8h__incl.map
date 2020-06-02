@@ -1,0 +1,20 @@
+<map id="mainwindow.h" name="mainwindow.h">
+<area shape="rect" id="node1" title=" " alt="" coords="153,5,255,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,155,112,181"/>
+<area shape="rect" id="node3" href="$setwindow_8h.html" title=" " alt="" coords="73,80,167,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="159,155,249,181"/>
+<area shape="rect" id="node5" href="$port_8h.html" title=" " alt="" coords="242,80,297,107"/>
+<area shape="rect" id="node6" href="$gamewin_8h.html" title=" " alt="" coords="537,80,621,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="273,155,341,181"/>
+<area shape="rect" id="node8" href="$_player_8h.html" title=" " alt="" coords="365,155,435,181"/>
+<area shape="rect" id="node13" title=" " alt="" coords="459,155,581,181"/>
+<area shape="rect" id="node14" href="$_score_8h.html" title=" " alt="" coords="605,155,672,181"/>
+<area shape="rect" id="node16" href="$_health_8h.html" title=" " alt="" coords="697,155,767,181"/>
+<area shape="rect" id="node17" title=" " alt="" coords="791,155,865,181"/>
+<area shape="rect" id="node18" title=" " alt="" coords="889,155,953,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="91,229,227,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="251,229,322,256"/>
+<area shape="rect" id="node11" title=" " alt="" coords="347,229,456,256"/>
+<area shape="rect" id="node12" title=" " alt="" coords="481,229,634,256"/>
+<area shape="rect" id="node15" title=" " alt="" coords="662,229,797,256"/>
+</map>

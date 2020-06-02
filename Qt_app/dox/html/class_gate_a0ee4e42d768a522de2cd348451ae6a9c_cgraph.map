@@ -1,0 +1,6 @@
+<map id="Gate::moveDown" name="Gate::moveDown">
+<area shape="rect" id="node1" title="Slot odpowiadający za poruszanie się przeszkody (bramki) w dół sceny." alt="" coords="5,56,125,83"/>
+<area shape="rect" id="node2" href="$class_health.html#a15836492efb60f8c61151d35379768d2" title="Funkcja odpowiada za pomniejszenie wyniku o 1." alt="" coords="175,5,295,32"/>
+<area shape="rect" id="node3" href="$class_health.html#adc5f045b9f6937c592e196821d7a6878" title="Funkcja umożliwia pozyskanie atrybutu health." alt="" coords="173,56,296,83"/>
+<area shape="rect" id="node4" href="$class_score.html#ab5dbfab6935903c075509546878cfbda" title="Funkcja zwiększająca wynik rozgrywki o 1." alt="" coords="178,107,291,133"/>
+</map>

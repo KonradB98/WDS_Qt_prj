@@ -1,0 +1,5 @@
+<map id="MainWindow::MainWindow" name="MainWindow::MainWindow">
+<area shape="rect" id="node1" title="Konstruktor parametryczny głównego okna aplikacji." alt="" coords="5,31,184,57"/>
+<area shape="rect" id="node2" href="$class_main_window.html#ad96b4b5caa6927edce39351a218c5d26" title="Slot aktualizujący pasek statusowy." alt="" coords="237,5,385,32"/>
+<area shape="rect" id="node3" href="$class_main_window.html#a024e5e1be2dd79d0a19508bf0b7d651d" title="Slot rysujący wykres w zakładce &quot;plots&quot;." alt="" coords="232,56,391,83"/>
+</map>

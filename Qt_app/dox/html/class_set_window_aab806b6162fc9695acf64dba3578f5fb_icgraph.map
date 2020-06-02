@@ -1,0 +1,4 @@
+<map id="SetWindow::setConnect" name="SetWindow::setConnect">
+<area shape="rect" id="node1" title="Sygnal emitowany po wcisnieciu przycisku &quot;Connect&quot;." alt="" coords="236,13,399,39"/>
+<area shape="rect" id="node2" href="$class_set_window.html#ac32efd3b727186cc24d7b625311448e9" title="Przycisk umożliwiający podłączenie mikrokontrolera do aplikacji." alt="" coords="5,5,188,47"/>
+</map>

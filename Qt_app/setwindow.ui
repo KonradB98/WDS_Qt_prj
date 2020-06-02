@@ -15,7 +15,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QPushButton#pushButtonSearch:hover {
-background-color: rgb(200, 200, 200);
+background-color: rgb(153, 153, 153);
 border-style: inset;
 }
 
@@ -47,8 +47,13 @@ border-style: inset;
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color: rgb(50, 50, 50);
-font: 11pt &quot;Yu Gothic UI Semilight&quot;;</string>
+          <string notr="true">#pushButtonSearchr{
+background-color: #999999;
+color: rgb(50, 50, 50);
+}
+#pushButtonSearch:pressed{
+background-color: #4d4d4d; 
+}</string>
          </property>
          <property name="text">
           <string>Search</string>
@@ -108,9 +113,15 @@ color: rgb(50, 50, 50);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(113, 255, 5);
+          <string notr="true">#pushButtonConnect {
+background-color:#00ff00;
 color: rgb(50, 50, 50);
-font: 11pt &quot;Yu Gothic UI Semilight&quot;;</string>
+font: 11pt &quot;Yu Gothic UI Semilight&quot;;
+}
+
+#pushButtonConnect:pressed{
+background-color:#00b300;
+}</string>
          </property>
          <property name="text">
           <string>Connect</string>
@@ -129,9 +140,16 @@ font: 11pt &quot;Yu Gothic UI Semilight&quot;;</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 47, 47);
+          <string notr="true">#pushButtonDisconnect {
+background-color: rgb(255, 26, 26);
 color: rgb(50, 50, 50);
-font: 11pt &quot;Yu Gothic UI Semilight&quot;;</string>
+font: 11pt &quot;Yu Gothic UI Semilight&quot;;
+}
+#pushButtonDisconnect:pressed {
+background-color: #b30000;
+}
+
+</string>
          </property>
          <property name="text">
           <string>Disconnect</string>

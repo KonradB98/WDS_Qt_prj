@@ -1,0 +1,5 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,112,57"/>
+<area shape="rect" id="node2" href="$class_main_window.html" title="Klasa MainWindow Klasa odpowiada za główne menu aplikacji, dziedziczy po QMainWindow...." alt="" coords="160,5,256,32"/>
+<area shape="rect" id="node3" href="$class_set_window.html" title="Klasa modeluje wygląd okna ustawień" alt="" coords="164,56,252,83"/>
+</map>

@@ -1,0 +1,624 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Skier Game: Dokumentacja klasy port</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo1.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Skier Game
+   &#160;<span id="projectnumber">v 1.0</span>
+   </div>
+   <div id="projectbrief">Wizualizacja Danych Sensorycznych - Projekt, Konrad Bajak</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('classport.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">Sygnały</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pri-slots">Sloty prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="classport-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy port</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa modeluje obiekt typu port. Posiada niezbęde atrybuty, sloty oraz sygnały umożliwiające nawiązanie połączenia z zewnątrznym urządzeniem.  
+ <a href="classport.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="port_8h_source.html">port.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla port</div>
+<div class="dyncontent">
+<div class="center"><img src="classport__inherit__graph.png" border="0" usemap="#port_inherit__map" alt="Inheritance graph"/></div>
+<map name="port_inherit__map" id="port_inherit__map">
+<area shape="rect" title="Klasa modeluje obiekt typu port. Posiada niezbęde atrybuty, sloty oraz sygnały umożliwiające nawiązan..." alt="" coords="19,80,63,107"/>
+<area shape="rect" title=" " alt="" coords="5,5,76,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla port:</div>
+<div class="dyncontent">
+<div class="center"><img src="classport__coll__graph.png" border="0" usemap="#port_coll__map" alt="Collaboration graph"/></div>
+<map name="port_coll__map" id="port_coll__map">
+<area shape="rect" title="Klasa modeluje obiekt typu port. Posiada niezbęde atrybuty, sloty oraz sygnały umożliwiające nawiązan..." alt="" coords="19,80,63,107"/>
+<area shape="rect" title=" " alt="" coords="5,5,76,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Sygnały</h2></td></tr>
+<tr class="memitem:aa88ff772ccd4a2c3016bdf9111287430"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#aa88ff772ccd4a2c3016bdf9111287430">reportStatus</a> (const QString &amp;)</td></tr>
+<tr class="memdesc:aa88ff772ccd4a2c3016bdf9111287430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnal emitowany po poprawnym skonfigurowaniu i podlaczeniu urzadzenia.  <a href="classport.html#aa88ff772ccd4a2c3016bdf9111287430">Więcej...</a><br /></td></tr>
+<tr class="separator:aa88ff772ccd4a2c3016bdf9111287430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29daafc7e56d50d600fe4ce709df6406"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a29daafc7e56d50d600fe4ce709df6406">plotData</a> (QList&lt; float &gt;)</td></tr>
+<tr class="memdesc:a29daafc7e56d50d600fe4ce709df6406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnal emitowany po poprawnym odczytaniu danych w slocie <a class="el" href="classport.html#a799ea3847ff38d544b4d49189eb69e86" title="Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera.">readData()</a>.  <a href="classport.html#a29daafc7e56d50d600fe4ce709df6406">Więcej...</a><br /></td></tr>
+<tr class="separator:a29daafc7e56d50d600fe4ce709df6406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a5f40cbc450a8b0342a79b6e7ca4886e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a5f40cbc450a8b0342a79b6e7ca4886e9">port</a> ()</td></tr>
+<tr class="memdesc:a5f40cbc450a8b0342a79b6e7ca4886e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor.  <a href="classport.html#a5f40cbc450a8b0342a79b6e7ca4886e9">Więcej...</a><br /></td></tr>
+<tr class="separator:a5f40cbc450a8b0342a79b6e7ca4886e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd903c84068e3b7829d0688ae4aad58e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#acd903c84068e3b7829d0688ae4aad58e">~port</a> ()</td></tr>
+<tr class="memdesc:acd903c84068e3b7829d0688ae4aad58e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor.  <a href="classport.html#acd903c84068e3b7829d0688ae4aad58e">Więcej...</a><br /></td></tr>
+<tr class="separator:acd903c84068e3b7829d0688ae4aad58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Sloty prywatne</h2></td></tr>
+<tr class="memitem:a0bec8b815e7f3e959983d2500792778d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a0bec8b815e7f3e959983d2500792778d">OpenPort</a> (QString portName)</td></tr>
+<tr class="memdesc:a0bec8b815e7f3e959983d2500792778d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot konfiguruje i otwiera port szeregowy.  <a href="classport.html#a0bec8b815e7f3e959983d2500792778d">Więcej...</a><br /></td></tr>
+<tr class="separator:a0bec8b815e7f3e959983d2500792778d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ef1817cd20c1f06eb91bb33edbb680"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a70ef1817cd20c1f06eb91bb33edbb680">ClosePort</a> ()</td></tr>
+<tr class="memdesc:a70ef1817cd20c1f06eb91bb33edbb680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot zamyka otwarty port szeregowy.  <a href="classport.html#a70ef1817cd20c1f06eb91bb33edbb680">Więcej...</a><br /></td></tr>
+<tr class="separator:a70ef1817cd20c1f06eb91bb33edbb680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a799ea3847ff38d544b4d49189eb69e86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a799ea3847ff38d544b4d49189eb69e86">readData</a> ()</td></tr>
+<tr class="memdesc:a799ea3847ff38d544b4d49189eb69e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera.  <a href="classport.html#a799ea3847ff38d544b4d49189eb69e86">Więcej...</a><br /></td></tr>
+<tr class="separator:a799ea3847ff38d544b4d49189eb69e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a31e6dae45b6b0b22d4494593eb6b49ae"><td class="memItemLeft" align="right" valign="top">QSerialPort *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a31e6dae45b6b0b22d4494593eb6b49ae">mcu</a></td></tr>
+<tr class="memdesc:a31e6dae45b6b0b22d4494593eb6b49ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskaźnik na obiekt klasy QSerialPort. Definuje obiekt, umożliwiający połączenie oraz interakcję aplikacji z urządzeniem zewnętrznym.  <a href="classport.html#a31e6dae45b6b0b22d4494593eb6b49ae">Więcej...</a><br /></td></tr>
+<tr class="separator:a31e6dae45b6b0b22d4494593eb6b49ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87b5ed026d63f1a31140580155b83b66"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a87b5ed026d63f1a31140580155b83b66">serialData</a></td></tr>
+<tr class="separator:a87b5ed026d63f1a31140580155b83b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9255ec3763e26a0809f3c1c9772803df"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a9255ec3763e26a0809f3c1c9772803df">serialBuffer</a></td></tr>
+<tr class="separator:a9255ec3763e26a0809f3c1c9772803df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a240da3fad7f3cd61596cde5225dda"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#ac7a240da3fad7f3cd61596cde5225dda">checkSUM</a></td></tr>
+<tr class="memdesc:ac7a240da3fad7f3cd61596cde5225dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna potrzebna do obliczenia sumy kontrolnej.  <a href="classport.html#ac7a240da3fad7f3cd61596cde5225dda">Więcej...</a><br /></td></tr>
+<tr class="separator:ac7a240da3fad7f3cd61596cde5225dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d91402ab6f9063c02fdc1c815e0772"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a18d91402ab6f9063c02fdc1c815e0772">checkSync</a></td></tr>
+<tr class="memdesc:a18d91402ab6f9063c02fdc1c815e0772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zmienna przechowująca znak synchronizacji zapisany w systemie szestnastkowym.  <a href="classport.html#a18d91402ab6f9063c02fdc1c815e0772">Więcej...</a><br /></td></tr>
+<tr class="separator:a18d91402ab6f9063c02fdc1c815e0772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa6cb2cb2f1e1cb97ed36a65d232246"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a1aa6cb2cb2f1e1cb97ed36a65d232246">correctConvert</a></td></tr>
+<tr class="separator:a1aa6cb2cb2f1e1cb97ed36a65d232246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc8828bb8b31bab25bdca473e4d2abfa"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#adc8828bb8b31bab25bdca473e4d2abfa">pom</a></td></tr>
+<tr class="separator:adc8828bb8b31bab25bdca473e4d2abfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba7a08a02f1a3ab39e37589a05aa0a4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classport.html#a4ba7a08a02f1a3ab39e37589a05aa0a4">pom_g</a></td></tr>
+<tr class="separator:a4ba7a08a02f1a3ab39e37589a05aa0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa modeluje obiekt typu port. Posiada niezbęde atrybuty, sloty oraz sygnały umożliwiające nawiązanie połączenia z zewnątrznym urządzeniem. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00010">10</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a5f40cbc450a8b0342a79b6e7ca4886e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f40cbc450a8b0342a79b6e7ca4886e9">&#9670;&nbsp;</a></span>port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">port::port </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="port_8cpp_source.html#l00007">7</a> pliku <a class="el" href="port_8cpp_source.html">port.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acd903c84068e3b7829d0688ae4aad58e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd903c84068e3b7829d0688ae4aad58e">&#9670;&nbsp;</a></span>~port()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">port::~port </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="port_8cpp_source.html#l00012">12</a> pliku <a class="el" href="port_8cpp_source.html">port.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a70ef1817cd20c1f06eb91bb33edbb680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70ef1817cd20c1f06eb91bb33edbb680">&#9670;&nbsp;</a></span>ClosePort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void port::ClosePort </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot zamyka otwarty port szeregowy. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="port_8cpp_source.html#l00102">102</a> pliku <a class="el" href="port_8cpp_source.html">port.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a0bec8b815e7f3e959983d2500792778d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bec8b815e7f3e959983d2500792778d">&#9670;&nbsp;</a></span>OpenPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void port::OpenPort </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>portName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot konfiguruje i otwiera port szeregowy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">portName</td><td>- nazwa portu typu QString, sczytana z combobox'a. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="port_8cpp_source.html#l00065">65</a> pliku <a class="el" href="port_8cpp_source.html">port.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classport_a0bec8b815e7f3e959983d2500792778d_cgraph.png" border="0" usemap="#classport_a0bec8b815e7f3e959983d2500792778d_cgraph" alt=""/></div>
+<map name="classport_a0bec8b815e7f3e959983d2500792778d_cgraph" id="classport_a0bec8b815e7f3e959983d2500792778d_cgraph">
+<area shape="rect" title="Slot konfiguruje i otwiera port szeregowy." alt="" coords="5,5,112,32"/>
+<area shape="rect" href="classport.html#a799ea3847ff38d544b4d49189eb69e86" title="Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera." alt="" coords="160,5,264,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a29daafc7e56d50d600fe4ce709df6406"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29daafc7e56d50d600fe4ce709df6406">&#9670;&nbsp;</a></span>plotData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void port::plotData </td>
+          <td>(</td>
+          <td class="paramtype">QList&lt; float &gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sygnal emitowany po poprawnym odczytaniu danych w slocie <a class="el" href="classport.html#a799ea3847ff38d544b4d49189eb69e86" title="Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera.">readData()</a>. </p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classport_a29daafc7e56d50d600fe4ce709df6406_icgraph.png" border="0" usemap="#classport_a29daafc7e56d50d600fe4ce709df6406_icgraph" alt=""/></div>
+<map name="classport_a29daafc7e56d50d600fe4ce709df6406_icgraph" id="classport_a29daafc7e56d50d600fe4ce709df6406_icgraph">
+<area shape="rect" title="Sygnal emitowany po poprawnym odczytaniu danych w slocie readData()." alt="" coords="312,5,412,32"/>
+<area shape="rect" href="classport.html#a799ea3847ff38d544b4d49189eb69e86" title="Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera." alt="" coords="160,5,264,32"/>
+<area shape="rect" href="classport.html#a0bec8b815e7f3e959983d2500792778d" title="Slot konfiguruje i otwiera port szeregowy." alt="" coords="5,5,112,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a799ea3847ff38d544b4d49189eb69e86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a799ea3847ff38d544b4d49189eb69e86">&#9670;&nbsp;</a></span>readData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void port::readData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="port_8cpp_source.html#l00117">117</a> pliku <a class="el" href="port_8cpp_source.html">port.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classport_a799ea3847ff38d544b4d49189eb69e86_icgraph.png" border="0" usemap="#classport_a799ea3847ff38d544b4d49189eb69e86_icgraph" alt=""/></div>
+<map name="classport_a799ea3847ff38d544b4d49189eb69e86_icgraph" id="classport_a799ea3847ff38d544b4d49189eb69e86_icgraph">
+<area shape="rect" title="Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera." alt="" coords="160,5,264,32"/>
+<area shape="rect" href="classport.html#a0bec8b815e7f3e959983d2500792778d" title="Slot konfiguruje i otwiera port szeregowy." alt="" coords="5,5,112,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa88ff772ccd4a2c3016bdf9111287430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa88ff772ccd4a2c3016bdf9111287430">&#9670;&nbsp;</a></span>reportStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void port::reportStatus </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sygnal emitowany po poprawnym skonfigurowaniu i podlaczeniu urzadzenia. </p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="classport_aa88ff772ccd4a2c3016bdf9111287430_icgraph.png" border="0" usemap="#classport_aa88ff772ccd4a2c3016bdf9111287430_icgraph" alt=""/></div>
+<map name="classport_aa88ff772ccd4a2c3016bdf9111287430_icgraph" id="classport_aa88ff772ccd4a2c3016bdf9111287430_icgraph">
+<area shape="rect" title="Sygnal emitowany po poprawnym skonfigurowaniu i podlaczeniu urzadzenia." alt="" coords="163,31,285,57"/>
+<area shape="rect" href="classport.html#a70ef1817cd20c1f06eb91bb33edbb680" title="Slot zamyka otwarty port szeregowy." alt="" coords="5,5,115,32"/>
+<area shape="rect" href="classport.html#a0bec8b815e7f3e959983d2500792778d" title="Slot konfiguruje i otwiera port szeregowy." alt="" coords="7,56,113,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="ac7a240da3fad7f3cd61596cde5225dda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7a240da3fad7f3cd61596cde5225dda">&#9670;&nbsp;</a></span>checkSUM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint port::checkSUM</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zmienna potrzebna do obliczenia sumy kontrolnej. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00033">33</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+
+</div>
+</div>
+<a id="a18d91402ab6f9063c02fdc1c815e0772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d91402ab6f9063c02fdc1c815e0772">&#9670;&nbsp;</a></span>checkSync</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint port::checkSync</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zmienna przechowująca znak synchronizacji zapisany w systemie szestnastkowym. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00037">37</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+
+</div>
+</div>
+<a id="a1aa6cb2cb2f1e1cb97ed36a65d232246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1aa6cb2cb2f1e1cb97ed36a65d232246">&#9670;&nbsp;</a></span>correctConvert</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool port::correctConvert</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00038">38</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+
+</div>
+</div>
+<a id="a31e6dae45b6b0b22d4494593eb6b49ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31e6dae45b6b0b22d4494593eb6b49ae">&#9670;&nbsp;</a></span>mcu</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSerialPort* port::mcu</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Wskaźnik na obiekt klasy QSerialPort. Definuje obiekt, umożliwiający połączenie oraz interakcję aplikacji z urządzeniem zewnętrznym. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00027">27</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+
+</div>
+</div>
+<a id="adc8828bb8b31bab25bdca473e4d2abfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc8828bb8b31bab25bdca473e4d2abfa">&#9670;&nbsp;</a></span>pom</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t port::pom</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00039">39</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+
+</div>
+</div>
+<a id="a4ba7a08a02f1a3ab39e37589a05aa0a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ba7a08a02f1a3ab39e37589a05aa0a4">&#9670;&nbsp;</a></span>pom_g</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float port::pom_g</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00040">40</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+
+</div>
+</div>
+<a id="a9255ec3763e26a0809f3c1c9772803df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9255ec3763e26a0809f3c1c9772803df">&#9670;&nbsp;</a></span>serialBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString port::serialBuffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00029">29</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+
+</div>
+</div>
+<a id="a87b5ed026d63f1a31140580155b83b66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87b5ed026d63f1a31140580155b83b66">&#9670;&nbsp;</a></span>serialData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray port::serialData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="port_8h_source.html#l00028">28</a> pliku <a class="el" href="port_8h_source.html">port.h</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="port_8h_source.html">port.h</a></li>
+<li><a class="el" href="port_8cpp_source.html">port.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classport.html">port</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

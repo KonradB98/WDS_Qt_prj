@@ -1,0 +1,10 @@
+<map id="Health.h" name="Health.h">
+<area shape="rect" id="node1" title=" " alt="" coords="159,5,230,32"/>
+<area shape="rect" id="node2" href="$gamewin_8h.html" title=" " alt="" coords="99,80,183,107"/>
+<area shape="rect" id="node8" href="$_health_8cpp.html" title=" " alt="" coords="207,80,291,107"/>
+<area shape="rect" id="node3" href="$gamewin_8cpp.html" title=" " alt="" coords="5,155,104,181"/>
+<area shape="rect" id="node4" href="$_gate_8cpp.html" title=" " alt="" coords="101,229,176,256"/>
+<area shape="rect" id="node5" href="$mainwindow_8h.html" title=" " alt="" coords="183,155,286,181"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title="Zawiera funkcję główną programu." alt="" coords="200,229,275,256"/>
+<area shape="rect" id="node7" href="$mainwindow_8cpp.html" title=" " alt="" coords="299,229,416,256"/>
+</map>

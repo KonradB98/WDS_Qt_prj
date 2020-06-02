@@ -1,0 +1,5 @@
+<map id="SetWindow::addLogs" name="SetWindow::addLogs">
+<area shape="rect" id="node1" title="Funkcja wpisujaca logi do pola tekstowego." alt="" coords="236,46,381,73"/>
+<area shape="rect" id="node2" href="$class_set_window.html#ac32efd3b727186cc24d7b625311448e9" title="Przycisk umożliwiający podłączenie mikrokontrolera do aplikacji." alt="" coords="5,5,188,47"/>
+<area shape="rect" id="node3" href="$class_set_window.html#a704d3a7e767e4d950da90012c591b989" title="Przycisk umożliwiający przeszukanie urządzeń podłączonych do komputera przez port szeregowy COM...." alt="" coords="5,71,188,112"/>
+</map>

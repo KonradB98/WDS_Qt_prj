@@ -4,14 +4,8 @@
 #include <QDebug>
 #include <QPointer>
 
-//Zmienne do rysowania wykresow
-float t = 0;
-float range = 20;
-int axis = 0;
-QString os = "X";
 //Zmienna wskaznikowa globalna do utworzenia rozgrywki
 Gamewin *game;
-//QPointer<Gamewin> game;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -26,6 +20,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(&device,SIGNAL(reportStatus(const QString &)),this,SLOT(ifReport(const QString &)));//Aktualizuj StatusBar
     connect(&device,SIGNAL(plotData(QList<float>)),this,SLOT(makePlot(QList<float>)));//Rysuj wykres
+
+    os = "X";
 }
 
 MainWindow::~MainWindow()
@@ -55,14 +51,18 @@ void MainWindow::makePlot(QList<float> acc_dat)
 {
     //os = "X";
     ui->customPlot->addGraph();
+    ui->customPlot->setBackground(QColor(102, 102, 102));
     if(axis == 0){
         ui->customPlot->graph(0)->addData(t,acc_dat.at(0));
+        ui->customPlot->graph(0)->setPen(QPen(QColor(153, 187, 255),2));
     }
     else if(axis == 1){
        ui->customPlot->graph(0)->addData(t,acc_dat.at(1));
+       ui->customPlot->graph(0)->setPen(QPen(QColor(255, 128, 128),2));
     }
     else{
         ui->customPlot->graph(0)->addData(t,acc_dat.at(2));
+        ui->customPlot->graph(0)->setPen(QPen(QColor(77, 0, 77),2));
     }
     // give the axes some labels:
     ui->customPlot->xAxis->setLabel("t [s]");

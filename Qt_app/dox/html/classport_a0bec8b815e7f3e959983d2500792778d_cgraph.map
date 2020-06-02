@@ -1,0 +1,4 @@
+<map id="port::OpenPort" name="port::OpenPort">
+<area shape="rect" id="node1" title="Slot konfiguruje i otwiera port szeregowy." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$classport.html#a799ea3847ff38d544b4d49189eb69e86" title="Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera." alt="" coords="160,5,264,32"/>
+</map>

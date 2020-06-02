@@ -1,0 +1,632 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Skier Game: Dokumentacja klasy MainWindow</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo1.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Skier Game
+   &#160;<span id="projectnumber">v 1.0</span>
+   </div>
+   <div id="projectbrief">Wizualizacja Danych Sensorycznych - Projekt, Konrad Bajak</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('class_main_window.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pub-attribs">Atrybuty publiczne</a> &#124;
+<a href="#pri-slots">Sloty prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="class_main_window-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja klasy MainWindow</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa <a class="el" href="class_main_window.html" title="Klasa MainWindow Klasa odpowiada za główne menu aplikacji, dziedziczy po QMainWindow....">MainWindow</a> Klasa odpowiada za główne menu aplikacji, dziedziczy po QMainWindow. <br  />
+Posiada atrybuty odpowiedzialne za wykresy, okno ustawień połączenia oraz samo urządzenie.  
+ <a href="class_main_window.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla MainWindow</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window__inherit__graph.png" border="0" usemap="#_main_window_inherit__map" alt="Inheritance graph"/></div>
+<map name="_main_window_inherit__map" id="_main_window_inherit__map">
+<area shape="rect" title="Klasa MainWindow Klasa odpowiada za główne menu aplikacji, dziedziczy po QMainWindow...." alt="" coords="11,80,107,107"/>
+<area shape="rect" title=" " alt="" coords="5,5,112,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<div class="dynheader">
+Diagram współpracy dla MainWindow:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window__coll__graph.png" border="0" usemap="#_main_window_coll__map" alt="Collaboration graph"/></div>
+<map name="_main_window_coll__map" id="_main_window_coll__map">
+<area shape="rect" title="Klasa MainWindow Klasa odpowiada za główne menu aplikacji, dziedziczy po QMainWindow...." alt="" coords="51,171,147,197"/>
+<area shape="rect" title=" " alt="" coords="5,5,112,32"/>
+<area shape="rect" href="class_set_window.html" title="Klasa modeluje wygląd okna ustawień" alt="" coords="55,81,143,108"/>
+<area shape="rect" href="classport.html" title="Klasa modeluje obiekt typu port. Posiada niezbęde atrybuty, sloty oraz sygnały umożliwiające nawiązan..." alt="" coords="167,81,211,108"/>
+<area shape="rect" title=" " alt="" coords="154,5,225,32"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a996c5a2b6f77944776856f08ec30858d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">MainWindow</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a996c5a2b6f77944776856f08ec30858d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor parametryczny głównego okna aplikacji.  <a href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d">Więcej...</a><br /></td></tr>
+<tr class="separator:a996c5a2b6f77944776856f08ec30858d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">~MainWindow</a> ()</td></tr>
+<tr class="memdesc:ae98d00a93bc118200eeef9f9bba1dba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor głównego okna aplikacji.  <a href="class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7">Więcej...</a><br /></td></tr>
+<tr class="separator:ae98d00a93bc118200eeef9f9bba1dba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Atrybuty publiczne</h2></td></tr>
+<tr class="memitem:a7c532374be7dd4598178084bc0692819"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a7c532374be7dd4598178084bc0692819">t</a> = 0</td></tr>
+<tr class="separator:a7c532374be7dd4598178084bc0692819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fcabbd3601f07b9399318db16e624d5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a6fcabbd3601f07b9399318db16e624d5">range</a> = 20</td></tr>
+<tr class="separator:a6fcabbd3601f07b9399318db16e624d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148d1428d85a7d263efd8f3ee72d32cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a148d1428d85a7d263efd8f3ee72d32cc">axis</a> = 0</td></tr>
+<tr class="separator:a148d1428d85a7d263efd8f3ee72d32cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbfcc14a05f971e48a22a90259ba30d3"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#adbfcc14a05f971e48a22a90259ba30d3">os</a></td></tr>
+<tr class="separator:adbfcc14a05f971e48a22a90259ba30d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Sloty prywatne</h2></td></tr>
+<tr class="memitem:a74bf7ec51582db3d2d98265b66afc0cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a74bf7ec51582db3d2d98265b66afc0cc">on_pushButtonConnect_clicked</a> ()</td></tr>
+<tr class="memdesc:a74bf7ec51582db3d2d98265b66afc0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot otwierający okno ustawień połączenia z mikrokontrolerem.  <a href="class_main_window.html#a74bf7ec51582db3d2d98265b66afc0cc">Więcej...</a><br /></td></tr>
+<tr class="separator:a74bf7ec51582db3d2d98265b66afc0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96b4b5caa6927edce39351a218c5d26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#ad96b4b5caa6927edce39351a218c5d26">ifReport</a> (const QString &amp;message)</td></tr>
+<tr class="memdesc:ad96b4b5caa6927edce39351a218c5d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot aktualizujący pasek statusowy.  <a href="class_main_window.html#ad96b4b5caa6927edce39351a218c5d26">Więcej...</a><br /></td></tr>
+<tr class="separator:ad96b4b5caa6927edce39351a218c5d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a024e5e1be2dd79d0a19508bf0b7d651d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a024e5e1be2dd79d0a19508bf0b7d651d">makePlot</a> (QList&lt; float &gt; acc_dat)</td></tr>
+<tr class="memdesc:a024e5e1be2dd79d0a19508bf0b7d651d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot rysujący wykres w zakładce "plots".  <a href="class_main_window.html#a024e5e1be2dd79d0a19508bf0b7d651d">Więcej...</a><br /></td></tr>
+<tr class="separator:a024e5e1be2dd79d0a19508bf0b7d651d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bb7c5be3b758428872525dad6877d78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a3bb7c5be3b758428872525dad6877d78">on_pushButtonX_clicked</a> ()</td></tr>
+<tr class="memdesc:a3bb7c5be3b758428872525dad6877d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przycisk przełączający wyświetlanie na wykresie danych z osi X.  <a href="class_main_window.html#a3bb7c5be3b758428872525dad6877d78">Więcej...</a><br /></td></tr>
+<tr class="separator:a3bb7c5be3b758428872525dad6877d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ba9c36f2b0f5ecf4c5091b7be8ca0c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a1ba9c36f2b0f5ecf4c5091b7be8ca0c7">on_pushButtonY_clicked</a> ()</td></tr>
+<tr class="memdesc:a1ba9c36f2b0f5ecf4c5091b7be8ca0c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przycisk przełączający wyświetlanie na wykresie danych z osi Y.  <a href="class_main_window.html#a1ba9c36f2b0f5ecf4c5091b7be8ca0c7">Więcej...</a><br /></td></tr>
+<tr class="separator:a1ba9c36f2b0f5ecf4c5091b7be8ca0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12cf88402a93adef89645ba4e4cb7be1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a12cf88402a93adef89645ba4e4cb7be1">on_pushButton_3_clicked</a> ()</td></tr>
+<tr class="memdesc:a12cf88402a93adef89645ba4e4cb7be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przycisk przełączający wyświetlanie na wykresie danych z osi Z.  <a href="class_main_window.html#a12cf88402a93adef89645ba4e4cb7be1">Więcej...</a><br /></td></tr>
+<tr class="separator:a12cf88402a93adef89645ba4e4cb7be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda898912761f267a586cb1b436e3c71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#aeda898912761f267a586cb1b436e3c71">on_pushButtonPlay_clicked</a> ()</td></tr>
+<tr class="memdesc:aeda898912761f267a586cb1b436e3c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przycisk uruchamiający nową grę.  <a href="class_main_window.html#aeda898912761f267a586cb1b436e3c71">Więcej...</a><br /></td></tr>
+<tr class="separator:aeda898912761f267a586cb1b436e3c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a35466a70ed47252a0191168126a352a5"><td class="memItemLeft" align="right" valign="top">Ui::MainWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#a35466a70ed47252a0191168126a352a5">ui</a></td></tr>
+<tr class="separator:a35466a70ed47252a0191168126a352a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87e61310bf1f584b49bb20c40034a8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_set_window.html">SetWindow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#aa87e61310bf1f584b49bb20c40034a8d">sw</a></td></tr>
+<tr class="separator:aa87e61310bf1f584b49bb20c40034a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1df47b34e48a983d3b73555010b1f06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classport.html">port</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html#af1df47b34e48a983d3b73555010b1f06">device</a></td></tr>
+<tr class="separator:af1df47b34e48a983d3b73555010b1f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa <a class="el" href="class_main_window.html" title="Klasa MainWindow Klasa odpowiada za główne menu aplikacji, dziedziczy po QMainWindow....">MainWindow</a> Klasa odpowiada za główne menu aplikacji, dziedziczy po QMainWindow. <br  />
+Posiada atrybuty odpowiedzialne za wykresy, okno ustawień połączenia oraz samo urządzenie. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00019">19</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a996c5a2b6f77944776856f08ec30858d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a996c5a2b6f77944776856f08ec30858d">&#9670;&nbsp;</a></span>MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::MainWindow </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor parametryczny głównego okna aplikacji. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>- wskażnik rodzica ustawiony na NULL pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00010">10</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywołań dla tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph.png" border="0" usemap="#class_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph" alt=""/></div>
+<map name="class_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph" id="class_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph">
+<area shape="rect" title="Konstruktor parametryczny głównego okna aplikacji." alt="" coords="5,31,184,57"/>
+<area shape="rect" href="class_main_window.html#ad96b4b5caa6927edce39351a218c5d26" title="Slot aktualizujący pasek statusowy." alt="" coords="237,5,385,32"/>
+<area shape="rect" href="class_main_window.html#a024e5e1be2dd79d0a19508bf0b7d651d" title="Slot rysujący wykres w zakładce &quot;plots&quot;." alt="" coords="232,56,391,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae98d00a93bc118200eeef9f9bba1dba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae98d00a93bc118200eeef9f9bba1dba7">&#9670;&nbsp;</a></span>~MainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindow::~MainWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destruktor głównego okna aplikacji. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00027">27</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="ad96b4b5caa6927edce39351a218c5d26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad96b4b5caa6927edce39351a218c5d26">&#9670;&nbsp;</a></span>ifReport</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::ifReport </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>message</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot aktualizujący pasek statusowy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td>- string zawierający tekst wyświetlany w pasku statusowym. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00045">45</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_ad96b4b5caa6927edce39351a218c5d26_icgraph.png" border="0" usemap="#class_main_window_ad96b4b5caa6927edce39351a218c5d26_icgraph" alt=""/></div>
+<map name="class_main_window_ad96b4b5caa6927edce39351a218c5d26_icgraph" id="class_main_window_ad96b4b5caa6927edce39351a218c5d26_icgraph">
+<area shape="rect" title="Slot aktualizujący pasek statusowy." alt="" coords="232,5,380,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Konstruktor parametryczny głównego okna aplikacji." alt="" coords="5,5,184,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a024e5e1be2dd79d0a19508bf0b7d651d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a024e5e1be2dd79d0a19508bf0b7d651d">&#9670;&nbsp;</a></span>makePlot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::makePlot </td>
+          <td>(</td>
+          <td class="paramtype">QList&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>acc_dat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot rysujący wykres w zakładce "plots". </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">acc_dat</td><td>- dane z akcelerometru w postaci listy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00050">50</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_main_window_a024e5e1be2dd79d0a19508bf0b7d651d_icgraph.png" border="0" usemap="#class_main_window_a024e5e1be2dd79d0a19508bf0b7d651d_icgraph" alt=""/></div>
+<map name="class_main_window_a024e5e1be2dd79d0a19508bf0b7d651d_icgraph" id="class_main_window_a024e5e1be2dd79d0a19508bf0b7d651d_icgraph">
+<area shape="rect" title="Slot rysujący wykres w zakładce &quot;plots&quot;." alt="" coords="232,5,391,32"/>
+<area shape="rect" href="class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="Konstruktor parametryczny głównego okna aplikacji." alt="" coords="5,5,184,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a12cf88402a93adef89645ba4e4cb7be1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12cf88402a93adef89645ba4e4cb7be1">&#9670;&nbsp;</a></span>on_pushButton_3_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_pushButton_3_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Przycisk przełączający wyświetlanie na wykresie danych z osi Z. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00100">100</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a74bf7ec51582db3d2d98265b66afc0cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74bf7ec51582db3d2d98265b66afc0cc">&#9670;&nbsp;</a></span>on_pushButtonConnect_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_pushButtonConnect_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Slot otwierający okno ustawień połączenia z mikrokontrolerem. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00033">33</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aeda898912761f267a586cb1b436e3c71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeda898912761f267a586cb1b436e3c71">&#9670;&nbsp;</a></span>on_pushButtonPlay_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_pushButtonPlay_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Przycisk uruchamiający nową grę. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00038">38</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a3bb7c5be3b758428872525dad6877d78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bb7c5be3b758428872525dad6877d78">&#9670;&nbsp;</a></span>on_pushButtonX_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_pushButtonX_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Przycisk przełączający wyświetlanie na wykresie danych z osi X. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00084">84</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1ba9c36f2b0f5ecf4c5091b7be8ca0c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba9c36f2b0f5ecf4c5091b7be8ca0c7">&#9670;&nbsp;</a></span>on_pushButtonY_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindow::on_pushButtonY_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Przycisk przełączający wyświetlanie na wykresie danych z osi Y. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00092">92</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a148d1428d85a7d263efd8f3ee72d32cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148d1428d85a7d263efd8f3ee72d32cc">&#9670;&nbsp;</a></span>axis</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainWindow::axis = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00037">37</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="af1df47b34e48a983d3b73555010b1f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1df47b34e48a983d3b73555010b1f06">&#9670;&nbsp;</a></span>device</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classport.html">port</a> MainWindow::device</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00077">77</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="adbfcc14a05f971e48a22a90259ba30d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbfcc14a05f971e48a22a90259ba30d3">&#9670;&nbsp;</a></span>os</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MainWindow::os</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00038">38</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a6fcabbd3601f07b9399318db16e624d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fcabbd3601f07b9399318db16e624d5">&#9670;&nbsp;</a></span>range</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainWindow::range = 20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00036">36</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="aa87e61310bf1f584b49bb20c40034a8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa87e61310bf1f584b49bb20c40034a8d">&#9670;&nbsp;</a></span>sw</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_set_window.html">SetWindow</a> MainWindow::sw</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00075">75</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a7c532374be7dd4598178084bc0692819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c532374be7dd4598178084bc0692819">&#9670;&nbsp;</a></span>t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainWindow::t = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00035">35</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a35466a70ed47252a0191168126a352a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35466a70ed47252a0191168126a352a5">&#9670;&nbsp;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::MainWindow* MainWindow::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00074">74</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="mainwindow_8h_source.html">mainwindow.h</a></li>
+<li><a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_main_window.html">MainWindow</a></li>
+    <li class="footer">Wygenerowano przez
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

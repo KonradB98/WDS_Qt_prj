@@ -1,0 +1,5 @@
+<map id="port::reportStatus" name="port::reportStatus">
+<area shape="rect" id="node1" title="Sygnal emitowany po poprawnym skonfigurowaniu i podlaczeniu urzadzenia." alt="" coords="163,31,285,57"/>
+<area shape="rect" id="node2" href="$classport.html#a70ef1817cd20c1f06eb91bb33edbb680" title="Slot zamyka otwarty port szeregowy." alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node3" href="$classport.html#a0bec8b815e7f3e959983d2500792778d" title="Slot konfiguruje i otwiera port szeregowy." alt="" coords="7,56,113,83"/>
+</map>

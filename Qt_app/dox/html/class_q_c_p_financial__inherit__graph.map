@@ -1,0 +1,9 @@
+<map id="QCPFinancial" name="QCPFinancial">
+<area shape="rect" id="node1" title="A plottable representing a financial stock chart." alt="" coords="95,428,197,455"/>
+<area shape="rect" id="node2" href="$class_q_c_p_abstract_plottable1_d.html" title=" " alt="" coords="63,337,229,379"/>
+<area shape="rect" id="node3" href="$class_q_c_p_abstract_plottable.html" title="The abstract base class for all data representing objects in a plot." alt="" coords="212,157,363,184"/>
+<area shape="rect" id="node7" href="$class_q_c_p_abstract_plottable1_d.html" title="A template base class for plottables with one&#45;dimensional data." alt="" coords="97,233,264,275"/>
+<area shape="rect" id="node4" href="$class_q_c_p_layerable.html" title="Base class for all drawable objects." alt="" coords="234,81,341,108"/>
+<area shape="rect" id="node5" title=" " alt="" coords="252,5,323,32"/>
+<area shape="rect" id="node6" href="$class_q_c_p_plottable_interface1_d.html" title="Defines an abstract interface for one&#45;dimensional plottables." alt="" coords="5,157,172,184"/>
+</map>

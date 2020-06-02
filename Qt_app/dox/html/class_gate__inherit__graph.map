@@ -1,0 +1,5 @@
+<map id="Gate" name="Gate">
+<area shape="rect" id="node1" title="Klasa Gate Klasa modeluje przeszkody obecne w postaci niebieskich bramek w grze." alt="" coords="83,80,134,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,76,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="100,5,253,32"/>
+</map>

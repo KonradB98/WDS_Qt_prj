@@ -1,0 +1,5 @@
+<map id="Health::decrease" name="Health::decrease">
+<area shape="rect" id="node1" title="Funkcja odpowiada za pomniejszenie wyniku o 1." alt="" coords="308,5,428,32"/>
+<area shape="rect" id="node2" href="$class_gate.html#a0ee4e42d768a522de2cd348451ae6a9c" title="Slot odpowiadający za poruszanie się przeszkody (bramki) w dół sceny." alt="" coords="140,5,260,32"/>
+<area shape="rect" id="node3" href="$class_gate.html#a204aaaa33396f2a1f4a5de4cee3956b8" title="Konstruktor parametryczny." alt="" coords="5,5,92,32"/>
+</map>

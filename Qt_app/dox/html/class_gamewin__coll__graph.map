@@ -1,0 +1,10 @@
+<map id="Gamewin" name="Gamewin">
+<area shape="rect" id="node1" title="Klasa Gamewindow Klasa modeluje całą rozgrywkę. &#160;Posiada wszystkie obiekty występujące w grze." alt="" coords="129,171,205,197"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,81,73,108"/>
+<area shape="rect" id="node3" href="$class_health.html" title="Klasa Health Klasa odpowiada za atrybut gracza jakim jest zdrowie." alt="" coords="98,81,157,108"/>
+<area shape="rect" id="node4" title=" " alt="" coords="84,5,219,32"/>
+<area shape="rect" id="node5" href="$class_score.html" title="Klasa modeluje wynik gry Dziedziczy po QGraphicsTextItem i posiada niezbędne atrybuty oraz funkcję do..." alt="" coords="181,81,237,108"/>
+<area shape="rect" id="node6" href="$class_player.html" title="Klasa Player Klasa zawiera konstruktor oraz sloty potrzebne do interakcji z postacią (poruszanie oraz..." alt="" coords="261,81,319,108"/>
+<area shape="rect" id="node7" title=" " alt="" coords="248,5,319,32"/>
+<area shape="rect" id="node8" title=" " alt="" coords="343,5,496,32"/>
+</map>

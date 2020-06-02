@@ -1,0 +1,4 @@
+<map id="port::readData" name="port::readData">
+<area shape="rect" id="node1" title="Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera." alt="" coords="160,5,264,32"/>
+<area shape="rect" id="node2" href="$classport.html#a0bec8b815e7f3e959983d2500792778d" title="Slot konfiguruje i otwiera port szeregowy." alt="" coords="5,5,112,32"/>
+</map>
