@@ -15,7 +15,8 @@ class Finishwin;
 }
 /*!
  * \brief Klasa Finishwin
- * Klasa modeluje wygląd okna, które pokazywane jest po osiągnięciu przez gracza wartości życia równą 0.
+ * Klasa modeluje wygląd okna, które wyświetlane jest po zakończeniu rozgrywki -- kiedy wartość życia gracza jest
+ * równa 0.
  */
 class Finishwin : public QDialog
 {
@@ -24,7 +25,7 @@ class Finishwin : public QDialog
 public:
     /*!
      * \brief Konstruktor klasy Finishwin
-     * \param[in] parent - wskaźnik na rodzica ustawiony na NULL.
+     * \param[in] parent - wskaźnik na rodzica ustawiony na NULL pointer.
      */
     explicit Finishwin(QWidget *parent = nullptr);
     /*!
@@ -36,12 +37,14 @@ private slots:
 
     /*!
      * \brief Slot on_pushButtonClose_clicked
-     * Po wciśnięciu przycisku "Close", okno zostaje zamknięte oraz zostaje usunięta rozgrywka.
+     * Po wciśnięciu przycisku "Close", okno zostaje zamknięte i usunięte oraz zostaje usunięty obiekt klasy Gamewin,
+     * który odpowiedzialny jest za rozegraną partię.
      */
     void on_pushButtonClose_clicked();
     /*!
      * \brief Slot gameOver_slt
      * \param[in] score - wynik rozgrywki w postaci liczby całkowitej.
+     * Slot wyświetla na wirtualnym wyświetlaczu LCD wynik osiągnięty przez gracza.
      */
     void gameOver_slt(int score);
 

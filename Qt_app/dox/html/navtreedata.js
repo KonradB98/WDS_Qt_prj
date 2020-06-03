@@ -29,7 +29,8 @@ var NAVTREE =
       [ "Opis ogólny", "index.html#etykieta-opis", null ],
       [ "Menu", "index.html#etykieta-main", null ],
       [ "Okno gry", "index.html#etykieta-game", null ],
-      [ "Okno ustawień", "index.html#etykieta-setings", null ]
+      [ "Okno ustawień", "index.html#etykieta-setings", null ],
+      [ "Okno końca rozgrywki", "index.html#etykieta-fin", null ]
     ] ],
     [ "Przestrzenie nazw", "namespaces.html", [
       [ "Lista przestrzeni nazw", "namespaces.html", "namespaces_dup" ],
@@ -81,7 +82,7 @@ var NAVTREEINDEX =
 "class_q_c_p_line_ending.html#a5ef16e6876b4b74959c7261d8d4c2cd5a61f78ee8f375fb21cb9d250687bbcbd2",
 "class_q_c_p_selection_rect.html#ae255dec12cd531071115bd667f0fd815",
 "class_q_custom_plot.html#aabb974d71ce96c137dc04eb6eab844fe",
-"qcustomplot_8h.html#a17844f19e1019693a953e1eb93536d2faae8fcfaafee234ce18558afef83f6a78"
+"qcustomplot_8h.html#a17844f19e1019693a953e1eb93536d2fa50d3657dba3fb90560b93a823cb0a6e8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -32,7 +32,7 @@ class Gamewin : public QDialog
 public:
     /*!
      * \brief Konstruktor obiektu klasy Gamewin
-     * \param[in] parent - rodzic ustawiony na NULL pointer.
+     * \param[in] parent - rodzic ustawiony na NULL.
      */
     explicit Gamewin(QWidget *parent = nullptr);
     /*!

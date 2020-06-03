@@ -23,7 +23,7 @@ class Player:public QObject, public QGraphicsPixmapItem{
 public:
     /*!
      * \brief Konstruktor klasy Player
-     * \param[in] parent - ustawienie rodzica na NULL pointer
+     * \param[in] parent - ustawienie rodzica na NULL.
      */
     Player(QGraphicsItem *parent = NULL);
 public slots:

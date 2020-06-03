@@ -18,7 +18,7 @@ class Health: public QGraphicsTextItem{
 public:
     /*!
      * \brief Konstruktor klasy Health
-     * \param[in] parent - rodzic obiektu ustawiony na NULL pointer.
+     * \param[in] parent - rodzic obiektu ustawiony na 0.
      */
     Health(QGraphicsItem * parent=0);
     /*!

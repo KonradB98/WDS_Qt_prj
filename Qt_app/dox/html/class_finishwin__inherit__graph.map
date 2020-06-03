@@ -1,4 +1,4 @@
 <map id="Finishwin" name="Finishwin">
-<area shape="rect" id="node1" title="Klasa Finishwin Klasa modeluje wygląd okna, które pokazywane jest po osiągnięciu przez gracza wartośc..." alt="" coords="5,80,81,107"/>
+<area shape="rect" id="node1" title="Klasa Finishwin Klasa modeluje wygląd okna, które wyświetlane jest po zakończeniu rozgrywki – kiedy w..." alt="" coords="5,80,81,107"/>
 <area shape="rect" id="node2" title=" " alt="" coords="9,5,77,32"/>
 </map>

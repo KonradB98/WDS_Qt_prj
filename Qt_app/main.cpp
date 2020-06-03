@@ -8,7 +8,8 @@
  * Gra polega na takim sterowaniu tytułowym narciarzem, aby omijał on przeszkody (bramki) spadające w dół ekranu. \n
  * Za każdym razem kiedy postać uderzy w przeszkodę, wartość życia narciarza ulega pomniejszeniu o jeden. Punktacja
  * liczona jest wprost proporcjonalnie do ominiętych bramek tj. ilość bramek, które nie dotknięte przez narciarza znikną
- * z ekranu gry. Gra kończy się w momencie kiedy główna postać trzykrotnie uderzy w bramki. \n
+ * z ekranu gry. Gra kończy się w momencie kiedy główna postać trzykrotnie uderzy w bramki. Po tym zdarzeniu wyświetlane
+ * jest nowe okno informujące o wyniku zakończonej rozgrywki. \n
  * Sterowanie narciarzem odbywa się za pomocą danych z akcelerometru umieszczonego na płytce rozwojowej.
  *
  * \section etykieta-main Menu
@@ -28,6 +29,11 @@
  * Umożliwia ono wyszukanie oraz wybór urządzenia podłączonego poprzez port szeregowy do komputera. Jeśli mikrokontroler
  * podłączony do komputera, możliwe jest nawiązanie połączenia poprzez wciśnięcie przycisku "Connect". Aby odłączyć
  * urządzenie od aplikacji należy wcisnąć czerwony przycisk "Disconnect".
+ *
+ * \section etykieta-fin Okno końca rozgrywki
+ * Okno końca rozgrywki wyświetlane jest w momencie osiągnięcia przez gracza wartości zdrowia równej 0.\n
+ * W górnej części pojawia się komunikat o końcu rozgrywki, a na wirtualnym wyświetlaczu LCD pokazany jest osiągnięty
+ * wynik.
  *
  */
 

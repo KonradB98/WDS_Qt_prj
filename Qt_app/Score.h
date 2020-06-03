@@ -18,7 +18,7 @@ class Score: public QGraphicsTextItem{
 public:
     /*!
      * \brief Konstruktor klasy Score
-     * \param[in] parent - wskaźnik na rodzica ustawiony na NULL pointer.
+     * \param[in] parent - wskaźnik na rodzica ustawiony na 0.
      */
     Score(QGraphicsItem * parent=0);
     /*!
