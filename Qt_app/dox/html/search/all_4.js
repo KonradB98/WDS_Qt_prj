@@ -14,7 +14,7 @@ var searchData=
   ['errorbarvisible_268',['errorBarVisible',['../class_q_c_p_error_bars.html#a5ad9abccb1be3df25485ad7dc21b3b89',1,'QCPErrorBars']]],
   ['errorminus_269',['errorMinus',['../class_q_c_p_error_bars_data.html#af8aaea160e52c14c57836224ee78020b',1,'QCPErrorBarsData']]],
   ['errorplus_270',['errorPlus',['../class_q_c_p_error_bars_data.html#ad1283c99fbfccf37a0226b1df52f0776',1,'QCPErrorBarsData']]],
-  ['errortype_271',['ErrorType',['../class_q_c_p_error_bars.html#a95f0220f11a72648b96480a85ce26474',1,'QCPErrorBars::ErrorType()'],['../class_q_c_p_error_bars.html#a527e7df83c98709cef22a8447fee4f13',1,'QCPErrorBars::errorType() const']]],
+  ['errortype_271',['errorType',['../class_q_c_p_error_bars.html#a527e7df83c98709cef22a8447fee4f13',1,'QCPErrorBars::errorType() const'],['../class_q_c_p_error_bars.html#a95f0220f11a72648b96480a85ce26474',1,'QCPErrorBars::ErrorType()']]],
   ['esbar_272',['esBar',['../class_q_c_p_line_ending.html#a5ef16e6876b4b74959c7261d8d4c2cd5a2cf543bbca332df26d89bf779f50469f',1,'QCPLineEnding']]],
   ['esdiamond_273',['esDiamond',['../class_q_c_p_line_ending.html#a5ef16e6876b4b74959c7261d8d4c2cd5a378fe5a8b768411b0bc1765210fe7200',1,'QCPLineEnding']]],
   ['esdisc_274',['esDisc',['../class_q_c_p_line_ending.html#a5ef16e6876b4b74959c7261d8d4c2cd5ae5a3414916817258bcc6dddd605e8f5c',1,'QCPLineEnding']]],

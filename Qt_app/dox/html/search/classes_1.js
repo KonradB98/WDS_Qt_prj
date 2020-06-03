@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['gamewin_1697',['Gamewin',['../class_gamewin.html',1,'']]],
-  ['gate_1698',['Gate',['../class_gate.html',1,'']]]
+  ['finishwin_1704',['Finishwin',['../class_finishwin.html',1,'']]]
 ];

@@ -28,7 +28,9 @@ public slots:
      * \brief Slot moveDown
      * Slot odpowiadający za poruszanie się przeszkody (bramki) w dół sceny.
      */
-    void moveDown(); //Slot porusza bramka w dol i sprawdza kolizje z graczem
+    void moveDown(); //Slot porusza bramka w dol i sprawdza kolizje z
+signals:
+    void sigGameOver(int scr);
 };
 
 #endif // GATE_H

@@ -69,6 +69,7 @@ public:
       * Obiekt odpowiedzialny za timer cyklicznie tworzący przeszkody w grze.
       */
      QTimer *tim1;
+
 public slots:
      /*!
      * \brief Slot odbierający dane
@@ -84,7 +85,6 @@ signals:
      * Sygnał odbierany jest przez obiekt klasy Player, aby umożliwić poruszanie graczem za pomocą danych z akcelerometru.
      */
     void passData(QList<float> acc_dat); // Emitwany po odebraniu danych z akcelerometru w slocie  getControlData()
-
 };
 
 #endif // GAMEWIN_H

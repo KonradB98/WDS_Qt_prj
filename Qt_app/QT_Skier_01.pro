@@ -20,6 +20,7 @@ SOURCES += \
     Health.cpp \
     Player.cpp \
     Score.cpp \
+    finishwin.cpp \
     gamewin.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -32,6 +33,7 @@ HEADERS += \
     Health.h \
     Player.h \
     Score.h \
+    finishwin.h \
     gamewin.h \
     mainwindow.h \
     port.h \
@@ -39,6 +41,7 @@ HEADERS += \
     setwindow.h
 
 FORMS += \
+    finishwin.ui \
     gamewin.ui \
     mainwindow.ui \
     setwindow.ui

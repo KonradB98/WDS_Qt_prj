@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['y_1646',['y',['../class_q_c_p_vector2_d.html#a6398fb643ba380d7961a4b208f4eecf1',1,'QCPVector2D']]],
-  ['yaxis_1647',['yAxis',['../class_q_custom_plot.html#af6fea5679725b152c14facd920b19367',1,'QCustomPlot']]],
-  ['yaxis2_1648',['yAxis2',['../class_q_custom_plot.html#af13fdc5bce7d0fabd640f13ba805c0b7',1,'QCustomPlot']]]
+  ['y_1652',['y',['../class_q_c_p_vector2_d.html#a6398fb643ba380d7961a4b208f4eecf1',1,'QCPVector2D']]],
+  ['yaxis_1653',['yAxis',['../class_q_custom_plot.html#af6fea5679725b152c14facd920b19367',1,'QCustomPlot']]],
+  ['yaxis2_1654',['yAxis2',['../class_q_custom_plot.html#af13fdc5bce7d0fabd640f13ba805c0b7',1,'QCustomPlot']]]
 ];

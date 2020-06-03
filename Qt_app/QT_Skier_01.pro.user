@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.12.1, 2020-06-03T01:50:15. -->
+<!-- Written by QtCreator 4.12.1, 2020-06-03T13:17:03. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -308,9 +308,8 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">QT_Skier_012</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/Konrad/Desktop/Materialy_studia/AiR_6sem/Wizualizacja_danych_sens/Projekt/Tesciki_proby/QT_Skier_01/Qt_app/QT_Skier_01.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Konrad/Desktop/Materialy_studia/AiR_6sem/Wizualizacja_danych_sens/Projekt/Tesciki_proby/QT_Skier_01/Qt_app/QT_Skier_01.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/Konrad/Desktop/xd/Qt_app/QT_Skier_01.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Konrad/Desktop/xd/Qt_app/QT_Skier_01.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>

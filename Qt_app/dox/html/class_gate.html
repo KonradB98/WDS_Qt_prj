@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('class_gate.html',''); initResizable();
 <div class="header">
   <div class="summary">
 <a href="#pub-slots">Sloty publiczne</a> &#124;
+<a href="#signals">Sygnały</a> &#124;
 <a href="#pub-methods">Metody publiczne</a> &#124;
 <a href="class_gate-members.html">Lista wszystkich składowych</a>  </div>
   <div class="headertitle">
@@ -124,6 +125,11 @@ Sloty publiczne</h2></td></tr>
 <tr class="memdesc:a0ee4e42d768a522de2cd348451ae6a9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot moveDown Slot odpowiadający za poruszanie się przeszkody (bramki) w dół sceny.  <a href="class_gate.html#a0ee4e42d768a522de2cd348451ae6a9c">Więcej...</a><br /></td></tr>
 <tr class="separator:a0ee4e42d768a522de2cd348451ae6a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
+Sygnały</h2></td></tr>
+<tr class="memitem:a2e38d600aab8b83293ab6e1def0a35ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gate.html#a2e38d600aab8b83293ab6e1def0a35ef">sigGameOver</a> (int scr)</td></tr>
+<tr class="separator:a2e38d600aab8b83293ab6e1def0a35ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Metody publiczne</h2></td></tr>
 <tr class="memitem:a204aaaa33396f2a1f4a5de4cee3956b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_gate.html#a204aaaa33396f2a1f4a5de4cee3956b8">Gate</a> (QGraphicsItem *parent=NULL)</td></tr>
@@ -159,17 +165,18 @@ Metody publiczne</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definicja w linii <a class="el" href="_gate_8cpp_source.html#l00015">15</a> pliku <a class="el" href="_gate_8cpp_source.html">Gate.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_gate_8cpp_source.html#l00016">16</a> pliku <a class="el" href="_gate_8cpp_source.html">Gate.cpp</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_gate_a204aaaa33396f2a1f4a5de4cee3956b8_cgraph.png" border="0" usemap="#class_gate_a204aaaa33396f2a1f4a5de4cee3956b8_cgraph" alt=""/></div>
 <map name="class_gate_a204aaaa33396f2a1f4a5de4cee3956b8_cgraph" id="class_gate_a204aaaa33396f2a1f4a5de4cee3956b8_cgraph">
-<area shape="rect" title="Konstruktor klasy Gate." alt="" coords="5,56,92,83"/>
-<area shape="rect" href="class_gate.html#a0ee4e42d768a522de2cd348451ae6a9c" title="Slot moveDown Slot odpowiadający za poruszanie się przeszkody (bramki) w dół sceny." alt="" coords="140,56,260,83"/>
+<area shape="rect" title="Konstruktor klasy Gate." alt="" coords="5,81,92,108"/>
+<area shape="rect" href="class_gate.html#a0ee4e42d768a522de2cd348451ae6a9c" title="Slot moveDown Slot odpowiadający za poruszanie się przeszkody (bramki) w dół sceny." alt="" coords="140,81,260,108"/>
 <area shape="rect" href="class_health.html#a15836492efb60f8c61151d35379768d2" title="Funkcja decrease Funkcja odpowiada za pomniejszenie wyniku o 1. Wywoływana jest po uderzeniu gracza w..." alt="" coords="309,5,429,32"/>
 <area shape="rect" href="class_health.html#adc5f045b9f6937c592e196821d7a6878" title="Funkcja getHealth Funkcja umożliwia pozyskanie atrybutu health." alt="" coords="308,56,431,83"/>
-<area shape="rect" href="class_score.html#ab5dbfab6935903c075509546878cfbda" title="Funkcja increase Funkcja zwiększająca wynik rozgrywki o 1." alt="" coords="313,107,426,133"/>
+<area shape="rect" href="class_score.html#a8627c93270c188a3fd28a25b1d07a9e7" title="Funkcja getScore." alt="" coords="311,107,427,133"/>
+<area shape="rect" href="class_score.html#ab5dbfab6935903c075509546878cfbda" title="Funkcja increase Funkcja zwiększająca wynik rozgrywki o 1." alt="" coords="313,157,426,184"/>
 </map>
 </div>
 
@@ -201,16 +208,17 @@ Oto graf wywołań dla tej funkcji:</div>
 
 <p>Slot moveDown Slot odpowiadający za poruszanie się przeszkody (bramki) w dół sceny. </p>
 
-<p class="definition">Definicja w linii <a class="el" href="_gate_8cpp_source.html#l00030">30</a> pliku <a class="el" href="_gate_8cpp_source.html">Gate.cpp</a>.</p>
+<p class="definition">Definicja w linii <a class="el" href="_gate_8cpp_source.html#l00031">31</a> pliku <a class="el" href="_gate_8cpp_source.html">Gate.cpp</a>.</p>
 <div class="dynheader">
 Oto graf wywołań dla tej funkcji:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_gate_a0ee4e42d768a522de2cd348451ae6a9c_cgraph.png" border="0" usemap="#class_gate_a0ee4e42d768a522de2cd348451ae6a9c_cgraph" alt=""/></div>
 <map name="class_gate_a0ee4e42d768a522de2cd348451ae6a9c_cgraph" id="class_gate_a0ee4e42d768a522de2cd348451ae6a9c_cgraph">
-<area shape="rect" title="Slot moveDown Slot odpowiadający za poruszanie się przeszkody (bramki) w dół sceny." alt="" coords="5,56,125,83"/>
+<area shape="rect" title="Slot moveDown Slot odpowiadający za poruszanie się przeszkody (bramki) w dół sceny." alt="" coords="5,81,125,108"/>
 <area shape="rect" href="class_health.html#a15836492efb60f8c61151d35379768d2" title="Funkcja decrease Funkcja odpowiada za pomniejszenie wyniku o 1. Wywoływana jest po uderzeniu gracza w..." alt="" coords="175,5,295,32"/>
 <area shape="rect" href="class_health.html#adc5f045b9f6937c592e196821d7a6878" title="Funkcja getHealth Funkcja umożliwia pozyskanie atrybutu health." alt="" coords="173,56,296,83"/>
-<area shape="rect" href="class_score.html#ab5dbfab6935903c075509546878cfbda" title="Funkcja increase Funkcja zwiększająca wynik rozgrywki o 1." alt="" coords="178,107,291,133"/>
+<area shape="rect" href="class_score.html#a8627c93270c188a3fd28a25b1d07a9e7" title="Funkcja getScore." alt="" coords="177,107,293,133"/>
+<area shape="rect" href="class_score.html#ab5dbfab6935903c075509546878cfbda" title="Funkcja increase Funkcja zwiększająca wynik rozgrywki o 1." alt="" coords="178,157,291,184"/>
 </map>
 </div>
 <div class="dynheader">
@@ -219,6 +227,42 @@ Oto graf wywoływań tej funkcji:</div>
 <div class="center"><img src="class_gate_a0ee4e42d768a522de2cd348451ae6a9c_icgraph.png" border="0" usemap="#class_gate_a0ee4e42d768a522de2cd348451ae6a9c_icgraph" alt=""/></div>
 <map name="class_gate_a0ee4e42d768a522de2cd348451ae6a9c_icgraph" id="class_gate_a0ee4e42d768a522de2cd348451ae6a9c_icgraph">
 <area shape="rect" title="Slot moveDown Slot odpowiadający za poruszanie się przeszkody (bramki) w dół sceny." alt="" coords="140,5,260,32"/>
+<area shape="rect" href="class_gate.html#a204aaaa33396f2a1f4a5de4cee3956b8" title="Konstruktor klasy Gate." alt="" coords="5,5,92,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2e38d600aab8b83293ab6e1def0a35ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e38d600aab8b83293ab6e1def0a35ef">&#9670;&nbsp;</a></span>sigGameOver</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gate::sigGameOver </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Oto graf wywoływań tej funkcji:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_gate_a2e38d600aab8b83293ab6e1def0a35ef_icgraph.png" border="0" usemap="#class_gate_a2e38d600aab8b83293ab6e1def0a35ef_icgraph" alt=""/></div>
+<map name="class_gate_a2e38d600aab8b83293ab6e1def0a35ef_icgraph" id="class_gate_a2e38d600aab8b83293ab6e1def0a35ef_icgraph">
+<area shape="rect" title=" " alt="" coords="308,5,444,32"/>
+<area shape="rect" href="class_gate.html#a0ee4e42d768a522de2cd348451ae6a9c" title="Slot moveDown Slot odpowiadający za poruszanie się przeszkody (bramki) w dół sceny." alt="" coords="140,5,260,32"/>
 <area shape="rect" href="class_gate.html#a204aaaa33396f2a1f4a5de4cee3956b8" title="Konstruktor klasy Gate." alt="" coords="5,5,92,32"/>
 </map>
 </div>

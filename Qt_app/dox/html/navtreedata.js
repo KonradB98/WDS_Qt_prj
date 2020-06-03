@@ -71,17 +71,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_gate_8cpp.html",
-"class_q_c_p_axis.html#a1d52c78c856d8bd1f331d4ec4e63d944",
-"class_q_c_p_axis_rect.html#a648cce336bd99daac4a5ca3e5743775d",
-"class_q_c_p_bars_group.html#a314d09aeb2ad209518b9183ca7ffe662",
-"class_q_c_p_curve_data.html#a72b39b8e1dbf7b45382ebd48419b6828",
-"class_q_c_p_graph.html#a5b0291f248e8ca8eaa82833ab420dcd0",
-"class_q_c_p_item_position.html#a4ff3931ad115603dfb4c7000b24bb415",
-"class_q_c_p_layerable.html#acb663e375d2d36dc5c55021ee5a2119b",
-"class_q_c_p_line_ending.html#aca89d21341133c20dc6825c33a5eac48",
-"class_q_c_p_statistical_box.html#a0b62775bd67301b1eba5c785f2b26f14",
-"class_q_custom_plot.html#ab1692469dde841080fa33719533bf2b7",
-"qcustomplot_8h.html#a2e5583d1ae212f0deb10537cf975a15a"
+"class_q_c_p_axis.html#a13ec644fc6e22715744c92c6dfa4f0fa",
+"class_q_c_p_axis_rect.html#a5a847b3ddeca3abec38d3838fefb0dbd",
+"class_q_c_p_bars_data.html#acf3e6479dacacd6c81eebe7d4cd62185",
+"class_q_c_p_curve.html#afa6bd72a3a331a5ed45d3e0c5843b592",
+"class_q_c_p_graph.html#a44487a3a706605bb9fc97ad5e05d347e",
+"class_q_c_p_item_position.html#a0cd9b326fb324710169e92e8ca0041c2",
+"class_q_c_p_layerable.html#aa38ec5891aff0f50b36fd63e9372a0cd",
+"class_q_c_p_line_ending.html#a5ef16e6876b4b74959c7261d8d4c2cd5a61f78ee8f375fb21cb9d250687bbcbd2",
+"class_q_c_p_selection_rect.html#ae255dec12cd531071115bd667f0fd815",
+"class_q_custom_plot.html#aabb974d71ce96c137dc04eb6eab844fe",
+"qcustomplot_8h.html#a17844f19e1019693a953e1eb93536d2faae8fcfaafee234ce18558afef83f6a78"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

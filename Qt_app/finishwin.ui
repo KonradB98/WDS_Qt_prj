@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Finishwin</class>
+ <widget class="QDialog" name="Finishwin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>468</width>
+    <height>356</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(54, 54, 54);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <family>AR DESTINE</family>
+       <pointsize>26</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Game Over! Your score is:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLCDNumber" name="mylcd"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="pushButtonClose">
+     <property name="styleSheet">
+      <string notr="true">#pushButtonClose {
+background-color:#ff1a1a;
+color:#404040;
+font: 11pt &quot;Yu Gothic UI Semilight&quot;;
+}
+
+#pushButtonClose:hover {
+background-color: #e60000;
+}
+
+#pushButtonClose:pressed {
+background-color: #b30000;
+}</string>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
