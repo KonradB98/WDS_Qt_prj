@@ -10,6 +10,8 @@ SetWindow::SetWindow(QWidget *parent) :
     ui(new Ui::SetWindow)
 {
     ui->setupUi(this);
+    ui->pushButtonDisconnect->setEnabled(false);
+    ui->pushButtonDisconnect->setStyleSheet("background-color: #b30000;");
 }
 
 SetWindow::~SetWindow()
@@ -53,12 +55,20 @@ void SetWindow::on_pushButtonConnect_clicked()
     QString portName = portList.first();
     //emituj sygnal, ktory aktywuje SLOT w port.cpp odpowiadajacy za otworzenie i konfiguracje polaczenia
     emit setConnect(portName);
-
-
+    //Sprzezenie dwóch przycisku connect z disconnect
+    ui->pushButtonDisconnect->setEnabled(true);
+    ui->pushButtonDisconnect->setStyleSheet("background-color: rgb(255, 26, 26);");
+    ui->pushButtonConnect->setEnabled(false);
+    ui->pushButtonConnect->setStyleSheet("background-color: #00b300;");
 }
 //Slot odpowiadajacy zamknieciu portu
 void SetWindow::on_pushButtonDisconnect_clicked()
 {
     //emituje sygnal, ktory aktywuje SLOT w port.cpp odpowiadajacy za zamkniecie polaczenia
     emit closeConnect();
+    //Sprzezenie dwóch przycisku connect z disconnect
+    ui->pushButtonDisconnect->setEnabled(false);
+    ui->pushButtonDisconnect->setStyleSheet("background-color: #b30000;");
+    ui->pushButtonConnect->setEnabled(true);
+    ui->pushButtonConnect->setStyleSheet("background-color: #00ff00;");
 }

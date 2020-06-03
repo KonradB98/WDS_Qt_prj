@@ -18,9 +18,9 @@ class Score: public QGraphicsTextItem{
 public:
     /*!
      * \brief Konstruktor klasy Score
-     * \param[in] parent - wskaźnik na rodzica ustawiony na 0.
+     * \param[in] parent - wskaźnik rodzica ustawiony na nullptr.
      */
-    Score(QGraphicsItem * parent=0);
+    Score(QGraphicsItem * parent = nullptr);
     /*!
      * \brief Funkcja increase
      * Funkcja zwiększająca wynik rozgrywki o 1.

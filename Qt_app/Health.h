@@ -18,9 +18,9 @@ class Health: public QGraphicsTextItem{
 public:
     /*!
      * \brief Konstruktor klasy Health
-     * \param[in] parent - rodzic obiektu ustawiony na 0.
+     * \param[in] parent - wskaźnik rodzica ustawiony na nullptr.
      */
-    Health(QGraphicsItem * parent=0);
+    Health(QGraphicsItem * parent = nullptr);
     /*!
      * \brief Funkcja decrease
      * Funkcja odpowiada za pomniejszenie wyniku o 1. Wywoływana jest po uderzeniu gracza w bramkę.

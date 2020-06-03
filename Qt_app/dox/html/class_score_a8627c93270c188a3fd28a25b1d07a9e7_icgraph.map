@@ -1,5 +1,5 @@
 <map id="Score::getScore" name="Score::getScore">
 <area shape="rect" id="node1" title="Funkcja getScore." alt="" coords="308,5,424,32"/>
 <area shape="rect" id="node2" href="$class_gate.html#a0ee4e42d768a522de2cd348451ae6a9c" title="Slot moveDown Slot odpowiadający za poruszanie się przeszkody (bramki) w dół sceny." alt="" coords="140,5,260,32"/>
-<area shape="rect" id="node3" href="$class_gate.html#a204aaaa33396f2a1f4a5de4cee3956b8" title="Konstruktor klasy Gate." alt="" coords="5,5,92,32"/>
+<area shape="rect" id="node3" href="$class_gate.html#af8ecc27056f301856c580433ca2bc35f" title="Konstruktor klasy Gate." alt="" coords="5,5,92,32"/>
 </map>

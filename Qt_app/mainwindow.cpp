@@ -21,6 +21,9 @@ MainWindow::MainWindow(QWidget *parent)
     connect(&device,SIGNAL(reportStatus(const QString &)),this,SLOT(ifReport(const QString &)));//Aktualizuj StatusBar
     connect(&device,SIGNAL(plotData(QList<float>)),this,SLOT(makePlot(QList<float>)));//Rysuj wykres
 
+    t = 0;
+    range = 20;
+    axis = 0;
     os = "X";
 }
 

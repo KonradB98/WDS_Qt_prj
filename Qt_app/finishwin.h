@@ -25,7 +25,7 @@ class Finishwin : public QDialog
 public:
     /*!
      * \brief Konstruktor klasy Finishwin
-     * \param[in] parent - wskaźnik na rodzica ustawiony na NULL pointer.
+     * \param[in] parent - wskaźnik rodzica ustawiony na nullptr.
      */
     explicit Finishwin(QWidget *parent = nullptr);
     /*!

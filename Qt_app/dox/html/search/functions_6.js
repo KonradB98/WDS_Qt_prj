@@ -2,7 +2,7 @@ var searchData=
 [
   ['gameover_5fslt_2034',['gameOver_slt',['../class_finishwin.html#a0cf931ef19777ccd84ef9b545de3a41a',1,'Finishwin']]],
   ['gamewin_2035',['Gamewin',['../class_gamewin.html#ac19d436da5f2ea78924ef940b3a73a67',1,'Gamewin']]],
-  ['gate_2036',['Gate',['../class_gate.html#a204aaaa33396f2a1f4a5de4cee3956b8',1,'Gate']]],
+  ['gate_2036',['Gate',['../class_gate.html#af8ecc27056f301856c580433ca2bc35f',1,'Gate']]],
   ['generate_2037',['generate',['../class_q_c_p_axis_ticker.html#aefbd11725678ca824add8cf926cbc856',1,'QCPAxisTicker']]],
   ['generatelabelparameterhash_2038',['generateLabelParameterHash',['../class_q_c_p_axis_painter_private.html#ab6f77ae2bd3eccca3fef4b7ec8e34b31',1,'QCPAxisPainterPrivate']]],
   ['getbarrect_2039',['getBarRect',['../class_q_c_p_bars.html#a01b87e38e5d5089d214646d2af7896ea',1,'QCPBars']]],

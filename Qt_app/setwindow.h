@@ -63,7 +63,7 @@ signals:
      */
     void setConnect(QString); //Sygnal emitowany po wcisnieciu przycisku "Connect"
     /*!
-     * \brief Sygnał setConnect
+     * \brief Sygnał closeConnect
      * Sygnał emitowany po wcisnieciu przycisku "Disconnect".
      */
     void closeConnect(); //Sygnal emitowany po wcisnieciu przycisku "Disconnect"

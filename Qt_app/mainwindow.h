@@ -31,7 +31,7 @@ class MainWindow : public QMainWindow
 public:
     /*!
      * \brief Konstruktor głównego okna aplikacji.
-     * \param[in] parent - wskażnik rodzica ustawiony na NULL pointer.
+     * \param[in] parent - wskaźnik rodzica ustawiony na nullptr.
      */
     MainWindow(QWidget *parent = nullptr);
 
@@ -42,22 +42,24 @@ public:
     //Zmienne do rysowania wykresow
     /*!
      * \brief Atrybut t
-     * Zmienna odpowiedzialna za czas (oś X) wykresu.
+     * Zmienna odpowiedzialna za czas (oś X) wykresu podawany w sekundach.
      */
-    float t = 0;
+    float t;
     /*!
      * \brief Atrybut range
-     * Zmienna odpowiedzialna za zakres czasu symulacji na wykresie.
+     * Zmienna odpowiedzialna za zakres czasu symulacji na wykresie podawany w sekundach.
      */
-    float range = 20;
+    float range;
     /*!
      * \brief Atrybut axis
-     * Zmienna odpowiedzialna za wybór osi, z której dane prezentowane są na wykresie.
+     * Zmienna pomocnicza odpowiedzialna za wybór osi, z której dane prezentowane są na wykresie. axis = 0 oznacza oś X,
+     * axis = 1 oznacza oś Y, axis = 2 oznacza oś Z.
      */
-    int axis = 0;
+    int axis;
     /*!
      * \brief Atrybut os
-     * Zmienna typu QString do opisu osi Y wykresu.
+     * Zmienna typu QString używana do opisu osi Y wykresu. Jej wartość przypisywana jest w momencie wciśnięcia przycisku
+     * zmieniającego dane prezentowane na wykresie. W konstruktorze przypisywana jest wartość os = "X"
      */
     QString os;
 
@@ -69,14 +71,15 @@ private slots:
     void on_pushButtonConnect_clicked();
     /*!
      * \brief Slot aktualizujący pasek statusowy.
-     * \param[in] message - string zawierający tekst wyświetlany w pasku statusowym.
+     * \param[in] message - Qstring zawierający tekst wyświetlany w pasku statusowym.
+     * Jego wartość jest zmieniana podczas połączenia lub rozłączenia aplikacji z mikrokontrolerem.
      */
     void ifReport(const QString &message);
     //Funkcja odpowiada rysowanie wykresu
     /*!
      * \brief Slot makePlot
      * Slot odpowiedzialny za rysowanie wykres w zakładce "plots".
-     * \param[in] acc_dat - dane z akcelerometru w postaci listy.
+     * \param[in] acc_dat - dane z akcelerometru w postaci listy floatów w jednostce g.
      */
     void makePlot(QList<float> acc_dat);
     /*!

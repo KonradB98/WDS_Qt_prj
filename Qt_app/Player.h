@@ -23,20 +23,20 @@ class Player:public QObject, public QGraphicsPixmapItem{
 public:
     /*!
      * \brief Konstruktor klasy Player
-     * \param[in] parent - ustawienie rodzica na NULL.
+     * \param[in] parent - wskaźnik rodzica ustawiony na nullptr.
      */
-    Player(QGraphicsItem *parent = NULL);
+    Player(QGraphicsItem *parent = nullptr);
 public slots:
     /*!
      * \brief Slot accMove
      * Slot umożliwiający poruszanie postacią przy pomocy danych z akcelerometru.
-     * \param[in] acc_dat - dane z akcelerometru w postaci listy
+     * \param[in] acc_dat - dane z akcelerometru w postaci listy floatów w jednostce g.
      */
     void accMove(QList<float> acc_dat); //Slot porusza postacia przy pomocy danych z akcelerometru
 
     /*!
      * \brief Slot makeSpawn
-     * Slot cyklicznie tworzy przeszkody dla gracza (niebieskie bramki)
+     * Slot cyklicznie tworzy przeszkody dla gracza (niebieskie bramki).
      */
     void makeSpawn(); //Slot spawnuje bramki (przeszkody)
 };

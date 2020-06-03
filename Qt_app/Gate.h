@@ -20,9 +20,9 @@ class Gate:public QObject,public QGraphicsPixmapItem{
 public:
     /*!
      * \brief Konstruktor klasy Gate
-     * \param[in] parent - rodzic ustawiony na NULL.
+     * \param[in] parent - wskaźnik rodzica ustawiony na nullptr.
      */
-    Gate(QGraphicsItem *parent=NULL);
+    Gate(QGraphicsItem *parent = nullptr);
 public slots:
     /*!
      * \brief Slot moveDown

@@ -203,7 +203,7 @@ Posiada wskaźniki na wszystkie obiekty występujące w grze. Konstruktor inicja
 <p>Konstruktor obiektu klasy <a class="el" href="class_gamewin.html" title="Klasa Gamewindow Klasa modeluje całą rozgrywkę.  Posiada wskaźniki na wszystkie obiekty występujące w...">Gamewin</a>. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>- rodzic ustawiony na NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>- wskaźnik rodzica ustawiony na nullptr. </td></tr>
   </table>
   </dd>
 </dl>
@@ -261,7 +261,7 @@ Posiada wskaźniki na wszystkie obiekty występujące w grze. Konstruktor inicja
 <p>Slot odbierający dane Umożliwia on odbiór danych z akcelerometru orez przesłanie ich dalej do obiektu <a class="el" href="class_player.html" title="Klasa Player Klasa modeluje postać gracza.  Umożliwia sterowanie graczem przy pomocy danych z akceler...">Player</a>. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">acc_dat</td><td>- dane z akcelerometru w postaci listy. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">acc_dat</td><td>- dane z akcelerometru w postaci listy w jednostce g. </td></tr>
   </table>
   </dd>
 </dl>
@@ -297,7 +297,7 @@ Posiada wskaźniki na wszystkie obiekty występujące w grze. Konstruktor inicja
 <p>Sygnał emitowany po odebraniu danych. </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">acc_dat</td><td>- dane z akcelerometru w postaci listy. Sygnał emitowany jest po odbiorze danych przez slot getControlData. Sygnał odbierany jest przez obiekt klasy <a class="el" href="class_player.html" title="Klasa Player Klasa modeluje postać gracza.  Umożliwia sterowanie graczem przy pomocy danych z akceler...">Player</a>, aby umożliwić poruszanie graczem za pomocą danych z akcelerometru. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">acc_dat</td><td>- dane z akcelerometru w postaci listy w jednostce g. Sygnał emitowany jest po odbiorze danych przez slot getControlData. Sygnał odbierany jest przez obiekt klasy <a class="el" href="class_player.html" title="Klasa Player Klasa modeluje postać gracza.  Umożliwia sterowanie graczem przy pomocy danych z akceler...">Player</a>, aby umożliwić poruszanie graczem za pomocą danych z akcelerometru. </td></tr>
   </table>
   </dd>
 </dl>

@@ -54,7 +54,7 @@ private slots:
     //void readPortData(); //Slot czytajacy i wypisujacy dane przesylane z mikrokontrolera
     /*!
      * \brief Slot OpenPort
-     * \param[in] portName - nazwa portu typu QString, sczytana z combobox'a.
+     * \param[in] portName - nazwa portu typu QString, wybrana przez użytkownika z combobox'a.
      * Slot konfiguruje i otwiera port szeregowy.
      */
     void OpenPort(QString portName); //Slot konfiguruje i otwiera port szeregowy

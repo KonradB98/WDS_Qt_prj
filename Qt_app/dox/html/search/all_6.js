@@ -5,7 +5,7 @@ var searchData=
   ['gamewin_316',['Gamewin',['../class_gamewin.html',1,'Gamewin'],['../class_gamewin.html#ac19d436da5f2ea78924ef940b3a73a67',1,'Gamewin::Gamewin()']]],
   ['gamewin_2ecpp_317',['gamewin.cpp',['../gamewin_8cpp.html',1,'']]],
   ['gamewin_2eh_318',['gamewin.h',['../gamewin_8h.html',1,'']]],
-  ['gate_319',['Gate',['../class_gate.html',1,'Gate'],['../class_gate.html#a204aaaa33396f2a1f4a5de4cee3956b8',1,'Gate::Gate()']]],
+  ['gate_319',['Gate',['../class_gate.html',1,'Gate'],['../class_gate.html#af8ecc27056f301856c580433ca2bc35f',1,'Gate::Gate()']]],
   ['gate_2ecpp_320',['Gate.cpp',['../_gate_8cpp.html',1,'']]],
   ['gate_2eh_321',['Gate.h',['../_gate_8h.html',1,'']]],
   ['generate_322',['generate',['../class_q_c_p_axis_ticker.html#aefbd11725678ca824add8cf926cbc856',1,'QCPAxisTicker']]],

@@ -10,7 +10,7 @@ Health::Health(QGraphicsItem *parent): QGraphicsTextItem(parent){
     //setPlainText(QString("Health: ❤️ ") + QString::number(health)); // Health: 3
     setPlainText(QString(" 💗 ") + QString::number(health)); // Health: 3
     setDefaultTextColor(Qt::red);
-    setFont(QFont("OldEnglish",22));
+    setFont(QFont("AR DESTINE",22));
 }
 
 void Health::decrease(){

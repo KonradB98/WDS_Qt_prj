@@ -26,7 +26,7 @@ var searchData=
   ['pixeltocoord_2290',['pixelToCoord',['../class_q_c_p_axis.html#a536ef8f624cac59b6b6fdcb495723c57',1,'QCPAxis']]],
   ['pixmap_2291',['pixmap',['../class_q_c_p_scatter_style.html#a9b2d1a2ec0aac0c74f7582d14050e93a',1,'QCPScatterStyle::pixmap()'],['../class_q_c_p_item_pixmap.html#a7daef7e0c432902d69e7db3e0e217a1f',1,'QCPItemPixmap::pixmap()']]],
   ['placeticklabel_2292',['placeTickLabel',['../class_q_c_p_axis_painter_private.html#af8fe7350c19575bc33ca770f9b3a15fd',1,'QCPAxisPainterPrivate']]],
-  ['player_2293',['Player',['../class_player.html#a320b129a16aca7ff1aeac26292110b8c',1,'Player']]],
+  ['player_2293',['Player',['../class_player.html#a847cda8deb8dca3637bef1084643b46b',1,'Player']]],
   ['plotdata_2294',['plotData',['../classport.html#a29daafc7e56d50d600fe4ce709df6406',1,'port']]],
   ['plotlayout_2295',['plotLayout',['../class_q_custom_plot.html#af1a1f1f571237deb7c2bd34a5e9f018f',1,'QCustomPlot']]],
   ['plottable_2296',['plottable',['../class_q_custom_plot.html#a32de81ff53e263e785b83b52ecd99d6f',1,'QCustomPlot::plottable(int index)'],['../class_q_custom_plot.html#adea38bdc660da9412ba69fb939031567',1,'QCustomPlot::plottable()'],['../class_q_c_p_plottable_legend_item.html#af29e9a2c60b4cba0cac2447b8af7b488',1,'QCPPlottableLegendItem::plottable()']]],

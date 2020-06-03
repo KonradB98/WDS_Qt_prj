@@ -32,7 +32,7 @@ class Gamewin : public QDialog
 public:
     /*!
      * \brief Konstruktor obiektu klasy Gamewin
-     * \param[in] parent - rodzic ustawiony na NULL.
+     * \param[in] parent - wskaźnik rodzica ustawiony na nullptr.
      */
     explicit Gamewin(QWidget *parent = nullptr);
     /*!
@@ -74,13 +74,13 @@ public slots:
      /*!
      * \brief Slot odbierający dane
      * Umożliwia on odbiór danych z akcelerometru orez przesłanie ich dalej do obiektu Player.
-     * \param[in] acc_dat - dane z akcelerometru w postaci listy.
+     * \param[in] acc_dat - dane z akcelerometru w postaci listy w jednostce g.
      */
     void getControlData(QList<float> acc_dat); //Odbiera dane z akcelerometru od okna "mainwindow"
 signals:
     /*!
      * \brief Sygnał emitowany po odebraniu danych
-     * \param [in] acc_dat - dane z akcelerometru w postaci listy.
+     * \param [in] acc_dat - dane z akcelerometru w postaci listy w jednostce g.
      * Sygnał emitowany jest po odbiorze danych przez slot getControlData.
      * Sygnał odbierany jest przez obiekt klasy Player, aby umożliwić poruszanie graczem za pomocą danych z akcelerometru.
      */

@@ -31,7 +31,7 @@ var searchData=
   ['pixeltocoord_950',['pixelToCoord',['../class_q_c_p_axis.html#a536ef8f624cac59b6b6fdcb495723c57',1,'QCPAxis']]],
   ['pixmap_951',['pixmap',['../struct_q_c_p_axis_painter_private_1_1_cached_label.html#a461597cbd470914a9d24b64d16037a88',1,'QCPAxisPainterPrivate::CachedLabel::pixmap()'],['../class_q_c_p_scatter_style.html#a9b2d1a2ec0aac0c74f7582d14050e93a',1,'QCPScatterStyle::pixmap()'],['../class_q_c_p_item_pixmap.html#a7daef7e0c432902d69e7db3e0e217a1f',1,'QCPItemPixmap::pixmap()']]],
   ['placeticklabel_952',['placeTickLabel',['../class_q_c_p_axis_painter_private.html#af8fe7350c19575bc33ca770f9b3a15fd',1,'QCPAxisPainterPrivate']]],
-  ['player_953',['Player',['../class_player.html',1,'Player'],['../class_player.html#a320b129a16aca7ff1aeac26292110b8c',1,'Player::Player()'],['../class_gamewin.html#a460d704a8cd1e3b3d5f4cc0e69ece7f5',1,'Gamewin::player()']]],
+  ['player_953',['Player',['../class_player.html',1,'Player'],['../class_player.html#a847cda8deb8dca3637bef1084643b46b',1,'Player::Player()'],['../class_gamewin.html#a460d704a8cd1e3b3d5f4cc0e69ece7f5',1,'Gamewin::player()']]],
   ['player_2ecpp_954',['Player.cpp',['../_player_8cpp.html',1,'']]],
   ['player_2eh_955',['Player.h',['../_player_8h.html',1,'']]],
   ['plotdata_956',['plotData',['../classport.html#a29daafc7e56d50d600fe4ce709df6406',1,'port']]],
